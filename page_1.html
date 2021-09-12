@@ -5835,7 +5835,7 @@
         <section class="sect_17">
             <div class="cont_wrapper_70">
                 <div class="space_3"></div>
-                <form method="post" action="#form" enctype="multipart/form-data" novalidate>
+                <form action="#">
                     <!-- 1 -->
                     <div class="flex_1 flex_center wrapper_85">
                         <div class="width_25 f_sub txt_left">
@@ -5844,9 +5844,18 @@
                                     style="background-color: #cc1e47;">必須</span></label>
                         </div>
                         <div class="width_75 f_sub txt_left">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['inquiry']; ?>
-                            </p>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="" class="noto_regular font_75 txt_rpad_1">無料相談希望</label>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="" class="noto_regular font_75">資料請求</label>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="" class="noto_regular font_75 txt_rpad_1">サービス詳細</label>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="" class="noto_regular font_75 txt_rpad_1">サービス料金</label>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="" class="noto_regular font_75 txt_rpad_1">導入事例</label>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="" class="noto_regular font_75">その他</label>
                         </div>
                     </div>
                     <div class="view_sp">
@@ -5861,24 +5870,31 @@
                                     style="background-color: #cc1e47;">必須</span></label>
                         </div>
                         <div class="width_75 f_sub full_width">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['company_name']; ?>
-                            </p>
+                            <input type="text" id="" name="" value="" placeholder="ここに会社名を入力してください"
+                                class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                style="border: 1px solid #c2c2c2;">
                         </div>
                     </div>
                     <div class="space_1"></div>
                     <!-- 3 -->
                     <div class="flex_1 flex_center wrapper_85">
                         <div class="width_25 f_sub txt_left">
-                            <label for="" class="noto_bold font_75">氏名 <span
+                            <label for="" class="noto_bold font_75">会社名 <span
                                     class="white noto_bold font_75 txt_lpad_05 txt_rpad_05 box_radius_25 lspace_05"
                                     style="background-color: #cc1e47;">必須</span></label>
                         </div>
                         <div class="width_75 f_sub full_width flex"
                             style="justify-content: flex-start; column-gap: 1vw;">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['name_fname'] . " " . $clean['name_lname']; ?>
-                            </p>
+                            <div class="width_35">
+                                <input type="text" id="" name="" value="" placeholder="氏"
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
+                            <div class="width_35">
+                                <input type="text" id="" name="" value="" placeholder="名"
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
                         </div>
                     </div>
                     <div class="space_1"></div>
@@ -5891,9 +5907,16 @@
                         </div>
                         <div class="width_75 f_sub full_width flex"
                             style="justify-content: flex-start; column-gap: 1vw;">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['kana_fname'] . " " . $clean['kana_lname']; ?>
-                            </p>
+                            <div class="width_35">
+                                <input type="text" id="" name="" value="" placeholder="氏（カナ）"
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
+                            <div class="width_35">
+                                <input type="text" id="" name="" value="" placeholder="名（カナ）"
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
                         </div>
                     </div>
                     <div class="space_1"></div>
@@ -5905,9 +5928,9 @@
                                     style="background-color: #cc1e47;">必須</span></label>
                         </div>
                         <div class="width_75 full_width f_sub">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['email']; ?>
-                            </p>
+                            <input type="text" id="" name="" value="" placeholder="ここにメールアドレスを入力してください"
+                                class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                style="border: 1px solid #c2c2c2;">
                         </div>
                     </div>
                     <div class="space_1"></div>
@@ -5920,9 +5943,23 @@
                         </div>
                         <div class="width_75 f_sub full_width flex flex_center"
                             style="justify-content: flex-start; column-gap: 1vw;">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['tel1'] . " " . $clean['tel2'] . " " . $clean['tel3']; ?>
-                            </p>
+                            <div class="width_20">
+                                <input type="text" id="" name="" value="" placeholder=""
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
+                            <p class="font_200">-</p>
+                            <div class="width_20">
+                                <input type="text" id="" name="" value="" placeholder=""
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
+                            <p class="font_200">-</p>
+                            <div class="width_20">
+                                <input type="text" id="" name="" value="" placeholder=""
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
                         </div>
                     </div>
                     <!-- 7 -->
@@ -5934,9 +5971,23 @@
                         </div>
                         <div class="width_75 f_sub full_width flex flex_center"
                             style="justify-content: flex-start; column-gap: 1vw;">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['remote_tel1'] . " " . $clean['remote_tel2'] . " " . $clean['remote_tel3']; ?>
-                            </p>
+                            <div class="width_20">
+                                <input type="text" id="" name="" value="" placeholder=""
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
+                            <p class="font_200">-</p>
+                            <div class="width_20">
+                                <input type="text" id="" name="" value="" placeholder=""
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
+                            <p class="font_200">-</p>
+                            <div class="width_20">
+                                <input type="text" id="" name="" value="" placeholder=""
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
                         </div>
                     </div>
                     <div class="space_1"></div>
@@ -5948,23 +5999,27 @@
                                     style="background-color: #31a5b0;">必須</span></label>
                         </div>
                         <div class="width_75 f_sub txt_left">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['job']; ?>
-                            </p>
+                            <input type="radio" id="" name="" value="">
+                            <label for="" class="noto_regular font_75 txt_rpad_1">経営者</label>
+                            <input type="radio" id="" name="" value="">
+                            <label for="" class="noto_regular font_75">部長/課長</label>
+                            <input type="radio" id="" name="" value="">
+                            <label for="" class="noto_regular font_75 txt_rpad_1">担当者（その他）</label>
                         </div>
                     </div>
                     <div class="space_1"></div>
                     <!-- 9 -->
                     <div class="flex_1 flex_center wrapper_85">
                         <div class="width_25 f_sub txt_left">
-                            <label for="" class="noto_bold font_75">会社所在地<span
+                            <label for="" class="noto_bold font_75">役職<span
                                     class="white noto_bold font_75 txt_lpad_05 txt_rpad_05 box_radius_25 lspace_05"
                                     style="background-color: #cc1e47;">必須</span></label>
                         </div>
                         <div class="width_75 f_sub full_width txt_left">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['location']; ?>
-                            </p>
+                            <select id="cars" name="carlist" form="carform" class="noto_regular font_75 txt_lpad_05 txt_rpad_1 txt_bpad_05 txt_tpad_05 width_30 sclt
+                                box_radius_5" style="border: 1px solid #c2c2c2;">
+                                <option value="お選びください">お選びください</option>
+                            </select>
                         </div>
                     </div>
                     <div class="space_1"></div>
@@ -5977,48 +6032,47 @@
                             <p class="noto_bold font_75" style="color: #b5b5b5;">（複数選択可能）</p>
                         </div>
                         <div class="width_75 f_sub txt_left txt_lpad_1">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['purpose']; ?>
-                            </p>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="" class="noto_regular font_75 txt_rpad_1">母集団形成がうまくいっていない</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="" class="noto_regular font_75 txt_rpad_1">どの求人媒体を利用してよいかわからない</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="" class="noto_regular font_75 txt_rpad_1">効果的なインターンシップを開催したい</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="" class="noto_regular font_75 txt_rpad_1">内定承諾が得られない</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="" class="noto_regular font_75 txt_rpad_1">ダイレクトリクルーティングについて知りたい</label><br>
+                            <input type="checkbox" id="" name="" value="">
+                            <label for="" class="noto_regular font_75 txt_rpad_1">その他（自由記入欄にご記入ください）</label><br>
                         </div>
                     </div>
                     <div class="space_1"></div>
                     <!-- 11 -->
-                    <div class="flex_1 wrapper_85 full_width" style="justify-content: flex-start;">
+                    <div class="flex_1 wrapper_85 full_width style=" justify-content: flex-start;">
                         <div class="width_25 f_sub txt_left">
                             <label for="" class="noto_bold font_75">自由記入欄<span
                                     class="white noto_bold font_75 txt_lpad_05 txt_rpad_05 box_radius_25 lspace_05"
                                     style="background-color: #31a5b0;">必須</span></label>
                         </div>
                         <div class="width_75 f_sub area">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['content']; ?>
-                            </p>
+                            <textarea placeholder="ここにお問い合わせ内容を入力してください" rows="6" cols="50" resize="none;"
+                                class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                style="border: 1px solid #c2c2c2;"></textarea>
                         </div>
                     </div>
                     <div class="space_2"></div>
                     <!-- Button -->
-                    <input type="submit" name="btn_submit" value="Submit" class="white noto_black font_75 square_btn wrapper_25 txt_tpad_1 txt_bpad_1 box_radius_10" style=" background-image: linear-gradient(to right, #f4882d , #fb6b48);"><br>
-                    <input type="submit" name="btn_back" value="Back" class="white noto_black font_75 square_btn wrapper_25 txt_tpad_1 txt_bpad_1 box_radius_10" style=" background-image: linear-gradient(to right, #f4882d , #fb6b48);">
+                    <div class="square_btn wrapper_25 txt_tpad_1 txt_bpad_1 box_radius_10"
+                        style=" background-image: linear-gradient(to right, #f4882d , #fb6b48);">
+                        <div>
+                            <div>
+                                <p class="white noto_black font_75">入力内容を確認する</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="space_2"></div>
 
-                    <input type="hidden" name="inquiry" value="<?php echo $clean['inquiry']; ?>">
-                    <input type="hidden" name="company_name" value="<?php echo $clean['company_name']; ?>">
-                    <input type="hidden" name="name_fname" value="<?php echo $clean['name_fname']; ?>">
-                    <input type="hidden" name="name_lname" value="<?php echo $clean['name_lname']; ?>">
-                    <input type="hidden" name="kana_fname" value="<?php echo $clean['kana_fname']; ?>">
-                    <input type="hidden" name="kana_lname" value="<?php echo $clean['kana_lname']; ?>">
-                    <input type="hidden" name="email" value="<?php echo $clean['email']; ?>">
-                    <input type="hidden" name="tel1" value="<?php echo $clean['tel1']; ?>">
-                    <input type="hidden" name="tel2" value="<?php echo $clean['tel2']; ?>">
-                    <input type="hidden" name="tel3" value="<?php echo $clean['tel3']; ?>">
-                    <input type="hidden" name="remote_tel1" value="<?php echo $clean['remote_tel1']; ?>">
-                    <input type="hidden" name="remote_tel2" value="<?php echo $clean['remote_tel2']; ?>">
-                    <input type="hidden" name="remote_tel3" value="<?php echo $clean['remote_tel3']; ?>">
-                    <input type="hidden" name="job" value="<?php echo $clean['job']; ?>">
-                    <input type="hidden" name="location" value="<?php echo $clean['location']; ?>">
-                    <input type="hidden" name="purpose" value="<?php echo $clean['purpose']; ?>">
-                    <input type="hidden" name="content" value="<?php echo $clean['content']; ?>">
+
                 </form>
                 <div class="space_3"></div>
             </div>
@@ -6296,96 +6350,6 @@
             $('#toggle').toggleClass('active');
             $('#overlay').toggleClass('open');
         }
-    </script>
-
-<script>
-        $.fn.scrollView = function () {
-            return this.each(function () {
-                $('html, body').animate({
-                    scrollTop: $(this).offset().top - 100
-                }, 1000);
-            });
-        }
-
-        function check(){
-            if ($('.error_msg').is(':visible')) { 
-                // we're empty. do stuff.
-                $('.error_msg:visible:first').scrollView();
-            }
-        }
-        
-        check();
-
-        function telclick(){
-            var a = document.getElementById("tel1"),
-                b = document.getElementById("tel2"),
-                c = document.getElementById("tel3");
-
-            a.onkeyup = function() {
-                if (this.value.length === parseInt(this.attributes["maxlength"].value)) {
-                    b.focus();
-                }
-            }
-
-            b.onkeyup = function() {
-                if (this.value.length === parseInt(this.attributes["maxlength"].value)) {
-                    c.focus();
-                }
-            }
-
-            c.onkeydown = function() {
-                if (event.keyCode === 8) {
-                if (this.value.length === 0) {
-                    b.focus();
-                }
-                }
-            }
-
-            b.onkeydown = function() {
-                if (event.keyCode === 8) {
-                if (this.value.length === 0) {
-                    a.focus();
-                }
-                }
-            }
-        }
-
-        function remotetelclick(){
-            var a = document.getElementById("remote_tel1"),
-                b = document.getElementById("remote_tel2"),
-                c = document.getElementById("remote_tel3");
-
-            a.onkeyup = function() {
-                if (this.value.length === parseInt(this.attributes["maxlength"].value)) {
-                    b.focus();
-                }
-            }
-
-            b.onkeyup = function() {
-                if (this.value.length === parseInt(this.attributes["maxlength"].value)) {
-                    c.focus();
-                }
-            }
-
-            c.onkeydown = function() {
-                if (event.keyCode === 8) {
-                if (this.value.length === 0) {
-                    b.focus();
-                }
-                }
-            }
-
-            b.onkeydown = function() {
-                if (event.keyCode === 8) {
-                if (this.value.length === 0) {
-                    a.focus();
-                }
-                }
-            }
-        }
-        
-        telclick();
-        remotetelclick();
     </script>
 
 
