@@ -780,7 +780,7 @@
 
         <div class="view_pc">
             <div class="bg_img">
-                <div class="width_100" style="position: fixed; top: 50%; z-index: 9999;">
+                <div class="width_13" style="position: fixed; top: 50%; z-index: 9999; right: 0;">
                     <div class="tr_0" style="z-index: 150;">
                         <div class="width_100">
                             <a href="#"> <img src="../img/sidebar/side_1.png" alt="" class="fix_zoom undrag">
