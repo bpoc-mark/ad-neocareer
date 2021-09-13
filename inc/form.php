@@ -533,7 +533,7 @@
     }
 
     @media only screen and (max-width: 770px) {
-        .sect_17 .wrapper_85 {
+        .`sect`_17 .wrapper_85 {
             width: 100% !important;
             display: block;
             float: none !important;
@@ -7864,14 +7864,14 @@
                                 <div class="space_1"></div>
                             </div>
                         </div>
-                        <span id="dots" style="visibility: hidden;">...</span>
+                        <span id="dots2" style="visibility: hidden;">...</span>
                     </div>
 
                     <div class="space_3"></div>
                     <!-- Button -->
                     <div class="d_none square_btn wrapper_70 txt_tpad_1 txt_bpad_1 box_radius_10" id="myBtn-2"
                         style=" background-image: linear-gradient(to right, #f4882d , #fb6b48);">
-                        <div class="bg_img" onclick="myFunction()">
+                        <div class="bg_img" onclick="myFunctionsp();">
                             <div class="tl_0" style="left: 7%;">
                                 <p class="white font_125">▶</p>
                             </div>
@@ -8151,7 +8151,6 @@
         <!-- Section 17 -->
         <section class="sect_17" id="confirm_form">
             <div class="cont_wrapper_70">
-                <div class="space_10 view_tabsp"></div>
                 <div class="space_3"></div>
                 <form method="post" action="#form" enctype="multipart/form-data" novalidate>
                     <!-- 1 -->
@@ -8162,14 +8161,36 @@
                                     style="background-color: #cc1e47;">必須</span></label>
                         </div>
                         <div class="width_75 f_sub txt_left">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo ($_POST['inquiry'][0]) ? $_POST['inquiry'][0] . " / " : ""; ?>
-                                <?php echo ($_POST['inquiry'][1]) ? $_POST['inquiry'][1] . " / " : ""; ?>
-                                <?php echo ($_POST['inquiry'][2]) ? $_POST['inquiry'][2] . " / " : ""; ?>
-                                <?php echo ($_POST['inquiry'][3]) ? $_POST['inquiry'][3] . " / " : ""; ?>
-                                <?php echo ($_POST['inquiry'][4]) ? $_POST['inquiry'][4] . " / " : ""; ?>
-                                <?php echo ($_POST['inquiry'][5]) ? $_POST['inquiry'][5] . " / " : ""; ?>
-                            </p>
+                            <?php 
+                                if(empty($_POST['inquiry'])){
+                                    $_POST['inquiry'] = array();
+                                }
+                            ?>
+                            <input type="checkbox" id="" name="inquiry[]" value="無料相談希望"
+                                <?php if(array_search('無料相談希望', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
+                            <label for="" class="noto_regular font_75 txt_rpad_1">無料相談希望</label>
+                            <input type="checkbox" id="" name="inquiry[]" value="資料請求"
+                                <?php if(array_search('資料請求', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
+                            <label for="" class="noto_regular font_75">資料請求</label>
+                            <input type="checkbox" id="" name="inquiry[]" value="サービス詳細"
+                                <?php if(array_search('サービス詳細', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
+                            <label for="" class="noto_regular font_75 txt_rpad_1">サービス詳細</label>
+                            <input type="checkbox" id="" name="inquiry[]" value="サービス料金"
+                                <?php if(array_search('サービス料金', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
+                            <label for="" class="noto_regular font_75 txt_rpad_1">サービス料金</label>
+                            <input type="checkbox" id="" name="inquiry[]" value="導入事例"
+                                <?php if(array_search('導入事例', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
+                            <label for="" class="noto_regular font_75 txt_rpad_1">導入事例</label>
+                            <input type="checkbox" id="" name="inquiry[]" value="その他"
+                                <?php if(array_search('その他', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
+                            <label for="" class="noto_regular font_75">その他</label>
+                            <div class="width_100">
+                                <?php if( !empty($error['inquiry']) ): ?>
+                                <p class="error_msg bold txt_left font_75"
+                                    style="margin: 0 0 0 auto; padding-top: 5px;">
+                                    <?php echo $error['inquiry']; ?></p>
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
                     <div class="view_sp">
@@ -8184,9 +8205,20 @@
                                     style="background-color: #cc1e47;">必須</span></label>
                         </div>
                         <div class="width_75 f_sub full_width">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['company_name']; ?>
-                            </p>
+                            <input type="text" id="" name="company_name"
+                                value="<?php if( !empty($clean['company_name']) ){ echo $clean['company_name']; } ?>"
+                                placeholder="ここに会社名を入力してください"
+                                class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                style="border: 1px solid #c2c2c2;">
+                            <div class="width_100">
+                                <div class="width_100">
+                                    <?php if( !empty($error['company_name']) ): ?>
+                                    <p class="error_msg bold txt_left font_75"
+                                        style="margin: 0 0 0 auto; padding-top: 5px;">
+                                        <?php echo $error['company_name']; ?></p>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="space_1"></div>
@@ -8199,9 +8231,27 @@
                         </div>
                         <div class="width_75 f_sub full_width flex"
                             style="justify-content: flex-start; column-gap: 1vw;">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['name_fname'] . " " . $clean['name_lname']; ?>
-                            </p>
+                            <div class="width_35">
+                                <input type="text" id="" name="name_fname"
+                                    value="<?php if( !empty($clean['name_fname']) ){ echo $clean['name_fname']; } ?>"
+                                    placeholder="氏"
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
+                            <div class="width_35">
+                                <input type="text" id="" name="name_lname"
+                                    value="<?php if( !empty($clean['name_lname']) ){ echo $clean['name_lname']; } ?>"
+                                    placeholder="名"
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
+                            <div class="width_100">
+                                <?php if( !empty($error['name']) ): ?>
+                                <p class="error_msg bold txt_left font_75"
+                                    style="margin: 0 0 0 auto; padding-top: 5px;">
+                                    <?php echo $error['name']; ?></p>
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
                     <div class="space_1"></div>
@@ -8214,9 +8264,27 @@
                         </div>
                         <div class="width_75 f_sub full_width flex"
                             style="justify-content: flex-start; column-gap: 1vw;">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['kana_fname'] . " " . $clean['kana_lname']; ?>
-                            </p>
+                            <div class="width_35">
+                                <input type="text" id="" name="kana_fname"
+                                    value="<?php if( !empty($clean['kana_fname']) ){ echo $clean['kana_fname']; } ?>"
+                                    placeholder="氏（カナ）"
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
+                            <div class="width_35">
+                                <input type="text" id="" name="kana_lname"
+                                    value="<?php if( !empty($clean['kana_lname']) ){ echo $clean['kana_lname']; } ?>"
+                                    placeholder="名（カナ）"
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
+                            <div class="width_100">
+                                <?php if( !empty($error['name_kana']) ): ?>
+                                <p class="error_msg bold txt_left font_75"
+                                    style="margin: 0 0 0 auto; padding-top: 5px;">
+                                    <?php echo $error['name_kana']; ?></p>
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
                     <div class="space_1"></div>
@@ -8228,9 +8296,18 @@
                                     style="background-color: #cc1e47;">必須</span></label>
                         </div>
                         <div class="width_75 full_width f_sub">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['email']; ?>
-                            </p>
+                            <input type="text" id="" name="email"
+                                value="<?php if( !empty($clean['email']) ){ echo $clean['email']; } ?>"
+                                placeholder="ここにメールアドレスを入力してください"
+                                class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                style="border: 1px solid #c2c2c2;">
+                            <div class="width_100">
+                                <?php if( !empty($error['email']) ): ?>
+                                <p class="error_msg bold txt_left font_75"
+                                    style="margin: 0 0 0 auto; padding-top: 5px;">
+                                    <?php echo $error['email']; ?></p>
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
                     <div class="space_1"></div>
@@ -8243,9 +8320,36 @@
                         </div>
                         <div class="width_75 f_sub full_width flex flex_center"
                             style="justify-content: flex-start; column-gap: 1vw;">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['tel1'] . " " . $clean['tel2'] . " " . $clean['tel3']; ?>
-                            </p>
+                            <div class="width_20">
+                                <input type="text" id="tel1" name="tel1"
+                                    value="<?php if( !empty($clean['tel1']) ){ echo $clean['tel1']; } ?>" maxlength="3"
+                                    placeholder=""
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
+                            <p class="font_200">-</p>
+                            <div class="width_20">
+                                <input type="text" id="tel2" name="tel2"
+                                    value="<?php if( !empty($clean['tel2']) ){ echo $clean['tel2']; } ?>" maxlength="3"
+                                    placeholder=""
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
+                            <p class="font_200">-</p>
+                            <div class="width_20">
+                                <input type="text" id="tel3" name="tel3"
+                                    value="<?php if( !empty($clean['tel3']) ){ echo $clean['tel3']; } ?>" maxlength="4"
+                                    placeholder=""
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
+                            <div class="width_100">
+                                <?php if( !empty($error['tel']) ): ?>
+                                <p class="error_msg bold txt_left font_75"
+                                    style="margin: 0 0 0 auto; padding-top: 5px;">
+                                    <?php echo $error['tel']; ?></p>
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
                     <!-- 7 -->
@@ -8257,9 +8361,36 @@
                         </div>
                         <div class="width_75 f_sub full_width flex flex_center"
                             style="justify-content: flex-start; column-gap: 1vw;">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['remote_tel1'] . " " . $clean['remote_tel2'] . " " . $clean['remote_tel3']; ?>
-                            </p>
+                            <div class="width_20">
+                                <input type="text" id="remote_tel1" name="remote_tel1"
+                                    value="<?php if( !empty($clean['remote_tel1']) ){ echo $clean['remote_tel1']; } ?>"
+                                    maxlength="3" placeholder=""
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
+                            <p class="font_200">-</p>
+                            <div class="width_20">
+                                <input type="text" id="remote_tel2" name="remote_tel2"
+                                    value="<?php if( !empty($clean['remote_tel2']) ){ echo $clean['remote_tel2']; } ?>"
+                                    maxlength="3" placeholder=""
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
+                            <p class="font_200">-</p>
+                            <div class="width_20">
+                                <input type="text" id="remote_tel3" name="remote_tel3"
+                                    value="<?php if( !empty($clean['remote_tel3']) ){ echo $clean['remote_tel3']; } ?>"
+                                    maxlength="4" placeholder=""
+                                    class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                    style="border: 1px solid #c2c2c2;">
+                            </div>
+                            <div class="width_100">
+                                <?php if( !empty($error['remote_tel']) ): ?>
+                                <p class="error_msg bold txt_left font_75"
+                                    style="margin: 0 0 0 auto; padding-top: 5px;">
+                                    <?php echo $error['remote_tel']; ?></p>
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
                     <div class="space_1"></div>
@@ -8271,9 +8402,22 @@
                                     style="background-color: #31a5b0;">必須</span></label>
                         </div>
                         <div class="width_75 f_sub txt_left">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['job']; ?>
-                            </p>
+                            <input type="radio" id="" name="job" value="経営者"
+                                <?php if( !empty($clean['job']) && $clean['job'] === "経営者" ){ echo 'checked'; } ?>>
+                            <label for="" class="noto_regular font_75 txt_rpad_1">経営者</label>
+                            <input type="radio" id="" name="job" value="部長/課長"
+                                <?php if( !empty($clean['job']) && $clean['job'] === "部長/課長" ){ echo 'checked'; } ?>>
+                            <label for="" class="noto_regular font_75">部長/課長</label>
+                            <input type="radio" id="" name="job" value="担当者（その他）"
+                                <?php if( !empty($clean['job']) && $clean['job'] === "担当者（その他）" ){ echo 'checked'; } ?>>
+                            <label for="" class="noto_regular font_75 txt_rpad_1">担当者（その他）</label>
+                            <div class="width_100">
+                                <?php if( !empty($error['job']) ): ?>
+                                <p class="error_msg bold txt_left font_75"
+                                    style="margin: 0 0 0 auto; padding-top: 5px;">
+                                    <?php echo $error['job']; ?></p>
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
                     <div class="space_1"></div>
@@ -8285,9 +8429,23 @@
                                     style="background-color: #cc1e47;">必須</span></label>
                         </div>
                         <div class="width_75 f_sub full_width txt_left">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['location']; ?>
-                            </p>
+                            <select id="cars" name="location" class="noto_regular font_75 txt_lpad_05 txt_rpad_1 txt_bpad_05 txt_tpad_05 width_30 sclt
+                                box_radius_5" style="border: 1px solid #c2c2c2;">
+                                <option value="お選びください">お選びください</option>
+                                <option value="item 1"
+                                    <?php if( !empty($clean['location']) && $clean['location'] === "1" ){ echo 'selected'; } ?>>
+                                    item 1</option>
+                                <option value="item 2"
+                                    <?php if( !empty($clean['location']) && $clean['location'] === "2" ){ echo 'selected'; } ?>>
+                                    item 2</option>
+                            </select>
+                            <div class="width_100">
+                                <?php if( !empty($error['location']) ): ?>
+                                <p class="error_msg bold txt_left font_75"
+                                    style="margin: 0 0 0 auto; padding-top: 5px;">
+                                    <?php echo $error['location']; ?></p>
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
                     <div class="space_1"></div>
@@ -8300,14 +8458,36 @@
                             <p class="noto_bold font_75" style="color: #b5b5b5;">（複数選択可能）</p>
                         </div>
                         <div class="width_75 f_sub txt_left txt_lpad_1">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo ($_POST['purpose'][0]) ? $_POST['purpose'][0] . " / " : ""; ?>
-                                <?php echo ($_POST['purpose'][1]) ? $_POST['purpose'][1] . " / " : ""; ?>
-                                <?php echo ($_POST['purpose'][2]) ? $_POST['purpose'][2] . " / " : ""; ?>
-                                <?php echo ($_POST['purpose'][3]) ? $_POST['purpose'][3] . " / " : ""; ?>
-                                <?php echo ($_POST['purpose'][4]) ? $_POST['purpose'][4] . " / " : ""; ?>
-                                <?php echo ($_POST['purpose'][5]) ? $_POST['purpose'][5] . " / " : ""; ?>
-                            </p>
+                            <?php 
+                                if(empty($_POST['purpose'])){
+                                    $_POST['purpose'] = array();
+                                }
+                            ?>
+                            <input type="checkbox" id="" name="purpose[]" value="母集団形成がうまくいっていない"
+                                <?php if(array_search('母集団形成がうまくいっていない', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
+                            <label for="" class="noto_regular font_75 txt_rpad_1">母集団形成がうまくいっていない</label><br>
+                            <input type="checkbox" id="" name="purpose[]" value="どの求人媒体を利用してよいかわからない"
+                                <?php if(array_search('どの求人媒体を利用してよいかわからない', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
+                            <label for="" class="noto_regular font_75 txt_rpad_1">どの求人媒体を利用してよいかわからない</label><br>
+                            <input type="checkbox" id="" name="purpose[]" value="効果的なインターンシップを開催したい"
+                                <?php if(array_search('効果的なインターンシップを開催したい', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
+                            <label for="" class="noto_regular font_75 txt_rpad_1">効果的なインターンシップを開催したい</label><br>
+                            <input type="checkbox" id="" name="purpose[]" value="内定承諾が得られない"
+                                <?php if(array_search('内定承諾が得られない', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
+                            <label for="" class="noto_regular font_75 txt_rpad_1">内定承諾が得られない</label><br>
+                            <input type="checkbox" id="" name="purpose[]" value="ダイレクトリクルーティングについて知りたい"
+                                <?php if(array_search('ダイレクトリクルーティングについて知りたい', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
+                            <label for="" class="noto_regular font_75 txt_rpad_1">ダイレクトリクルーティングについて知りたい</label><br>
+                            <input type="checkbox" id="" name="purpose[]" value="その他（自由記入欄にご記入ください）"
+                                <?php if(array_search('その他（自由記入欄にご記入ください）', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
+                            <label for="" class="noto_regular font_75 txt_rpad_1">その他（自由記入欄にご記入ください）</label><br>
+                            <div class="width_100">
+                                <?php if( !empty($error['purpose']) ): ?>
+                                <p class="error_msg bold txt_left font_75"
+                                    style="margin: 0 0 0 auto; padding-top: 5px;">
+                                    <?php echo $error['purpose']; ?></p>
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
                     <div class="space_1"></div>
@@ -8319,48 +8499,27 @@
                                     style="background-color: #31a5b0;">必須</span></label>
                         </div>
                         <div class="width_75 f_sub area">
-                            <p class="noto_regular font_75 txt_left">
-                                <?php echo $clean['content']; ?>
-                            </p>
+                            <textarea placeholder="ここにお問い合わせ内容を入力してください" rows="6" cols="50" resize="none;"
+                                class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
+                                style="border: 1px solid #c2c2c2;"
+                                name="content"><?php if( !empty($clean['content']) ){ echo $clean['content']; } ?></textarea>
+                            <div class="width_100">
+                                <?php if( !empty($error['content']) ): ?>
+                                <p class="error_msg bold txt_left font_75"
+                                    style="margin: 0 0 0 auto; padding-top: 5px;">
+                                    <?php echo $error['content']; ?></p>
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
                     <div class="space_2"></div>
                     <!-- Button -->
-                    <input type="submit" name="btn_submit" value="送信する"
-                        class="white noto_black font_75 square_btn wrapper_25 txt_tpad_1 txt_bpad_1 box_radius_10"
-                        style=" background-image: linear-gradient(to right, #f4882d , #fb6b48);"><br>
-                    <input type="submit" name="btn_back" value="入力画面に戻る"
+                    <input type="submit" name="btn_confirm" value="入力内容を確認する"
                         class="white noto_black font_75 square_btn wrapper_25 txt_tpad_1 txt_bpad_1 box_radius_10"
                         style=" background-image: linear-gradient(to right, #f4882d , #fb6b48);">
                     <div class="space_2"></div>
 
-                    <input type="hidden" name="inquiry[]" value="<?php echo $_POST['inquiry'][0]; ?>">
-                    <input type="hidden" name="inquiry[]" value="<?php echo $_POST['inquiry'][1]; ?>">
-                    <input type="hidden" name="inquiry[]" value="<?php echo $_POST['inquiry'][2]; ?>">
-                    <input type="hidden" name="inquiry[]" value="<?php echo $_POST['inquiry'][3]; ?>">
-                    <input type="hidden" name="inquiry[]" value="<?php echo $_POST['inquiry'][4]; ?>">
-                    <input type="hidden" name="inquiry[]" value="<?php echo $_POST['inquiry'][5]; ?>">
-                    <input type="hidden" name="company_name" value="<?php echo $clean['company_name']; ?>">
-                    <input type="hidden" name="name_fname" value="<?php echo $clean['name_fname']; ?>">
-                    <input type="hidden" name="name_lname" value="<?php echo $clean['name_lname']; ?>">
-                    <input type="hidden" name="kana_fname" value="<?php echo $clean['kana_fname']; ?>">
-                    <input type="hidden" name="kana_lname" value="<?php echo $clean['kana_lname']; ?>">
-                    <input type="hidden" name="email" value="<?php echo $clean['email']; ?>">
-                    <input type="hidden" name="tel1" value="<?php echo $clean['tel1']; ?>">
-                    <input type="hidden" name="tel2" value="<?php echo $clean['tel2']; ?>">
-                    <input type="hidden" name="tel3" value="<?php echo $clean['tel3']; ?>">
-                    <input type="hidden" name="remote_tel1" value="<?php echo $clean['remote_tel1']; ?>">
-                    <input type="hidden" name="remote_tel2" value="<?php echo $clean['remote_tel2']; ?>">
-                    <input type="hidden" name="remote_tel3" value="<?php echo $clean['remote_tel3']; ?>">
-                    <input type="hidden" name="job" value="<?php echo $clean['job']; ?>">
-                    <input type="hidden" name="location" value="<?php echo $clean['location']; ?>">
-                    <input type="hidden" name="purpose[]" value="<?php echo $_POST['purpose'][0]; ?>">
-                    <input type="hidden" name="purpose[]" value="<?php echo $_POST['purpose'][1]; ?>">
-                    <input type="hidden" name="purpose[]" value="<?php echo $_POST['purpose'][2]; ?>">
-                    <input type="hidden" name="purpose[]" value="<?php echo $_POST['purpose'][3]; ?>">
-                    <input type="hidden" name="purpose[]" value="<?php echo $_POST['purpose'][4]; ?>">
-                    <input type="hidden" name="purpose[]" value="<?php echo $_POST['purpose'][5]; ?>">
-                    <input type="hidden" name="content" value="<?php echo $clean['content']; ?>">
+
                 </form>
                 <div class="space_3"></div>
             </div>
@@ -8559,43 +8718,44 @@
     <!-- See more -->
     <!-- PC -->
     <script>
-    function myFunction() {
-        var dots = document.getElementById("dots");
-        var moreText = document.getElementById("more");
-        var btnText = document.getElementById("myBtn");
+        function myFunction() {
+            alert();
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
 
-        if (dots.style.display === "none") {
-            // dots.style.display = "inline";
-            // btnText.innerHTML = "もっと見る";
-            moreText.style.display = "none";
-            btnText.style.display = "none";
-        } else {
-            // dots.style.display = "none";
-            // btnText.innerHTML = "続きを読む";
-            btnText.style.display = "none";
-            moreText.style.display = "inline";
+            if (dots.style.display === "none") {
+                // dots.style.display = "inline";
+                // btnText.innerHTML = "もっと見る";
+                moreText.style.display = "none";
+                btnText.style.display = "none";
+            } else {
+                // dots.style.display = "none";
+                // btnText.innerHTML = "続きを読む";
+                btnText.style.display = "none";
+                moreText.style.display = "inline";
+            }
         }
-    }
     </script>
     <!-- SP -->
     <script>
-    function myFunction() {
-        var dots = document.getElementById("dots");
-        var moreText = document.getElementById("more-2");
-        var btnText = document.getElementById("myBtn-2");
+        function myFunctionsp() {
+            var dots = document.getElementById("dots2");
+            var moreText = document.getElementById("more-2");
+            var btnText = document.getElementById("myBtn-2");
 
-        if (dots.style.display === "none") {
-            // dots.style.display = "inline";
-            // btnText.innerHTML = "もっと見る";
-            moreText.style.display = "none";
-            btnText.style.display = "none";
-        } else {
-            // dots.style.display = "none";
-            // btnText.innerHTML = "続きを読む";
-            btnText.style.display = "none";
-            moreText.style.display = "inline";
+            if (dots.style.display === "none") {
+                // dots.style.display = "inline";
+                // btnText.innerHTML = "もっと見る";
+                moreText.style.display = "none";
+                btnText.style.display = "none";
+            } else {
+                // dots.style.display = "none";
+                // btnText.innerHTML = "続きを読む";
+                btnText.style.display = "none";
+                moreText.style.display = "inline";
+            }
         }
-    }
     </script>
 
     <!-- ACCORDION -->

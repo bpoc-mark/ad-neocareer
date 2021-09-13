@@ -227,17 +227,17 @@ function validation($data) {
 
 <?php if( $page_flag === 1 ):
 	// 確認画面読み込み
-require_once(dirname(__FILE__)."/index_form/confirm.php");
+require_once(dirname(__FILE__)."/inc/confirm.php");
  ?>
 <?php elseif( $page_flag === 2 ):
 	// サンクスページへリダイレクト
 // $url = "https://www.e-vision.co.jp/lp/inc/thanks.php";
 // header('Location: ' . $url, true, 301);
-require_once(dirname(__FILE__)."/index_form/thanks.html");
+require_once(dirname(__FILE__)."/inc/thanks.html");
 exit;
  ?>
 <?php else:
 	// フォーム画面読み込み
-require_once(dirname(__FILE__)."/index_form/confirm.php");
+require_once(dirname(__FILE__)."/inc/form.php");
  ?>
 <?php endif; ?>
