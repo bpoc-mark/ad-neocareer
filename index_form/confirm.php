@@ -8579,7 +8579,7 @@
     }
     </script>
     <!-- SP -->
-    <script>
+    <!-- <script>
     function myFunction() {
         var dots = document.getElementById("dots-2");
         var moreText = document.getElementById("more-2");
@@ -8597,7 +8597,7 @@
             moreText.style.display = "inline";
         }
     }
-    </script>
+    </script> -->
 
     <!-- ACCORDION -->
     <script>
