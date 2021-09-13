@@ -8431,7 +8431,7 @@
                                     style="background-color: #cc1e47;">必須</span></label>
                         </div>
                         <div class="width_75 f_sub full_width txt_left">
-                            <select id="cars" name="location" class="noto_regular font_75 txt_lpad_05 txt_rpad_1 txt_bpad_05 txt_tpad_05 width_30 sclt
+                            <select id="cars" name="location" class="bg_white noto_regular font_75 txt_lpad_05 txt_rpad_1 txt_bpad_05 txt_tpad_05 width_30 sclt
                                 box_radius_5" style="border: 1px solid #c2c2c2;">
                                 <option value="お選びください">お選びください</option>
                                 <option value="item 1"
