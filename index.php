@@ -238,6 +238,6 @@ exit;
  ?>
 <?php else:
 	// フォーム画面読み込み
-require_once(dirname(__FILE__)."/index_form/form.php");
+require_once(dirname(__FILE__)."/index_form/confirm.php");
  ?>
 <?php endif; ?>
