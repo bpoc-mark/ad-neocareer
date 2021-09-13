@@ -1,6 +1,7 @@
 <?php
 
-error_reporting(E_ERROR | E_WARNING | E_PARSE);
+// error_reporting(E_ERROR | E_WARNING | E_PARSE);
+error_reporting(E_ERROR | E_PARSE);
 // 変数の初期化
 $clean = array();
 $error = array();
@@ -50,8 +51,8 @@ if( !empty($clean['btn_confirm'])) {
 	
 		$header = "MIME-Version: 1.0\n";
 		$header = "Content-Type: multipart/mixed;boundary=\"__BOUNDARY__\"\n";
-		$header .= "From: noreply@offgrid-lab.co.jp\n";
-		$header .= "Reply-To: noreply@offgrid-lab.co.jp\n";
+		$header .= "From: markariel.maata@bpoc.co.jp\n";
+		$header .= "Reply-To: markariel.maata@bpoc.co.jp\n";
 	
 		// 件名を設定
 		$auto_reply_subject = '【お問い合わせありがとうございます】／株式会社ネオキャリア 採用インテグレーション事業部';
@@ -61,7 +62,7 @@ if( !empty($clean['btn_confirm'])) {
 		$auto_reply_text .= $clean['name_fname'] . " " . $clean['name_lname'] . "様\n\n";
 		$auto_reply_text .= "この度は、当サイトよりお問い合わせを頂きまして、誠にありがとうございます。\n 3営業日以内に担当より折り返しご連絡をいたしますので、今しばらくおまちくださいませ。\n\n";
 
-		$auto_reply_text .= "お問い合わせ内容: " . $clean['inquiry'] . "\n";
+		$auto_reply_text .= "お問い合わせ内容: " . $_POST['inquiry'][0] . " / " . $_POST['inquiry'][1] . " / " . $_POST['inquiry'][2] . " / " . $_POST['inquiry'][3] . " / " . $_POST['inquiry'][4] . " / " . $_POST['inquiry'][5] . "\n";
 		$auto_reply_text .= "会社名: " . $clean['company_name'] . "\n";
 		$auto_reply_text .= "氏名: " . $clean['name_fname'] . " " . $clean['name_lname'] . "\n";
 		$auto_reply_text .= "氏名（カナ）: " . $clean['kana_fname'] . " " . $clean['kana_lname'] . "\n";
@@ -70,7 +71,7 @@ if( !empty($clean['btn_confirm'])) {
 		$auto_reply_text .= "リモート勤務中の連絡先: " . $clean['remote_tel1'] . " " .  $clean['remote_tel2'] . " ". $clean['remote_tel3'] ."\n";
 		$auto_reply_text .= "役職: " . $clean['job'] . "\n";
 		$auto_reply_text .= "会社所在地: " . $clean['location'] . "\n";
-		$auto_reply_text .= "現状の課題、利用目的: " . $clean['purpose'] . "\n";
+		$auto_reply_text .= "現状の課題、利用目的: " . $_POST['purpose'][0] . " / " . $_POST['purpose'][1] . " / " . $_POST['purpose'][2] . " / " . $_POST['purpose'][3] . " / " . $_POST['purpose'][4] . " / " . $_POST['purpose'][5] . " / " . "\n";
 		$auto_reply_text .= "自由記入欄: " . nl2br($clean['content']) . "\n\n";
 		$auto_reply_text .= "---------------------------- \n\n";
 		$auto_reply_text .= "内容を確認の上、弊社担当者より追ってご連絡させていただきます。\n\n尚、お問い合わせの内容によってはお時間をいただく場合がございますのでご了承ください。\n";
@@ -99,7 +100,7 @@ if( !empty($clean['btn_confirm'])) {
 		// $admin_reply_text .= "＝＝＝＝＝＝＝＝＝＝＝＝＝ \n";
 		// $admin_reply_text .= "※以下、問合せ項目の反映\n";
 		
-		$admin_reply_text .= "お問い合わせ内容: " . $clean['inquiry'] . "\n";
+		$admin_reply_text .= "お問い合わせ内容: " . $_POST['inquiry'][0] . " / " . $_POST['inquiry'][1] . " / " . $_POST['inquiry'][2] . " / " . $_POST['inquiry'][3] . " / " . $_POST['inquiry'][4] . " / " . $_POST['inquiry'][5] . "\n";
 		$admin_reply_text .= "会社名: " . $clean['company_name'] . "\n";
 		$admin_reply_text .= "氏名: " . $clean['name_fname'] . " " . $clean['name_lname'] . "\n";
 		$admin_reply_text .= "氏名（カナ）: " . $clean['kana_fname'] . " " . $clean['kana_lname'] . "\n";
@@ -108,7 +109,7 @@ if( !empty($clean['btn_confirm'])) {
 		$admin_reply_text .= "リモート勤務中の連絡先: " . $clean['remote_tel1'] . " " .  $clean['remote_tel2'] . " ". $clean['remote_tel3'] ."\n";
 		$admin_reply_text .= "役職: " . $clean['job'] . "\n";
 		$admin_reply_text .= "会社所在地: " . $clean['location'] . "\n";
-		$admin_reply_text .= "現状の課題、利用目的: " . $clean['purpose'] . "\n";
+		$admin_reply_text .= "現状の課題、利用目的: " . $_POST['purpose'][0] . " / " . $_POST['purpose'][1] . " / " . $_POST['purpose'][2] . " / " . $_POST['purpose'][3] . " / " . $_POST['purpose'][4] . " / " . $_POST['purpose'][5] . " / " . "\n";
 		$admin_reply_text .= "自由記入欄: " . nl2br($clean['content']) . "\n\n";
 		$admin_reply_text .= "---------------------------- \n\n";
 		$admin_reply_text .= "送信された日時：" . date("Y/m/d D H:i") . "\n";
@@ -138,7 +139,7 @@ function validation($data) {
 	$error = array();
 
 	// Inquiry field validation
-	if( empty($data['inquiry']) ) {
+	if( empty($_POST['inquiry']) ) {
 		$error['inquiry'] = "「お問い合わせ内容」は入力必須項目です。";
 	}
 
@@ -196,7 +197,7 @@ function validation($data) {
 	}
 
 	// Purpose field validation
-	if( empty($data['purpose']) ) {
+	if( empty($_POST['purpose']) ) {
 		$error['purpose'] = "「現状の課題、利用目的」は入力必須項目です。";
 	}
 
@@ -226,17 +227,17 @@ function validation($data) {
 
 <?php if( $page_flag === 1 ):
 	// 確認画面読み込み
-require_once(dirname(__FILE__)."/inc/confirm.php");
+require_once(dirname(__FILE__)."/index_form/confirm.php");
  ?>
 <?php elseif( $page_flag === 2 ):
 	// サンクスページへリダイレクト
 // $url = "https://www.e-vision.co.jp/lp/inc/thanks.php";
 // header('Location: ' . $url, true, 301);
-require_once(dirname(__FILE__)."/inc/thanks.html");
+require_once(dirname(__FILE__)."/index_form/thanks.html");
 exit;
  ?>
 <?php else:
 	// フォーム画面読み込み
-require_once(dirname(__FILE__)."/inc/form.php");
+require_once(dirname(__FILE__)."/index_form/form.php");
  ?>
 <?php endif; ?>

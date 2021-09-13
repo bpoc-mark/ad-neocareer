@@ -5844,17 +5844,22 @@
                                     style="background-color: #cc1e47;">必須</span></label>
                         </div>
                         <div class="width_75 f_sub txt_left">
-                            <input type="checkbox" id="" name="inquiry" value="無料相談希望" <?php if( !empty($clean['inquiry']) && $clean['inquiry'] === "無料相談希望" ){ echo 'checked'; } ?>>
+                            <?php 
+                                if(empty($_POST['inquiry'])){
+                                    $_POST['inquiry'] = array();
+                                }
+                            ?>
+                            <input type="checkbox" id="" name="inquiry[]" value="無料相談希望" <?php if(array_search('無料相談希望', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">無料相談希望</label>
-                            <input type="checkbox" id="" name="inquiry" value="資料請求" <?php if( !empty($clean['inquiry']) && $clean['inquiry'] === "資料請求" ){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="inquiry[]" value="資料請求" <?php if(array_search('資料請求', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75">資料請求</label>
-                            <input type="checkbox" id="" name="inquiry" value="サービス詳細" <?php if( !empty($clean['inquiry']) && $clean['inquiry'] === "サービス詳細" ){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="inquiry[]" value="サービス詳細" <?php if(array_search('サービス詳細', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">サービス詳細</label>
-                            <input type="checkbox" id="" name="inquiry" value="サービス料金" <?php if( !empty($clean['inquiry']) && $clean['inquiry'] === "サービス料金" ){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="inquiry[]" value="サービス料金" <?php if(array_search('サービス料金', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">サービス料金</label>
-                            <input type="checkbox" id="" name="inquiry" value="導入事例" <?php if( !empty($clean['inquiry']) && $clean['inquiry'] === "導入事例" ){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="inquiry[]" value="導入事例" <?php if(array_search('導入事例', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">導入事例</label>
-                            <input type="checkbox" id="" name="inquiry" value="その他" <?php if( !empty($clean['inquiry']) && $clean['inquiry'] === "その他" ){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="inquiry[]" value="その他" <?php if(array_search('その他', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75">その他</label>
                             <div class="width_100">
                                 <?php if( !empty($error['inquiry']) ): ?>
@@ -6099,17 +6104,22 @@
                             <p class="noto_bold font_75" style="color: #b5b5b5;">（複数選択可能）</p>
                         </div>
                         <div class="width_75 f_sub txt_left txt_lpad_1">
-                            <input type="checkbox" id="" name="purpose" value="母集団形成がうまくいっていない" <?php if( !empty($clean['purpose']) && $clean['purpose'] === "母集団形成がうまくいっていない" ){ echo 'checked'; } ?>>
+                            <?php 
+                                if(empty($_POST['purpose'])){
+                                    $_POST['purpose'] = array();
+                                }
+                            ?>
+                            <input type="checkbox" id="" name="purpose[]" value="母集団形成がうまくいっていない" <?php if(array_search('母集団形成がうまくいっていない', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">母集団形成がうまくいっていない</label><br>
-                            <input type="checkbox" id="" name="purpose" value="どの求人媒体を利用してよいかわからない" <?php if( !empty($clean['purpose']) && $clean['purpose'] === "どの求人媒体を利用してよいかわからない" ){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="purpose[]" value="どの求人媒体を利用してよいかわからない" <?php if(array_search('どの求人媒体を利用してよいかわからない', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">どの求人媒体を利用してよいかわからない</label><br>
-                            <input type="checkbox" id="" name="purpose" value="効果的なインターンシップを開催したい" <?php if( !empty($clean['purpose']) && $clean['purpose'] === "効果的なインターンシップを開催したい" ){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="purpose[]" value="効果的なインターンシップを開催したい" <?php if(array_search('効果的なインターンシップを開催したい', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">効果的なインターンシップを開催したい</label><br>
-                            <input type="checkbox" id="" name="purpose" value="内定承諾が得られない" <?php if( !empty($clean['purpose']) && $clean['purpose'] === "内定承諾が得られない" ){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="purpose[]" value="内定承諾が得られない" <?php if(array_search('内定承諾が得られない', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">内定承諾が得られない</label><br>
-                            <input type="checkbox" id="" name="purpose" value="ダイレクトリクルーティングについて知りたい" <?php if( !empty($clean['purpose']) && $clean['purpose'] === "ダイレクトリクルーティングについて知りたい" ){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="purpose[]" value="ダイレクトリクルーティングについて知りたい" <?php if(array_search('ダイレクトリクルーティングについて知りたい', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">ダイレクトリクルーティングについて知りたい</label><br>
-                            <input type="checkbox" id="" name="purpose" value="その他（自由記入欄にご記入ください）" <?php if( !empty($clean['purpose']) && $clean['purpose'] === "その他（自由記入欄にご記入ください）" ){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="purpose[]" value="その他（自由記入欄にご記入ください）" <?php if(array_search('その他（自由記入欄にご記入ください）', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">その他（自由記入欄にご記入ください）</label><br>
                             <div class="width_100">
                                 <?php if( !empty($error['purpose']) ): ?>
@@ -6426,7 +6436,7 @@
         }
     </script>
 
-<script>
+    <script>
         $.fn.scrollView = function () {
             return this.each(function () {
                 $('html, body').animate({
