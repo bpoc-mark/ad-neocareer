@@ -533,7 +533,7 @@
     }
 
     @media only screen and (max-width: 770px) {
-        .`sect`_17 .wrapper_85 {
+        .sect_17 .wrapper_85 {
             width: 100% !important;
             display: block;
             float: none !important;
@@ -579,7 +579,7 @@
                 <div class="cont_wrapper_70">
                     <div class="width_100 flex flex_center" style="justify-content: flex-start;">
                         <div class="width_20 txt_bpad_05">
-                            <a href="index.html" class="" style="display: block;">
+                            <a href="" class="" style="display: block;">
                                 <div class="width_90 mg_auto">
                                     <img src="../img/header/sym_state_ja_color_po_L.png" alt="" class="fix_zoom undrag">
                                 </div>
@@ -664,7 +664,7 @@
             <div class="bg_white" style="border-bottom: 3px solid #cbcbcb;">
                 <div class="flex flex_center" style="justify-content: space-between;">
                     <div class="width_30 txt_lpad_2">
-                        <a href="index.html" class="width_95 mg_auto">
+                        <a href="" class="width_95 mg_auto">
                             <img class="fix_zoom" src="../img/header/sym_state_ja_color_po_L.png" alt="">
                         </a>
                     </div>
@@ -674,8 +674,10 @@
 
                     <div class="width_13" style="border-left: 2px solid #cbcbcb; border-right: 2px solid #cbcbcb;">
                         <div class="width_60 txt_tpad_2 txt_bpad_2 mg_auto">
-                            <img src="../img/header/mail.png" alt="" class="fix_zoom undrag">
-                            <p class="font_75 noto_bold" style="color: #00a3e0; position: relative; top: 1vw;">MAIL</p>
+                            <a href="#confirm_form">
+                                <img src="../img/header/mail.png" alt="" class="fix_zoom undrag">
+                                <p class="font_75 noto_bold" style="color: #00a3e0; position: relative; top: 1vw;">MAIL</p>
+                            </a>
                         </div>
                     </div>
 
@@ -850,7 +852,7 @@
         </section>
 
         <!-- Section 2 -->
-        <section class="sect_2" id="ご提供サービス">
+        <section class="sect_2" id="ご提供サービス" style="padding-top: 20%;margin-top: -20%">
             <div class="view_pc">
                 <div class="wrapper_95">
                     <div class="space_4"></div>
@@ -1224,7 +1226,7 @@
         </section>
 
         <!-- Section 6 -->
-        <section class="sect_6" id="企業が抱える課題">
+        <section class="sect_6" id="企業が抱える課題" style="padding-top: 20%;margin-top: -20%">
             <div class="view_pc">
                 <div class="space_4"></div>
                 <div class="bg_white">
@@ -1352,7 +1354,7 @@
         </section>
 
         <!-- Section 7 -->
-        <section class="sect_7" id="こんなお悩みを解決できます">
+        <section class="sect_7" id="こんなお悩みを解決できます" style="padding-top: 20%;margin-top: -20%">
             <div class="view_pc">
                 <div style="background-color: #f0f9ff;">
                     <div class="cont_wrapper_70">
@@ -1716,7 +1718,7 @@
         </section>
 
         <!-- Section 8 -->
-        <section class="sect_8" id="ネオキャリアの強み">
+        <section class="sect_8" id="ネオキャリアの強み" style="padding-top: 20%;margin-top: -20%">
             <div class="view_pc">
                 <div
                     style="background-image: url('../img/sect_8/bg_img.png'); background-size: cover; background-repeat: no-repeat;">
@@ -3230,7 +3232,7 @@
         </section>
 
         <!-- Section 11 -->
-        <section class="sect_11" id="選ばれる理由">
+        <section class="sect_11" id="選ばれる理由" style="padding-top: 20%;margin-top: -20%">
             <!-- View PC -->
             <div class="view_pc">
                 <div style="background-color: #deecf7;">
@@ -3462,7 +3464,7 @@
         </section>
 
         <!-- Section 13 -->
-        <section class="sect_13" id="採用成功事例">
+        <section class="sect_13" id="採用成功事例" style="padding-top: 20%;margin-top: -20%">
             <!-- View PC -->
             <div class="view_pc">
                 <div class="cont_wrapper_70">
@@ -7886,7 +7888,7 @@
         </section>
 
         <!-- Section 14 -->
-        <section class="sect_14" id="よくあるご質問">
+        <section class="sect_14" id="よくあるご質問" style="padding-top: 20%;margin-top: -20%">
             <!-- View PC -->
             <div class="view_pc">
                 <div style="background-color: #deecf7;">
@@ -8149,7 +8151,7 @@
         </section>
 
         <!-- Section 17 -->
-        <section class="sect_17" id="confirm_form">
+        <section class="sect_17" id="confirm_form" style="padding-top: 20%;margin-top: -20%">
             <div class="cont_wrapper_70">
                 <div class="space_3"></div>
                 <form method="post" action="#form" enctype="multipart/form-data" novalidate>

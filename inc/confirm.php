@@ -7865,14 +7865,14 @@
                                 <div class="space_1"></div>
                             </div>
                         </div>
-                        <span id="dots" style="visibility: hidden;">...</span>
+                        <span id="dots-2" style="visibility: hidden;">...</span>
                     </div>
 
                     <div class="space_3"></div>
                     <!-- Button -->
                     <div class="d_none square_btn wrapper_70 txt_tpad_1 txt_bpad_1 box_radius_10" id="myBtn-2"
                         style=" background-image: linear-gradient(to right, #f4882d , #fb6b48);">
-                        <div class="bg_img" onclick="myFunction()">
+                        <div class="bg_img" onclick="myFunctionsp()">
                             <div class="tl_0" style="left: 7%;">
                                 <p class="white font_125">▶</p>
                             </div>
@@ -8332,7 +8332,7 @@
                         style=" background-image: linear-gradient(to right, #f4882d , #fb6b48);"><br>
                     <input type="submit" name="btn_back" value="入力画面に戻る"
                         class="white noto_black font_75 square_btn wrapper_25 txt_tpad_1 txt_bpad_1 box_radius_10"
-                        style=" background-image: linear-gradient(to right, #f4882d , #fb6b48);">
+                        style=" background-image: linear-gradient(to right, #725945 , #733e32);">
                     <div class="space_2"></div>
 
                     <input type="hidden" name="inquiry[]" value="<?php echo $_POST['inquiry'][0]; ?>">
@@ -8579,8 +8579,8 @@
     }
     </script>
     <!-- SP -->
-    <!-- <script>
-    function myFunction() {
+    <script>
+    function myFunctionsp() {
         var dots = document.getElementById("dots-2");
         var moreText = document.getElementById("more-2");
         var btnText = document.getElementById("myBtn-2");
@@ -8597,7 +8597,7 @@
             moreText.style.display = "inline";
         }
     }
-    </script> -->
+    </script>
 
     <!-- ACCORDION -->
     <script>
