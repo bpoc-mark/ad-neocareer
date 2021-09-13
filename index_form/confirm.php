@@ -6290,6 +6290,7 @@
             </div>
         </div>
     </footer>
+
     <!-- ACCORDION -->
     <script>
     $(document).ready(function() {

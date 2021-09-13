@@ -18,20 +18,20 @@
 
     <!-- Google Tag Manager -->
     <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PJLQ9VQ');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PJLQ9VQ');
     </script>
     <!-- End Google Tag Manager -->
     <!--[if lt IE 9]>
@@ -39,14 +39,14 @@
     <![endif]-->
     <!-- CSS読込 -->
     <!-- <link rel="stylesheet" href="assets/css/normalize.css"> -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/pagetop.css">
-    <link href="js/slick.css" rel="stylesheet" type="text/css">
-    <link href="js/slick-theme.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/pagetop.css">
+    <link href="../js/slick.css" rel="stylesheet" type="text/css">
+    <link href="../js/slick-theme.css" rel="stylesheet" type="text/css">
     <!-- Base CSS -->
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="../css/base.css">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
 
     <!-- フォントオーサム -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -60,61 +60,98 @@
     <script src="https://use.typekit.net/zzb5mon.js"></script>
     <script src="js/modernizr-2.8.3.min.js"></script>
     <script>
-        try {
-            Typekit.load({
-                async: true
-            });
-        } catch (e) {}
+    try {
+        Typekit.load({
+            async: true
+        });
+    } catch (e) {}
     </script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/modal.js"></script>
-    <script type="text/javascript" src="js/base-color.js"></script>
+    <script type="text/javascript" src="../js/slick.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/modal.js"></script>
+    <script type="text/javascript" src="../js/base-color.js"></script>
     <script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
 
-    <script type="text/javascript" src="js/jquery.easeScroll.js"></script>
+    <script type="text/javascript" src="../js/jquery.easeScroll.js"></script>
     <!-- スムーススクロール -->
     <script type="text/javascript">
-        $(function () {
-            $('a[href^="#"]').on('click', function () {
-                var speed = 1000;
-                var href = $(this).attr('href');
-                var target = $(href == '#' || href == '' ? 'html' : href);
-                var position = target.offset().top;
-                $('body,html').animate({
-                    scrollTop: position
-                }, speed, 'swing');
-                return false;
-            });
+    $(function() {
+        $('a[href^="#"]').on('click', function() {
+            var speed = 1000;
+            var href = $(this).attr('href');
+            var target = $(href == '#' || href == '' ? 'html' : href);
+            var position = target.offset().top;
+            $('body,html').animate({
+                scrollTop: position
+            }, speed, 'swing');
+            return false;
         });
+    });
     </script>
 
     <style id='base_val' type='text/css'></style>
 
     <style type='text/css'>
-        table {
-            margin: auto;
-        }
+    table {
+        margin: auto;
+    }
 
-        /*表示切替*/
+    /*表示切替*/
+    html body .view_pc {
+        display: block !important;
+    }
+
+    html body table.view_pc {
+        display: table !important;
+    }
+
+    html body table.view_pc tr {
+        display: table !important;
+    }
+
+    html body table.view_pc th {
+        display: table !important;
+    }
+
+    html body table.view_pc td {
+        display: table !important;
+    }
+
+    html body .view_pctab {
+        display: block !important;
+    }
+
+    html body table.view_pctab {
+        display: table !important;
+    }
+
+    html body table.view_pctab tr {
+        display: table !important;
+    }
+
+    html body table.view_pctab th {
+        display: table !important;
+    }
+
+    html body table.view_pctab td {
+        display: table !important;
+    }
+
+    html body .view_tab {
+        display: none !important;
+    }
+
+    html body .view_sp {
+        display: none !important;
+    }
+
+    html body .view_tabsp {
+        display: none !important;
+    }
+
+    @media only screen and (max-width: 1050px) {
         html body .view_pc {
-            display: block !important;
-        }
-
-        html body table.view_pc {
-            display: table !important;
-        }
-
-        html body table.view_pc tr {
-            display: table !important;
-        }
-
-        html body table.view_pc th {
-            display: table !important;
-        }
-
-        html body table.view_pc td {
-            display: table !important;
+            display: none !important;
         }
 
         html body .view_pctab {
@@ -138,7 +175,23 @@
         }
 
         html body .view_tab {
-            display: none !important;
+            display: block !important;
+        }
+
+        html body table.view_tab {
+            display: table !important;
+        }
+
+        html body table.view_tab tr {
+            display: table !important;
+        }
+
+        html body table.view_tab th {
+            display: table !important;
+        }
+
+        html body table.view_tab td {
+            display: table !important;
         }
 
         html body .view_sp {
@@ -146,355 +199,302 @@
         }
 
         html body .view_tabsp {
+            display: block !important;
+        }
+
+        html body table.view_tabsp {
+            display: table !important;
+        }
+
+        html body table.view_tabsp tr {
+            display: table !important;
+        }
+
+        html body table.view_tabsp th {
+            display: table !important;
+        }
+
+        html body table.view_tabsp td {
+            display: table !important;
+        }
+    }
+
+    @media only screen and (max-width: 770px) {
+        html body .view_pc {
             display: none !important;
         }
 
-        @media only screen and (max-width: 1050px) {
-            html body .view_pc {
-                display: none !important;
-            }
-
-            html body .view_pctab {
-                display: block !important;
-            }
-
-            html body table.view_pctab {
-                display: table !important;
-            }
-
-            html body table.view_pctab tr {
-                display: table !important;
-            }
-
-            html body table.view_pctab th {
-                display: table !important;
-            }
-
-            html body table.view_pctab td {
-                display: table !important;
-            }
-
-            html body .view_tab {
-                display: block !important;
-            }
-
-            html body table.view_tab {
-                display: table !important;
-            }
-
-            html body table.view_tab tr {
-                display: table !important;
-            }
-
-            html body table.view_tab th {
-                display: table !important;
-            }
-
-            html body table.view_tab td {
-                display: table !important;
-            }
-
-            html body .view_sp {
-                display: none !important;
-            }
-
-            html body .view_tabsp {
-                display: block !important;
-            }
-
-            html body table.view_tabsp {
-                display: table !important;
-            }
-
-            html body table.view_tabsp tr {
-                display: table !important;
-            }
-
-            html body table.view_tabsp th {
-                display: table !important;
-            }
-
-            html body table.view_tabsp td {
-                display: table !important;
-            }
+        html body .view_pctab {
+            display: none !important;
         }
 
-        @media only screen and (max-width: 770px) {
-            html body .view_pc {
-                display: none !important;
-            }
-
-            html body .view_pctab {
-                display: none !important;
-            }
-
-            html body .view_tab {
-                display: none !important;
-            }
-
-            html body .view_sp {
-                display: block !important;
-            }
-
-            html body table.view_sp {
-                display: table !important;
-            }
-
-            html body table.view_sp tr {
-                display: table !important;
-            }
-
-            html body table.view_sp th {
-                display: table !important;
-            }
-
-            html body table.view_sp td {
-                display: table !important;
-            }
-
-            html body .view_tabsp {
-                display: block !important;
-            }
-
-            html body table.view_tabsp {
-                display: table !important;
-            }
-
-            html body table.view_tabsp tr {
-                display: table !important;
-            }
-
-            html body table.view_tabsp th {
-                display: table !important;
-            }
-
-            html body table.view_tabsp td {
-                display: table !important;
-            }
+        html body .view_tab {
+            display: none !important;
         }
 
-        /* エラーメッセージ　赤文字設定 */
-        .error_msg {
-            color: #ff2e5a !important;
+        html body .view_sp {
+            display: block !important;
         }
+
+        html body table.view_sp {
+            display: table !important;
+        }
+
+        html body table.view_sp tr {
+            display: table !important;
+        }
+
+        html body table.view_sp th {
+            display: table !important;
+        }
+
+        html body table.view_sp td {
+            display: table !important;
+        }
+
+        html body .view_tabsp {
+            display: block !important;
+        }
+
+        html body table.view_tabsp {
+            display: table !important;
+        }
+
+        html body table.view_tabsp tr {
+            display: table !important;
+        }
+
+        html body table.view_tabsp th {
+            display: table !important;
+        }
+
+        html body table.view_tabsp td {
+            display: table !important;
+        }
+    }
+
+    /* エラーメッセージ　赤文字設定 */
+    .error_msg {
+        color: #ff2e5a !important;
+    }
     </style>
 
     <style type='text/css'>
-        @font-face {
-            font-family: 'noto_demilight';
-            src: url(assets/css/fonts/NotoSansCJKjp-DemiLight.otf);
-            font-style: normal;
-        }
+    @font-face {
+        font-family: 'noto_demilight';
+        src: url(../assets/css/fonts/NotoSansCJKjp-DemiLight.otf);
+        font-style: normal;
+    }
 
-        @font-face {
-            font-family: 'noto_regular';
-            src: url(assets/css/fonts/NotoSansCJKjp-Regular.otf);
-            font-style: normal;
-        }
+    @font-face {
+        font-family: 'noto_regular';
+        src: url(../assets/css/fonts/NotoSansCJKjp-Regular.otf);
+        font-style: normal;
+    }
 
-        @font-face {
-            font-family: 'noto_bold';
-            src: url(assets/css/fonts/NotoSansJP-Bold.otf);
-            font-style: normal;
-        }
+    @font-face {
+        font-family: 'noto_bold';
+        src: url(../assets/css/fonts/NotoSansJP-Bold.otf);
+        font-style: normal;
+    }
 
-        @font-face {
-            font-family: 'noto_light';
-            src: url(assets/css/fonts/NotoSansJP-Light.otf);
-            font-style: normal;
-        }
+    @font-face {
+        font-family: 'noto_light';
+        src: url(../assets/css/fonts/NotoSansJP-Light.otf);
+        font-style: normal;
+    }
 
-        @font-face {
-            font-family: 'noto_medium';
-            src: url(assets/css/fonts/NotoSansJP-Medium.otf);
-            font-style: normal;
-        }
+    @font-face {
+        font-family: 'noto_medium';
+        src: url(../assets/css/fonts/NotoSansJP-Medium.otf);
+        font-style: normal;
+    }
 
-        @font-face {
-            font-family: 'noto_black';
-            src: url(assets/css/fonts/NotoSansJP-Black.otf);
-            font-style: normal;
-        }
+    @font-face {
+        font-family: 'noto_black';
+        src: url(../assets/css/fonts/NotoSansJP-Black.otf);
+        font-style: normal;
+    }
 
-        @font-face {
-            font-family: 'co_regular';
-            src: url(assets/css/fonts/CoTextCorp-Regular.ttf);
-            font-style: normal;
-        }
+    @font-face {
+        font-family: 'co_regular';
+        src: url(../assets/css/fonts/CoTextCorp-Regular.ttf);
+        font-style: normal;
+    }
 
-        .noto_demilight {
-            font-family: 'noto_demilight';
-        }
+    .noto_demilight {
+        font-family: 'noto_demilight';
+    }
 
-        .noto_regular {
-            font-family: 'noto_regular';
-        }
+    .noto_regular {
+        font-family: 'noto_regular';
+    }
 
-        .noto_bold {
-            font-family: 'noto_bold';
-        }
+    .noto_bold {
+        font-family: 'noto_bold';
+    }
 
-        .noto_light {
-            font-family: 'noto_light';
-        }
+    .noto_light {
+        font-family: 'noto_light';
+    }
 
-        .noto_medium {
-            font-family: 'noto_medium';
-        }
+    .noto_medium {
+        font-family: 'noto_medium';
+    }
 
-        .noto_black {
-            font-family: 'noto_black';
-        }
+    .noto_black {
+        font-family: 'noto_black';
+    }
 
-        .co_regular {
-            font-family: 'co_regular';
-        }
+    .co_regular {
+        font-family: 'co_regular';
+    }
 
-        .flex_start {
-            align-items: flex-start;
-        }
+    .flex_start {
+        align-items: flex-start;
+    }
 
-        .inline_block {
-            display: inline-block;
-        }
+    .inline_block {
+        display: inline-block;
+    }
 
-        .mg_auto {
-            margin: 0 auto;
-        }
+    .mg_auto {
+        margin: 0 auto;
+    }
 
-        .txt_mg_0 {
-            margin: 0;
-        }
+    .txt_mg_0 {
+        margin: 0;
+    }
 
-        .txt_p_0 {
-            padding: 0;
-        }
+    .txt_p_0 {
+        padding: 0;
+    }
 
-        .txt_pd_l_foot {
-            padding-left: 1.1vw;
-        }
+    .txt_pd_l_foot {
+        padding-left: 1.1vw;
+    }
 
-        .txt_deco {
-            text-decoration: none;
-        }
+    .txt_deco {
+        text-decoration: none;
+    }
 
-        .bg_wht_grey {
-            background-color: #f5f5f5;
-        }
+    .bg_wht_grey {
+        background-color: #f5f5f5;
+    }
 
-        .u_line_d_grey {
-            border-bottom: solid 1px #475160;
-        }
+    .u_line_d_grey {
+        border-bottom: solid 1px #475160;
+    }
 
-        .u_line_top_d_grey {
-            border-top: solid 1px #475160;
-        }
+    .u_line_top_d_grey {
+        border-top: solid 1px #475160;
+    }
 
-        .u_line_right_d_grey {
-            border-right: solid 2px #475160;
-        }
+    .u_line_right_d_grey {
+        border-right: solid 2px #475160;
+    }
 
-        .undrag {
-            user-drag: none;
-            user-select: none;
-            -moz-user-select: none;
-            -webkit-user-drag: none;
-            -webkit-user-select: none;
-            -ms-user-select: none;
-        }
+    .undrag {
+        user-drag: none;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
 
-        .txt_main_color {
-            color: #3a3327;
-        }
+    .txt_main_color {
+        color: #3a3327;
+    }
 
-        .txt_main_color_2 {
-            color: #0c2e9f;
-        }
+    .txt_main_color_2 {
+        color: #0c2e9f;
+    }
 
-        .relative {
-            position: relative;
-        }
+    .relative {
+        position: relative;
+    }
     </style>
 
     <!-- CUSTOM STYLE -->
     <style>
-        table {
-            width: 100%;
-        }
+    table {
+        width: 100%;
+    }
 
-        th {
-            background: #0C2E9F;
-            color: #fff;
-            /* padding: 24px 70px; */
-        }
-
-
-        td {
-            background: #F5F5F5;
-            /* padding: 10px 30px; */
-            color: #0c2e9f;
-        }
-
-        .row-1 {
-            background: none;
-            padding: 0;
-            width: 40%;
-        }
-
-        .row-2 {
-            background: none;
-            color: #3a3327;
-            padding: 0;
-        }
-
-        tr:not(:last-child) {
-            border-bottom: 1px solid #3a3327;
-        }
+    th {
+        background: #0C2E9F;
+        color: #fff;
+        /* padding: 24px 70px; */
+    }
 
 
+    td {
+        background: #F5F5F5;
+        /* padding: 10px 30px; */
+        color: #0c2e9f;
+    }
 
-        .accordion-container {
-            position: relative;
-            background: #fff;
-        }
+    .row-1 {
+        background: none;
+        padding: 0;
+        width: 40%;
+    }
 
-        .accordion-container>h2 {
-            text-align: center;
-            color: #fff;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #ddd;
-        }
+    .row-2 {
+        background: none;
+        color: #3a3327;
+        padding: 0;
+    }
 
-        .accordion_item>a {
-            position: relative;
-            width: 100%;
-            height: auto;
-            color: #0C2E9F;
-        }
+    tr:not(:last-child) {
+        border-bottom: 1px solid #3a3327;
+    }
 
-        .accordion_item>a i {
-            float: right;
-            margin-top: 2px;
-        }
 
-        /* .accordion_item>a.active {
+
+    .accordion-container {
+        position: relative;
+        background: #fff;
+    }
+
+    .accordion-container>h2 {
+        text-align: center;
+        color: #fff;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .accordion_item>a {
+        position: relative;
+        width: 100%;
+        height: auto;
+        color: #0C2E9F;
+    }
+
+    .accordion_item>a i {
+        float: right;
+        margin-top: 2px;
+    }
+
+    /* .accordion_item>a.active {
             background-color: #0C2E9F;
             color: #fff;
         } */
 
-        .content {
-            background-color: #fff;
-            display: none;
+    .content {
+        background-color: #fff;
+        display: none;
 
-        }
+    }
 
-        .content p {
-            margin: 0;
-        }
+    .content p {
+        margin: 0;
+    }
 
-        /* .fa-plus:before {
+    /* .fa-plus:before {
             content: "\f067";
             color: #0C2E9F;
         }
@@ -503,74 +503,74 @@
             color: #fff;
         } */
 
-        .fa-plus:before {
-            color: #3c93c1;
+    .fa-plus:before {
+        color: #3c93c1;
+    }
+
+    .fa-minus:before {
+        color: #3c93c1;
+    }
+
+    .box {
+        position: relative;
+    }
+
+    .box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 10px;
+        padding: 3px;
+        background: linear-gradient(90deg, #4388cb, #31a5b0);
+        -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        mask-composite: exclude;
+    }
+
+    @media only screen and (max-width: 770px) {
+        .sect_17 .wrapper_85 {
+            width: 100% !important;
+            display: block;
+            float: none !important;
+            clear: both !important;
         }
 
-        .fa-minus:before {
-            color: #3c93c1;
+        .sect_17 .width_75.f_sub.full_width {
+            width: 100% !important;
         }
 
-        .box {
-            position: relative;
+        .sect_17 .width_35 {
+            width: 49.4% !important;
         }
 
-        .box::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            border-radius: 10px;
-            padding: 3px;
-            background: linear-gradient(90deg, #4388cb, #31a5b0);
-            -webkit-mask:
-                linear-gradient(#fff 0 0) content-box,
-                linear-gradient(#fff 0 0);
-            -webkit-mask-composite: destination-out;
-            mask-composite: exclude;
+        .sect_17 .width_20 {
+            width: 29.4% !important;
         }
 
-        @media only screen and (max-width: 770px) {
-            .sect_17 .wrapper_85 {
-                width: 100% !important;
-                display: block;
-                float: none !important;
-                clear: both !important;
-            }
-
-            .sect_17 .width_75.f_sub.full_width {
-                width: 100% !important;
-            }
-
-            .sect_17 .width_35 {
-                width: 49.4% !important;
-            }
-
-            .sect_17 .width_20 {
-                width: 29.4% !important;
-            }
-
-            .sect_17 .sclt {
-                width: 50% !important;
-            }
-
-            .sect_17 .width_75.f_sub.area {
-                width: 100% !important;
-            }
-
-            .sect_17 .square_btn {
-                width: 75% !important;
-            }
+        .sect_17 .sclt {
+            width: 50% !important;
         }
+
+        .sect_17 .width_75.f_sub.area {
+            width: 100% !important;
+        }
+
+        .sect_17 .square_btn {
+            width: 75% !important;
+        }
+    }
     </style>
 
-    <link rel="stylesheet" href="css/sp.css">
+    <link rel="stylesheet" href="../css/sp.css">
 </head>
 
 <body>
-    
+
     <!-- Header -->
     <header>
         <!-- PC -->
@@ -581,14 +581,16 @@
                         <div class="width_20 txt_bpad_05">
                             <a href="index.html" class="" style="display: block;">
                                 <div class="width_90 mg_auto">
-                                    <img src="img/header/sym_state_ja_color_po_L.png" alt="" class="fix_zoom undrag">
+                                    <img src="../img/header/sym_state_ja_color_po_L.png" alt="" class="fix_zoom undrag">
                                 </div>
                             </a>
                         </div>
-                        <div class="bg_img width_31">
-                            <img src="img/header/bg_header.png" alt="" class="fix_zoom undrag">
-                            <p class="tl_50 noto_black font_75 white width_100">24時間受付中！<span class="noto_black"
-                                    style="color: #f0e002;">無料</span>相談・資料請求はこちら &nbsp;▶</p>
+                        <div class="bg_img width_31 square_btn">
+                            <a href="#">
+                                <img src="../img/header/bg_header.png" alt="" class="fix_zoom undrag">
+                                <p class="tl_50 noto_black font_75 white width_100">24時間受付中！<span class="noto_black"
+                                        style="color: #f0e002;">無料</span>相談・資料請求はこちら &nbsp;▶</p>
+                            </a>
                         </div>
                         <div class="lspace_05 rspace_05">
                             <p class="noto_bold font_100">電話お問い合わせ</p>
@@ -663,7 +665,7 @@
                 <div class="flex flex_center" style="justify-content: space-between;">
                     <div class="width_30 txt_lpad_2">
                         <a href="index.html" class="width_95 mg_auto">
-                            <img class="fix_zoom" src="img/header/sym_state_ja_color_po_L.png" alt="">
+                            <img class="fix_zoom" src="../img/header/sym_state_ja_color_po_L.png" alt="">
                         </a>
                     </div>
 
@@ -672,15 +674,21 @@
 
                     <div class="width_13" style="border-left: 2px solid #cbcbcb; border-right: 2px solid #cbcbcb;">
                         <div class="width_60 txt_tpad_2 txt_bpad_2 mg_auto">
-                            <img src="img/header/mail.png" alt="" class="fix_zoom undrag">
-                            <p class="font_75 noto_bold" style="color: #00a3e0; position: relative; top: 1vw;">MAIL</p>
+                            <a href="#">
+                                <img src="../img/header/mail.png" alt="" class="fix_zoom undrag">
+                                <p class="font_75 noto_bold" style="color: #00a3e0; position: relative; top: 1vw;">MAIL
+                                </p>
+                            </a>
                         </div>
                     </div>
 
                     <div class="width_10 txt_rpad_1">
                         <div class="width_25 txt_tpad_2 txt_bpad_2 mg_auto">
-                            <img src="img/header/telephon.png" alt="" class="fix_zoom undrag">
-                            <p class="font_75 noto_bold" style="color: #00a3e0; position: relative; top: 1.4vw;">TEL</p>
+                            <a href="#">
+                                <img src="../img/header/telephon.png" alt="" class="fix_zoom undrag">
+                                <p class="font_75 noto_bold" style="color: #00a3e0; position: relative; top: 1.4vw;">TEL
+                                </p>
+                            </a>
                         </div>
                     </div>
 
@@ -769,16 +777,21 @@
     <main>
 
         <!-- Side Bar Button -->
+
         <div class="view_pc">
-            <div class="width_100" style="z-index: 150; position: fixed; top: 57%;">
-                <div class="width_10" style="float: right;">
-                    <a href="#"> <img src="img/sidebar/side_1.png" alt="" class="fix_zoom undrag">
-                    </a>
-                </div>
-                <div class="space_05"></div>
-                <div class="width_10" style="float: right;">
-                    <a href="#"> <img src="img/sidebar/side_2.png" alt="" class="fix_zoom undrag">
-                    </a>
+            <div class="bg_img">
+                <div class="width_13" style="position: fixed; top: 50%; z-index: 9999; right: 0;">
+                    <div class="tr_0" style="z-index: 150;">
+                        <div class="width_100">
+                            <a href="#"> <img src="../img/sidebar/side_1.png" alt="" class="fix_zoom undrag">
+                            </a>
+                        </div>
+                        <div class="space_05"></div>
+                        <div class="width_100">
+                            <a href="#"> <img src="../img/sidebar/side_2.png" alt="" class="fix_zoom undrag">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -787,23 +800,25 @@
         <section class="sect_1">
             <div class="view_pc">
                 <div class="wrapper_100 bg_img">
-                    <img src="img/sect_1/main_img.png" alt="" class="fix_zoom undrag">
+                    <img src="../img/sect_1/main_img.png" alt="" class="fix_zoom undrag">
 
                     <div class="t50_r0 width_31" style="top: 73.5%; right: 8%;">
                         <div class="bg_img square_btn">
-                            <img src="img/sect_4/bg_btn.png" alt="" class="fix_zoom undrag">
-                            <div class="tl_50 width_100">
-                                <div class="flex flex_center bg_img" style="justify-content: center;">
-                                    <div>
-                                        <p class="noto_regular font_100 white">お気軽にご相談ください</p>
-                                        <p class="noto_black font_125 white"><span class="noto_black font_125"
-                                                style="color: #f5fe00">無料</span>相談・資料請求はこちら </p>
-                                    </div>
-                                    <div class="t50_r0" style="right: 6%;">
-                                        <p class="white font_100">▶</p>
+                            <a href="#">
+                                <img src="../img/sect_4/bg_btn.png" alt="" class="fix_zoom undrag">
+                                <div class="tl_50 width_100">
+                                    <div class="flex flex_center bg_img" style="justify-content: center;">
+                                        <div>
+                                            <p class="noto_regular font_100 white">お気軽にご相談ください</p>
+                                            <p class="noto_black font_125 white"><span class="noto_black font_125"
+                                                    style="color: #f5fe00">無料</span>相談・資料請求はこちら </p>
+                                        </div>
+                                        <div class="t50_r0" style="right: 6%;">
+                                            <p class="white font_100">▶</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -812,23 +827,25 @@
                 <div class="space_5"></div>
                 <div class="space_4"></div>
                 <div class="wrapper_100 bg_img">
-                    <img src="img/sect_1/main_img_sp.png" alt="" class="fix_zoom undrag">
+                    <img src="../img/sect_1/main_img_sp.png" alt="" class="fix_zoom undrag">
 
                     <div class="t0_l50 width_81" style="top: 85.2%; right: 8%;">
                         <div class="bg_img square_btn">
-                            <img src="img/sect_4/bg_btn.png" alt="" class="fix_zoom undrag">
-                            <div class="tl_50 width_100">
-                                <div class="flex flex_center bg_img" style="justify-content: center;">
-                                    <div>
-                                        <p class="noto_regular font_75 white">お気軽にご相談ください</p>
-                                        <p class="noto_black font_100 white"><span class="noto_black font_125"
-                                                style="color: #f5fe00">無料</span>相談・資料請求はこちら </p>
-                                    </div>
-                                    <div class="t50_r0" style="right: 6%;">
-                                        <p class="white font_100">▶</p>
+                            <a href="#">
+                                <img src="../img/sect_4/bg_btn.png" alt="" class="fix_zoom undrag">
+                                <div class="tl_50 width_100">
+                                    <div class="flex flex_center bg_img" style="justify-content: center;">
+                                        <div>
+                                            <p class="noto_regular font_75 white">お気軽にご相談ください</p>
+                                            <p class="noto_black font_100 white"><span class="noto_black font_125"
+                                                    style="color: #f5fe00">無料</span>相談・資料請求はこちら </p>
+                                        </div>
+                                        <div class="t50_r0" style="right: 6%;">
+                                            <p class="white font_100">▶</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -840,62 +857,62 @@
             <div class="view_pc">
                 <div class="wrapper_95">
                     <div class="space_4"></div>
-                    <p class="font_150 noto_black txt_bpad_1">多くの企業様に<span class="font_150 noto_black"
+                    <p class="font_150 noto_black txt_bpad_1 ">多くの企業様に<span class="font_150 noto_black"
                             style="color: #31a5b0; ">導入</span>いただいております。</p>
                     <hr class="hr_1 wrapper_5 box_radius_15" style=" border-top: 4px solid #31a5b0;">
                 </div>
                 <div class="space_4"></div>
                 <div class="flex wrapper_100" style="justify-content: center;">
                     <div class="width_15">
-                        <img src="img/sect_2/SBI.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/sect_2/SBI.png" alt="" class="fix_zoom undrag">
                     </div>
                     <div class="width_15">
-                        <img src="img/sect_2/fullcast.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/sect_2/fullcast.png" alt="" class="fix_zoom undrag">
                     </div>
                     <div class="width_15">
-                        <img src="img/sect_2/JFE.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/sect_2/JFE.png" alt="" class="fix_zoom undrag">
                     </div>
                     <div class="width_15">
-                        <img src="img/sect_2/Layers.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/sect_2/Layers.png" alt="" class="fix_zoom undrag">
                     </div>
                     <div class="width_15">
-                        <img src="img/sect_2/WDB.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/sect_2/WDB.png" alt="" class="fix_zoom undrag">
                     </div>
                     <div class="width_5">
-                        <img src="img/sect_2/animal-icon.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/sect_2/animal-icon.png" alt="" class="fix_zoom undrag">
                     </div>
                     <div class="width_15">
-                        <img src="img/sect_2/systena.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/sect_2/systena.png" alt="" class="fix_zoom undrag">
                     </div>
                 </div>
                 <div class="space_2"></div>
                 <div class="flex wrapper_100" style="justify-content: center;">
                     <div class="width_3">
-                        <img src="img/sect_2/open_house.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/sect_2/open_house.png" alt="" class="fix_zoom undrag">
                     </div>
                     <div class="width_15">
-                        <img src="img/sect_2/qz.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/sect_2/qz.png" alt="" class="fix_zoom undrag">
                     </div>
                     <div class="width_15">
-                        <img src="img/sect_2/arimino.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/sect_2/arimino.png" alt="" class="fix_zoom undrag">
                     </div>
                     <div class="width_4">
-                        <img src="img/sect_2/nishikawa.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/sect_2/nishikawa.png" alt="" class="fix_zoom undrag">
                     </div>
                     <div class="width_5">
-                        <img src="img/sect_2/fujiya.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/sect_2/fujiya.png" alt="" class="fix_zoom undrag">
                     </div>
                     <div class="width_15">
-                        <img src="img/sect_2/asante.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/sect_2/asante.png" alt="" class="fix_zoom undrag">
                     </div>
                     <div class="width_10">
-                        <img src="img/sect_2/toa.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/sect_2/toa.png" alt="" class="fix_zoom undrag">
                     </div>
                     <div class="width_10">
-                        <img src="img/sect_2/kose.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/sect_2/kose.png" alt="" class="fix_zoom undrag">
                     </div>
                     <div class="width_15">
-                        <img src="img/sect_2/krosake.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/sect_2/krosake.png" alt="" class="fix_zoom undrag">
                     </div>
                 </div>
             </div>
@@ -910,7 +927,7 @@
                 <div class="space_4"></div>
                 <div class="wrapper_100">
                     <div class="width_100 txt_lpad_05 txt_rpad_05">
-                        <img src="img/sect_2/icon_sp.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/sect_2/icon_sp.png" alt="" class="fix_zoom undrag">
                     </div>
                 </div>
             </div>
@@ -936,7 +953,7 @@
                             <p class="noto_bold font_100 txt_lpad_1 txt_rpad_1 txt_tpad_1 txt_bpad_1">
                                 プロの目線で貴社の隠れた採用課題を発見し、<br>
                                 最適な手法のアドバイスをします。</p>
-                            <img src="img/sect_3/19221.png" alt="" class="fix_zoom undrag">
+                            <img src="../img/sect_3/19221.png" alt="" class="fix_zoom undrag">
                             <p class="font_75 noto_regular txt_left txt_lpad_1 txt_rpad_1 txt_tpad_1 txt_bpad_1">
                                 自社で採用を考える場合、過去の採用実績をもとに媒体選定や評
                                 判を頼りに手法選定を行い、採用活動をすすめることが多いので
@@ -955,7 +972,7 @@
                             <p class="noto_bold font_100 txt_lpad_1 txt_rpad_1 txt_tpad_1 txt_bpad_1">
                                 200を超える採用手法の中から、第三者目線で<br>
                                 貴社にベストな採用手法をご案内します。</p>
-                            <img src="img/sect_3/Thumbs_up.png" alt="" class="fix_zoom undrag">
+                            <img src="../img/sect_3/Thumbs_up.png" alt="" class="fix_zoom undrag">
                             <p class="font_75 noto_regular txt_left txt_lpad_1 txt_rpad_1 txt_tpad_1 txt_bpad_1">
                                 自社にあった採用手法を検討する場合、得られる情報は限定的で
                                 ばらつきがあるため、厳密に同じ基準で比較することは困難です。<br> <br>
@@ -969,7 +986,8 @@
                     <div class="space_2"></div>
                     <p class="txt_center noto_regular font_125">過去の採用経験や自社の実績に囚われてしまうと、貴社の採用を成功させる<br>
                         <span class="noto_black font_125" style="color: #31a5b0;">最適な手法を見失います。</span><br>
-                        まずは、新卒採用のプロにお気軽にご相談ください。</p>
+                        まずは、新卒採用のプロにお気軽にご相談ください。
+                    </p>
                     <div class="space_2"></div>
                 </div>
             </div>
@@ -995,7 +1013,7 @@
                             <p class="noto_bold font_100 txt_lpad_1 txt_rpad_1 txt_tpad_1 txt_bpad_1">
                                 プロの目線で貴社の隠れた採用課題を発見し、<br>
                                 最適な手法のアドバイスをします。</p>
-                            <img src="img/sect_3/19221.png" alt="" class="fix_zoom undrag">
+                            <img src="../img/sect_3/19221.png" alt="" class="fix_zoom undrag">
                             <p class="font_75 noto_regular txt_left txt_lpad_1 txt_rpad_1 txt_tpad_2 txt_bpad_2">
                                 自社で採用を考える場合、過去の採用実績をもとに媒体選定や評
                                 判を頼りに手法選定を行い、採用活動をすすめることが多いので
@@ -1015,7 +1033,7 @@
                             <p class="noto_bold font_100 txt_lpad_1 txt_rpad_1 txt_tpad_1 txt_bpad_1">
                                 200を超える採用手法の中から、第三者目線で<br>
                                 貴社にベストな採用手法をご案内します。</p>
-                            <img src="img/sect_3/Thumbs_up.png" alt="" class="fix_zoom undrag">
+                            <img src="../img/sect_3/Thumbs_up.png" alt="" class="fix_zoom undrag">
                             <p class="font_75 noto_regular txt_left txt_lpad_1 txt_rpad_1 txt_tpad_2 txt_bpad_2">
                                 自社にあった採用手法を検討する場合、得られる情報は限定的で
                                 ばらつきがあるため、厳密に同じ基準で比較することは困難です。<br> <br>
@@ -1029,7 +1047,8 @@
                     <div class="space_2"></div>
                     <p class="txt_center noto_regular font_125">過去の採用経験や自社の実績に<br>囚われてしまうと、貴社の採用を<br>成功させる
                         <span class="noto_black font_125" style="color: #31a5b0;">最適な手法を見失います。</span><br>
-                        まずは、新卒採用のプロにお気軽にご相談ください。</p>
+                        まずは、新卒採用のプロにお気軽にご相談ください。
+                    </p>
                     <div class="space_2"></div>
                 </div>
             </div>
@@ -1047,11 +1066,13 @@
                             </div>
                             <div class="width_45">
                                 <div class="bg_img square_btn">
-                                    <img src="img/sect_4/bg_btn.png" alt="" class="fix_zoom undrag">
-                                    <div class="tl_50 width_100">
-                                        <p class="noto_black font_125 white"><span class="noto_black font_125"
-                                                style="color: #f5fe00">無料</span>相談・資料請求はこちら> ▶</p>
-                                    </div>
+                                    <a href="#">
+                                        <img src="../img/sect_4/bg_btn.png" alt="" class="fix_zoom undrag">
+                                        <div class="tl_50 width_100">
+                                            <p class="noto_black font_125 white"><span class="noto_black font_125"
+                                                    style="color: #f5fe00">無料</span>相談・資料請求はこちら> ▶</p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -1068,7 +1089,7 @@
                             </div>
                             <div class="space_2"></div>
                             <div class="bg_img square_btn">
-                                <img src="img/sect_4/bg_btn.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_4/bg_btn.png" alt="" class="fix_zoom undrag">
                                 <div class="tl_50 width_100">
                                     <div class="flex flex_center bg_img" style="justify-content: center;">
                                         <div>
@@ -1098,7 +1119,8 @@
                                 class="noto_black font_150">の採用支援実績を活用し、貴社だけの</span><br>
                             <span class="noto_black font_200"
                                 style="color: #31a5b0; line-height: 1;">新卒採用勝ちパターン</span><span
-                                class="noto_black font_150">を形成</span></p>
+                                class="noto_black font_150">を形成</span>
+                        </p>
                         <div class="space_2"></div>
                         <p class="font_100 noto_regular">新卒採用のトレンドを正しく把握。<br>
                             変わりゆく時代に対応し、貴社にとって最適なプランを提案する。<br>
@@ -1107,37 +1129,37 @@
 
                         <div class="flex flex_center">
                             <div class="">
-                                <img src="img/sect_5/wifi.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_5/wifi.png" alt="" class="fix_zoom undrag">
                             </div>
                             <div class="">
-                                <img src="img/sect_5/weighing.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_5/weighing.png" alt="" class="fix_zoom undrag">
                             </div>
                             <div class="">
-                                <img src="img/sect_5/two_persons.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_5/two_persons.png" alt="" class="fix_zoom undrag">
                             </div>
                             <div class="">
-                                <img src="img/sect_5/pencil.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_5/pencil.png" alt="" class="fix_zoom undrag">
                             </div>
                             <div class="">
-                                <img src="img/sect_5/group.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_5/group.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                         <div class="space_1"></div>
                         <div class="flex flex_center">
                             <div class="">
-                                <img src="img/sect_5/computer.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_5/computer.png" alt="" class="fix_zoom undrag">
                             </div>
                             <div class="">
-                                <img src="img/sect_5/shakehands.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_5/shakehands.png" alt="" class="fix_zoom undrag">
                             </div>
                             <div class="">
-                                <img src="img/sect_5/youtube.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_5/youtube.png" alt="" class="fix_zoom undrag">
                             </div>
                             <div class="">
-                                <img src="img/sect_5/book.png" alt="" class="fix_zoom undrag">
+                                <img src="./.img/sect_5/book.png" alt="" class="fix_zoom undrag">
                             </div>
                             <div class="">
-                                <img src="img/sect_5/focus.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_5/focus.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
 
@@ -1154,7 +1176,8 @@
                                 class="noto_black font_125">の採用支援実績を活用し、貴社だけの</span><br>
                             <span class="noto_black font_150"
                                 style="color: #31a5b0; line-height: 1;">新卒採用勝ちパターン</span><span
-                                class="noto_black font_125">を形成</span></p>
+                                class="noto_black font_125">を形成</span>
+                        </p>
                         <div class="space_2"></div>
                         <p class="font_100 noto_regular txt_left">新卒採用のトレンドを正しく把握。<br>
                             変わりゆく時代に対応し、貴社にとって最適なプランを提案する。<br>
@@ -1163,34 +1186,34 @@
 
                         <div class="flex flex_center" style="row-gap: 2vw;">
                             <div class="width_32">
-                                <img src="img/sect_5/wifi.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_5/wifi.png" alt="" class="fix_zoom undrag">
                             </div>
                             <div class="width_32">
-                                <img src="img/sect_5/weighing.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_5/weighing.png" alt="" class="fix_zoom undrag">
                             </div>
                             <div class="width_32">
-                                <img src="img/sect_5/two_persons.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_5/two_persons.png" alt="" class="fix_zoom undrag">
                             </div>
                             <div class="width_32">
-                                <img src="img/sect_5/pencil.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_5/pencil.png" alt="" class="fix_zoom undrag">
                             </div>
                             <div class="width_32">
-                                <img src="img/sect_5/group.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_5/group.png" alt="" class="fix_zoom undrag">
                             </div>
                             <div class="width_32">
-                                <img src="img/sect_5/computer.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_5/computer.png" alt="" class="fix_zoom undrag">
                             </div>
                             <div class="width_32">
-                                <img src="img/sect_5/shakehands.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_5/shakehands.png" alt="" class="fix_zoom undrag">
                             </div>
                             <div class="width_32">
-                                <img src="img/sect_5/youtube.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_5/youtube.png" alt="" class="fix_zoom undrag">
                             </div>
                             <div class="width_32">
-                                <img src="img/sect_5/book.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_5/book.png" alt="" class="fix_zoom undrag">
                             </div>
                             <div class="width_32">
-                                <img src="img/sect_5/focus.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_5/focus.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                         <div class="space_1"></div>
@@ -1222,14 +1245,14 @@
                             <div class="flex" style="justify-content: space-between;">
                                 <div class="width_48">
                                     <p class="noto_bold font_150 txt_bpad_1" style="color: #68a1cd;">従来</p>
-                                    <img src="img/sect_6/img_1.png" alt="" class="fix_zoom undrag">
+                                    <img src="../img/sect_6/img_1.png" alt="" class="fix_zoom undrag">
                                     <div class="space_2"></div>
                                     <p class="noto_bold font_100">マスに対して告知を行い、大きな母集団を<br>
                                         形成することが当たり前だった。</p>
                                 </div>
                                 <div class="width_48">
                                     <p class="noto_bold font_150 txt_bpad_1" style="color: #68a1cd;">現在</p>
-                                    <img src="img/sect_6/img_2.png" alt="" class="fix_zoom undrag">
+                                    <img src="../img/sect_6/img_2.png" alt="" class="fix_zoom undrag">
                                     <div class="space_2"></div>
                                     <p class="noto_regular font_75">プラットフォームの多様化により、学生の選択チャネルも変化！<br>
                                         従来のような大量母集団形成の採用活動施策は困難。</p>
@@ -1241,7 +1264,7 @@
                 </div>
                 <div class="bg_img">
                     <div class="t50_r0" style="width: 24.7%;">
-                        <img src="img/sect_6/bg-right.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/sect_6/bg-right.png" alt="" class="fix_zoom undrag">
                     </div>
                     <div class="cont_wrapper_70">
                         <div class="space_4"></div>
@@ -1261,7 +1284,7 @@
                                     最も重要となるポイントです。</p>
                             </div>
                             <div class="width_50">
-                                <img src="img/sect_6/img_3.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_6/img_3.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                         <div class="space_4"></div>
@@ -1288,14 +1311,14 @@
                             <div class="flex" style="justify-content: space-between; flex-direction: column;">
                                 <div class="width_100">
                                     <p class="noto_bold font_150 txt_bpad_1" style="color: #68a1cd;">従来</p>
-                                    <img src="img/sect_6/img_1.png" alt="" class="fix_zoom undrag">
+                                    <img src="../img/sect_6/img_1.png" alt="" class="fix_zoom undrag">
                                     <div class="space_2"></div>
                                     <p class="noto_bold font_100">マスに対して告知を行い、大きな母集団を<br>
                                         形成することが当たり前だった。</p>
                                 </div>
                                 <div class="width_100">
                                     <p class="noto_bold font_150 txt_bpad_1 txt_tpad_3" style="color: #68a1cd;">現在</p>
-                                    <img src="img/sect_6/img_2.png" alt="" class="fix_zoom undrag">
+                                    <img src="../img/sect_6/img_2.png" alt="" class="fix_zoom undrag">
                                     <div class="space_2"></div>
                                     <p class="noto_regular font_75">プラットフォームの多様化により、学生の選択チャネルも変化！<br>
                                         従来のような大量母集団形成の採用活動施策は困難。</p>
@@ -1308,7 +1331,7 @@
                 </div>
                 <div class="bg_img">
                     <div class="t50_r0 width_48" style="z-index: -150; top: 65%;">
-                        <img src="img/sect_6/bg-right.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/sect_6/bg-right.png" alt="" class="fix_zoom undrag">
                     </div>
                     <div class="cont_wrapper_70">
                         <div class="space_4"></div>
@@ -1319,7 +1342,7 @@
                         <div class="space_2"></div>
                         <div>
                             <div class="width_100">
-                                <img src="img/sect_6/img_3.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_6/img_3.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                         <div class="space_4"></div>
@@ -1346,13 +1369,13 @@
                                         style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">
                                         母集団形成がうまくいかない</p>
                                     <div class="wrapper_40 txt_tpad_1 txt_bpad_2">
-                                        <img src="img/sect_7/id_pic.png" alt="" class="fix_zoom undrag">
+                                        <img src="../img/sect_7/id_pic.png" alt="" class="fix_zoom undrag">
                                     </div>
                                     <!-- List 1 -->
                                     <div class="flex flex_center txt_lpad_05 txt_rpad_05 txt_bpad_05 txt_tpad_05"
                                         style="border-bottom: 2px solid #c5c5c5; justify-content: flex-start;">
                                         <div class="width_4">
-                                            <img src="img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="txt_lpad_05 width_96">
                                             <p class="noto_regular font_100 txt_left">ナビサイトに出しても応募が来ない</p>
@@ -1362,7 +1385,7 @@
                                     <div class="flex flex_center txt_lpad_05 txt_rpad_05 txt_bpad_05 txt_tpad_05"
                                         style="border-bottom: 2px solid #c5c5c5; justify-content: flex-start;">
                                         <div class="width_4">
-                                            <img src="img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="txt_lpad_05 width_96">
                                             <p class="noto_regular font_100 txt_left">インターンシップに人がt集まらない</p>
@@ -1372,7 +1395,7 @@
                                     <div class="flex txt_lpad_05 txt_rpad_05 txt_bpad_05 txt_tpad_05"
                                         style="border-bottom: 2px solid #c5c5c5; justify-content: flex-start; align-items: baseline;">
                                         <div class="width_4">
-                                            <img src="img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="txt_lpad_05 width_96">
                                             <p class="noto_regular font_100 txt_left">自社に合った媒体を選定したいが全て試すのは
@@ -1383,7 +1406,7 @@
                                     <div class="flex flex_center txt_lpad_05 txt_rpad_05 txt_bpad_05 txt_tpad_05"
                                         style="border-bottom: 2px solid #c5c5c5; justify-content: flex-start;">
                                         <div class="width_4">
-                                            <img src="img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="txt_lpad_05 width_96">
                                             <p class="noto_regular font_100 txt_left">説明会に人が集まらない</p>
@@ -1400,13 +1423,13 @@
                                         style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">
                                         内定承諾を得られない</p>
                                     <div class="wrapper_40 txt_tpad_1 txt_bpad_05">
-                                        <img src="img/sect_7/ng_pic.png" alt="" class="fix_zoom undrag">
+                                        <img src="../img/sect_7/ng_pic.png" alt="" class="fix_zoom undrag">
                                     </div>
                                     <!-- List 1 -->
                                     <div class="flex flex_center txt_lpad_05 txt_rpad_05 txt_bpad_05 txt_tpad_05"
                                         style="border-bottom: 2px solid #c5c5c5; justify-content: flex-start;">
                                         <div class="width_4">
-                                            <img src="img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="txt_lpad_05 width_96">
                                             <p class="noto_regular font_100 txt_left">選考辞退が多い</p>
@@ -1416,7 +1439,7 @@
                                     <div class="flex txt_lpad_05 txt_rpad_05 txt_bpad_05 txt_tpad_05"
                                         style="border-bottom: 2px solid #c5c5c5; justify-content: flex-start; align-items: baseline;">
                                         <div class="width_4">
-                                            <img src="img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="txt_lpad_05 width_96">
                                             <p class="noto_regular font_100 txt_left">他社との差別化をどうアピールすればよいか
@@ -1427,7 +1450,7 @@
                                     <div class="flex txt_lpad_05 txt_rpad_05 txt_bpad_05 txt_tpad_05"
                                         style="border-bottom: 2px solid #c5c5c5; justify-content: flex-start; align-items: baseline;">
                                         <div class="width_4">
-                                            <img src="img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="txt_lpad_05 width_96">
                                             <p class="noto_regular font_100 txt_left">最新の採用活動の方法や標準・トレンドがわか
@@ -1438,7 +1461,7 @@
                                     <div class="flex txt_lpad_05 txt_rpad_05 txt_bpad_05 txt_tpad_05"
                                         style="border-bottom: 2px solid #c5c5c5; justify-content: flex-start; align-items: baseline;">
                                         <div class="width_4">
-                                            <img src="img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="txt_lpad_05 width_96">
                                             <p class="noto_regular font_100 txt_left">入社までのフォローで何をすればいいかわから
@@ -1506,13 +1529,13 @@
                                         style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">
                                         母集団形成がうまくいかない</p>
                                     <div class="wrapper_40 txt_tpad_1 txt_bpad_2">
-                                        <img src="img/sect_7/id_pic.png" alt="" class="fix_zoom undrag">
+                                        <img src="../img/sect_7/id_pic.png" alt="" class="fix_zoom undrag">
                                     </div>
                                     <!-- List 1 -->
                                     <div class="flex flex_center txt_lpad_05 txt_rpad_05 txt_bpad_05 txt_tpad_05"
                                         style="border-bottom: 2px solid #c5c5c5; justify-content: flex-start;">
                                         <div class="width_4">
-                                            <img src="img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="txt_lpad_05 width_96">
                                             <p class="noto_regular font_100 txt_left">ナビサイトに出しても応募が来ない</p>
@@ -1522,7 +1545,7 @@
                                     <div class="flex flex_center txt_lpad_05 txt_rpad_05 txt_bpad_05 txt_tpad_05"
                                         style="border-bottom: 2px solid #c5c5c5; justify-content: flex-start;">
                                         <div class="width_4">
-                                            <img src="img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="txt_lpad_05 width_96">
                                             <p class="noto_regular font_100 txt_left">インターンシップに人がt集まらない</p>
@@ -1532,7 +1555,7 @@
                                     <div class="flex txt_lpad_05 txt_rpad_05 txt_bpad_05 txt_tpad_05"
                                         style="border-bottom: 2px solid #c5c5c5; justify-content: flex-start; align-items: baseline;">
                                         <div class="width_4">
-                                            <img src="img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="txt_lpad_05 width_96">
                                             <p class="noto_regular font_100 txt_left">自社に合った媒体を選定したいが全て試すのは
@@ -1543,7 +1566,7 @@
                                     <div class="flex flex_center txt_lpad_05 txt_rpad_05 txt_bpad_05 txt_tpad_05"
                                         style="justify-content: flex-start;">
                                         <div class="width_4">
-                                            <img src="img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="txt_lpad_05 width_96">
                                             <p class="noto_regular font_100 txt_left">説明会に人が集まらない</p>
@@ -1561,13 +1584,13 @@
                                         style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">
                                         内定承諾を得られない</p>
                                     <div class="wrapper_40 txt_tpad_1 txt_bpad_05">
-                                        <img src="img/sect_7/ng_pic.png" alt="" class="fix_zoom undrag">
+                                        <img src="../img/sect_7/ng_pic.png" alt="" class="fix_zoom undrag">
                                     </div>
                                     <!-- List 1 -->
                                     <div class="flex flex_center txt_lpad_05 txt_rpad_05 txt_bpad_05 txt_tpad_05"
                                         style="border-bottom: 2px solid #c5c5c5; justify-content: flex-start;">
                                         <div class="width_4">
-                                            <img src="img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="txt_lpad_05 width_96">
                                             <p class="noto_regular font_100 txt_left">選考辞退が多い</p>
@@ -1577,7 +1600,7 @@
                                     <div class="flex txt_lpad_05 txt_rpad_05 txt_bpad_05 txt_tpad_05"
                                         style="border-bottom: 2px solid #c5c5c5; justify-content: flex-start; align-items: baseline;">
                                         <div class="width_4">
-                                            <img src="img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="txt_lpad_05 width_96">
                                             <p class="noto_regular font_100 txt_left">他社との差別化をどうアピールすればよいか
@@ -1588,7 +1611,7 @@
                                     <div class="flex txt_lpad_05 txt_rpad_05 txt_bpad_05 txt_tpad_05"
                                         style="border-bottom: 2px solid #c5c5c5; justify-content: flex-start; align-items: baseline;">
                                         <div class="width_4">
-                                            <img src="img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="txt_lpad_05 width_96">
                                             <p class="noto_regular font_100 txt_left">最新の採用活動の方法や標準・トレンドがわか
@@ -1599,7 +1622,7 @@
                                     <div class="flex txt_lpad_05 txt_rpad_05 txt_bpad_05 txt_tpad_05"
                                         style="justify-content: flex-start; align-items: baseline;">
                                         <div class="width_4">
-                                            <img src="img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_7/check_icon.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="txt_lpad_05 width_96">
                                             <p class="noto_regular font_100 txt_left">入社までのフォローで何をすればいいかわから
@@ -1614,7 +1637,7 @@
                             <div class="flex flex_center width_100 box txt_tpad_1 txt_bpad_1 txt_lpad_2 txt_rpad_05"
                                 style="justify-content: flex-start;">
                                 <div class="width_4">
-                                    <img src="img/sect_7/check_icon_sp.png" alt="" class="fix_zoom undrag">
+                                    <img src="../img/sect_7/check_icon_sp.png" alt="" class="fix_zoom undrag">
                                 </div>
                                 <div class="width_96 txt_lpad_1">
                                     <p class="line_h_300 noto_black font_100 txt_left">採用担当者の<span
@@ -1625,7 +1648,7 @@
                             <div class="flex flex_center width_100 box txt_tpad_1 txt_bpad_1 txt_lpad_2 txt_rpad_05"
                                 style="justify-content: flex-start;">
                                 <div class="width_4">
-                                    <img src="img/sect_7/check_icon_sp.png" alt="" class="fix_zoom undrag">
+                                    <img src="../img/sect_7/check_icon_sp.png" alt="" class="fix_zoom undrag">
                                 </div>
                                 <div class="width_96 txt_lpad_1">
                                     <p class="line_h_300 noto_black font_100 txt_left">募集職種が多く<span
@@ -1636,7 +1659,7 @@
                             <div class="flex flex_center width_100 box txt_tpad_1 txt_bpad_1 txt_lpad_2 txt_rpad_05"
                                 style="justify-content: flex-start;">
                                 <div class="width_4">
-                                    <img src="img/sect_7/check_icon_sp.png" alt="" class="fix_zoom undrag">
+                                    <img src="../img/sect_7/check_icon_sp.png" alt="" class="fix_zoom undrag">
                                 </div>
                                 <div class="width_96 txt_lpad_1">
                                     <p class="noto_black font_100 txt_left"><span class="noto_black font_100"
@@ -1651,7 +1674,7 @@
                             <div class="flex flex_center width_100 box txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_05"
                                 style="justify-content: flex-start;">
                                 <div class="width_4">
-                                    <img src="img/sect_7/check_icon_sp.png" alt="" class="fix_zoom undrag">
+                                    <img src="../img/sect_7/check_icon_sp.png" alt="" class="fix_zoom undrag">
                                 </div>
                                 <div class="width_96 txt_lpad_1">
                                     <p class="noto_black font_100 txt_left"><span class="noto_black font_100"
@@ -1663,7 +1686,7 @@
                             <div class="flex flex_center width_100 box txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_05"
                                 style="justify-content: flex-start;">
                                 <div class="width_4">
-                                    <img src="img/sect_7/check_icon_sp.png" alt="" class="fix_zoom undrag">
+                                    <img src="../img/sect_7/check_icon_sp.png" alt="" class="fix_zoom undrag">
                                 </div>
                                 <div class="width_96 txt_lpad_1">
                                     <p class="noto_black font_100 txt_left"><span class="noto_black font_100"
@@ -1676,7 +1699,7 @@
                             <div class="flex flex_center width_100 box txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_05"
                                 style="justify-content: flex-start;">
                                 <div class="width_4">
-                                    <img src="img/sect_7/check_icon_sp.png" alt="" class="fix_zoom undrag">
+                                    <img src="../img/sect_7/check_icon_sp.png" alt="" class="fix_zoom undrag">
                                 </div>
                                 <div class="width_96 txt_lpad_1">
                                     <p class="noto_black font_100 txt_left"><span class="noto_black font_100"
@@ -1696,7 +1719,7 @@
         <section class="sect_8">
             <div class="view_pc">
                 <div class="bg_img"
-                    style="background-image: url('img/sect_8/bg_img.png'); background-size: cover; background-repeat: no-repeat;">
+                    style="background-image: url('../img/sect_8/bg_img.png'); background-size: cover; background-repeat: no-repeat;">
 
                     <div class="t0_l50">
                         <p class="triangle-down" style="border-left: 45px solid transparent; border-right: 45px solid transparent;
@@ -1727,7 +1750,7 @@
             <!-- tabsp -->
             <div class="view_tabsp">
                 <div
-                    style="background-image: url('img/sect_8/bg_img.png'); background-size: cover; background-repeat: no-repeat;">
+                    style="background-image: url('../img/sect_8/bg_img.png'); background-size: cover; background-repeat: no-repeat;">
                     <div class="cont_wrapper_70">
                         <div class="space_5"></div>
                         <div class="space_2"></div>
@@ -1776,7 +1799,7 @@
                     </div>
                     <div class="cont_wrapper_70">
                         <div class="width_30 tr_0" style="right: 16%;">
-                            <img src="img/sect_9/circle_img.png" alt="" class="fix_zoom undrag">
+                            <img src="../img/sect_9/circle_img.png" alt="" class="fix_zoom undrag">
                         </div>
                     </div>
                 </div>
@@ -1795,12 +1818,12 @@
                                     <div class="flex flex_center txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                         style="justify-content: flex-start;">
                                         <div class="width_18">
-                                            <img src="img/sect_9/left_icon.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_9/left_icon.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="width_82 txt_lpad_1">
                                             <div class="flex flex_center" style="justify-content: flex-start;">
                                                 <div class="width_7 txt_bpad_05">
-                                                    <img src="img/sect_9/left_icon_mini.png" alt=""
+                                                    <img src="../img/sect_9/left_icon_mini.png" alt=""
                                                         class="fix_zoom undrag">
                                                 </div>
                                                 <div class="width_93 txt_lpad_05">
@@ -1875,12 +1898,12 @@
                                     <div class="flex flex_center txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                         style="justify-content: flex-start;">
                                         <div class="width_18">
-                                            <img src="img/sect_9/left_icon2.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_9/left_icon2.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="width_82 txt_lpad_1">
                                             <div class="flex flex_center" style="justify-content: flex-start;">
                                                 <div class="width_7 txt_bpad_05">
-                                                    <img src="img/sect_9/left_icon2_mini.png" alt=""
+                                                    <img src="../img/sect_9/left_icon2_mini.png" alt=""
                                                         class="fix_zoom undrag">
                                                 </div>
                                                 <div class="width_93 txt_lpad_05">
@@ -1966,7 +1989,7 @@
                                                     <p class="noto_regular font_75 txt_left"><span
                                                             style="color: #6ed53b; font-size: 0.8vw;">●</span>
                                                         成果報酬送客<br><br>
-                                                        <div class="space_1" style="height: 1.4vw !important;"></div>
+                                                    <div class="space_1" style="height: 1.4vw !important;"></div>
                                                     </p>
                                                 </div>
                                             </div>
@@ -1985,7 +2008,7 @@
                                             style="background-color: #44712d;">
                                             各種就職サイトの紹介・効果向上支援</p>
                                         <div class="wrapper_70 txt_tpad_1">
-                                            <img src="img/sect_9/img_1.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_9/img_1.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <p class="txt_left noto_regular font_75 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1"
                                             style="background-color: #f2f2f2; height: 12vw;">マイナビなどの大規模ナビサイトへの掲
@@ -1998,7 +2021,7 @@
                                             style="background-color: #44712d;">
                                             各種就職サイトの紹介・効果向上支援</p>
                                         <div class="wrapper_70 txt_tpad_1">
-                                            <img src="img/sect_9/img_2.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_9/img_2.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <p class="txt_left noto_regular font_75 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1"
                                             style="background-color: #f2f2f2; height: 12vw;">マイナビなどの大規模ナビサイトへの掲
@@ -2012,7 +2035,7 @@
                                             style="background-color: #44712d;">
                                             各種就職サイトの紹介・効果向上支援</p>
                                         <div class="wrapper_70 txt_tpad_1" style="padding-bottom: 1.7vw;">
-                                            <img src="img/sect_9/img_3.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_9/img_3.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <p class="txt_left noto_regular font_75 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1"
                                             style="background-color: #f2f2f2; height: 12vw;">マイナビなどの大規模ナビサイトへの掲
@@ -2039,12 +2062,12 @@
                                     <div class="flex flex_center txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                         style="justify-content: flex-start;">
                                         <div class="width_18">
-                                            <img src="img/sect_9/left_icon2.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_9/left_icon2.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="width_82 txt_lpad_1">
                                             <div class="flex flex_center" style="justify-content: flex-start;">
                                                 <div class="width_7 txt_bpad_05">
-                                                    <img src="img/sect_9/left_icon2-1.png" alt=""
+                                                    <img src="../img/sect_9/left_icon2-1.png" alt=""
                                                         class="fix_zoom undrag">
                                                 </div>
                                                 <div class="width_93 txt_lpad_05">
@@ -2099,12 +2122,12 @@
                                     <div class="flex flex_center txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                         style="justify-content: flex-start;">
                                         <div class="width_18">
-                                            <img src="img/sect_9/left_icon3.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_9/left_icon3.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="width_82 txt_lpad_1">
                                             <div class="flex flex_center" style="justify-content: flex-start;">
                                                 <div class="width_7 txt_bpad_05">
-                                                    <img src="img/sect_9/left_icon3-pin.png" alt=""
+                                                    <img src="../img/sect_9/left_icon3-pin.png" alt=""
                                                         class="fix_zoom undrag">
                                                 </div>
                                                 <div class="width_93 txt_lpad_05">
@@ -2170,12 +2193,12 @@
                                     <div class="flex flex_center txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                         style="justify-content: flex-start;">
                                         <div class="width_18">
-                                            <img src="img/sect_9/left_icon4.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_9/left_icon4.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="width_82 txt_lpad_1">
                                             <div class="flex flex_center" style="justify-content: flex-start;">
                                                 <div class="width_7 txt_bpad_05">
-                                                    <img src="img/sect_9/left_icon4-circle.png" alt=""
+                                                    <img src="../img/sect_9/left_icon4-circle.png" alt=""
                                                         class="fix_zoom undrag">
                                                 </div>
                                                 <div class="width_93 txt_lpad_05">
@@ -2247,12 +2270,12 @@
                                     <div class="flex flex_center txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                         style="justify-content: flex-start;">
                                         <div class="width_18">
-                                            <img src="img/sect_9/left_icon4.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_9/left_icon4.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="width_82 txt_lpad_1">
                                             <div class="flex flex_center" style="justify-content: flex-start;">
                                                 <div class="width_7 txt_bpad_05">
-                                                    <img src="img/sect_9/left_icon4-light.png" alt=""
+                                                    <img src="../img/sect_9/left_icon4-light.png" alt=""
                                                         class="fix_zoom undrag">
                                                 </div>
                                                 <div class="width_93 txt_lpad_05">
@@ -2318,12 +2341,12 @@
                                     <div class="flex flex_center txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                         style="justify-content: flex-start;">
                                         <div class="width_18">
-                                            <img src="img/sect_9/left_icon5.png" alt="" class="fix_zoom undrag">
+                                            <img src="../img/sect_9/left_icon5.png" alt="" class="fix_zoom undrag">
                                         </div>
                                         <div class="width_82 txt_lpad_1">
                                             <div class="flex flex_center" style="justify-content: flex-start;">
                                                 <div class="width_7 txt_bpad_05">
-                                                    <img src="img/sect_9/left_icon5-flag.png" alt=""
+                                                    <img src="../img/sect_9/left_icon5-flag.png" alt=""
                                                         class="fix_zoom undrag">
                                                 </div>
                                                 <div class="width_93 txt_lpad_05">
@@ -2402,7 +2425,7 @@
                         </div>
                         <div class="cont_wrapper_70">
                             <div class="width_100" style="margin-top: 30vw;">
-                                <img src="img/sect_9/circle_img.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_9/circle_img.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                         <div class="t0_l50" style="top: 25%;">
@@ -2421,12 +2444,12 @@
                                         <div class="flex flex_center txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                             style="justify-content: flex-start;">
                                             <div class="tl_0 width_30" style="top: -6%; left: 4%;">
-                                                <img src="img/sect_9/icon_1.png" alt="" class="fix_zoom undrag">
+                                                <img src="../img/sect_9/icon_1.png" alt="" class="fix_zoom undrag">
                                             </div>
                                             <div class="width_82 txt_lpad_1">
                                                 <div class="flex flex_center" style="justify-content: flex-start;">
                                                     <div class="width_10 txt_bpad_05">
-                                                        <img src="img/sect_9/left_icon_mini.png" alt=""
+                                                        <img src="../img/sect_9/left_icon_mini.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="width_90 txt_lpad_05">
@@ -2502,12 +2525,12 @@
                                         <div class="flex flex_center txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                             style="justify-content: flex-start;">
                                             <div class="tl_0 width_30" style="top: -6%; left: 4%;">
-                                                <img src="img/sect_9/icon_2.png" alt="" class="fix_zoom undrag">
+                                                <img src="../img/sect_9/icon_2.png" alt="" class="fix_zoom undrag">
                                             </div>
                                             <div class="width_82 txt_lpad_1">
                                                 <div class="flex flex_center" style="justify-content: flex-start;">
                                                     <div class="width_10 txt_bpad_05">
-                                                        <img src="img/sect_9/left_icon2_mini.png" alt=""
+                                                        <img src="../img/sect_9/left_icon2_mini.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="width_90 txt_lpad_05">
@@ -2594,8 +2617,8 @@
                                                         <p class="noto_regular font_75 txt_left"><span
                                                                 style="color: #6ed53b;">●</span>
                                                             成果報酬送客<br><br>
-                                                            <div class="space_1" style="height: 1.4vw !important;">
-                                                            </div>
+                                                        <div class="space_1" style="height: 1.4vw !important;">
+                                                        </div>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -2668,12 +2691,12 @@
                                         <div class="flex flex_center txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                             style="justify-content: flex-start;">
                                             <div class="tl_0 width_30" style="top: -6%; left: 4%;">
-                                                <img src="img/sect_9/icon_2.png" alt="" class="fix_zoom undrag">
+                                                <img src="../img/sect_9/icon_2.png" alt="" class="fix_zoom undrag">
                                             </div>
                                             <div class="width_82 txt_lpad_1">
                                                 <div class="flex flex_center" style="justify-content: flex-start;">
                                                     <div class="width_10 txt_bpad_05">
-                                                        <img src="img/sect_9/left_icon2-1.png" alt=""
+                                                        <img src="../img/sect_9/left_icon2-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="width_90 txt_lpad_05">
@@ -2729,12 +2752,12 @@
                                         <div class="flex flex_center txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                             style="justify-content: flex-start;">
                                             <div class="tl_0 width_30" style="top: -6%; left: 4%;">
-                                                <img src="img/sect_9/icon_3.png" alt="" class="fix_zoom undrag">
+                                                <img src="../img/sect_9/icon_3.png" alt="" class="fix_zoom undrag">
                                             </div>
                                             <div class="width_82 txt_lpad_1">
                                                 <div class="flex flex_center" style="justify-content: flex-start;">
                                                     <div class="width_10 txt_bpad_05">
-                                                        <img src="img/sect_9/left_icon3-pin.png" alt=""
+                                                        <img src="../img/sect_9/left_icon3-pin.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="width_90 txt_lpad_05">
@@ -2801,12 +2824,12 @@
                                         <div class="flex flex_center txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                             style="justify-content: flex-start;">
                                             <div class="tl_0 width_40" style="top: -6%; left: 4%;">
-                                                <img src="img/sect_9/icon_4.png" alt="" class="fix_zoom undrag">
+                                                <img src="../img/sect_9/icon_4.png" alt="" class="fix_zoom undrag">
                                             </div>
                                             <div class="width_82 txt_lpad_1">
                                                 <div class="flex flex_center" style="justify-content: flex-start;">
                                                     <div class="width_10 txt_bpad_05">
-                                                        <img src="img/sect_9/left_icon4-circle.png" alt=""
+                                                        <img src="../img/sect_9/left_icon4-circle.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="width_90 txt_lpad_05">
@@ -2879,12 +2902,12 @@
                                         <div class="flex flex_center txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                             style="justify-content: flex-start;">
                                             <div class="tl_0 width_40" style="top: -6%; left: 4%;">
-                                                <img src="img/sect_9/icon_4.png" alt="" class="fix_zoom undrag">
+                                                <img src="../img/sect_9/icon_4.png" alt="" class="fix_zoom undrag">
                                             </div>
                                             <div class="width_82 txt_lpad_1">
                                                 <div class="flex flex_center" style="justify-content: flex-start;">
                                                     <div class="width_10 txt_bpad_05">
-                                                        <img src="img/sect_9/left_icon4-light.png" alt=""
+                                                        <img src="../img/sect_9/left_icon4-light.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="width_90 txt_lpad_05">
@@ -2951,12 +2974,12 @@
                                         <div class="flex flex_center txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                             style="justify-content: flex-start;">
                                             <div class="tl_0 width_35" style="top: -6%; left: 4%;">
-                                                <img src="img/sect_9/icon_5.png" alt="" class="fix_zoom undrag">
+                                                <img src="../img/sect_9/icon_5.png" alt="" class="fix_zoom undrag">
                                             </div>
                                             <div class="width_82 txt_lpad_1">
                                                 <div class="flex flex_center" style="justify-content: flex-start;">
                                                     <div class="width_10 txt_bpad_05">
-                                                        <img src="img/sect_9/left_icon5-flag.png" alt=""
+                                                        <img src="../img/sect_9/left_icon5-flag.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="width_90 txt_lpad_05">
@@ -3033,7 +3056,7 @@
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05"
                                 style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">就職サイト</p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1">
-                                <img src="img/sect_10/logos.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_10/logos.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                         <div class="width_48" style="border: 2px solid #d0d0d0;">
@@ -3041,7 +3064,7 @@
                                 style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">ダイレクトリクルーティング
                             </p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1">
-                                <img src="img/sect_10/logos_2.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_10/logos_2.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                     </div>
@@ -3052,7 +3075,7 @@
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05"
                                 style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">就職サイト</p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1">
-                                <img src="img/sect_10/logos_3.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_10/logos_3.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                         <div class="width_48" style="border: 2px solid #d0d0d0;">
@@ -3061,7 +3084,7 @@
                                 ダイレクトリクルーティング
                             </p>
                             <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_80 mg_auto">
-                                <img src="img/sect_10/logos_4.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_10/logos_4.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                     </div>
@@ -3072,7 +3095,7 @@
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05"
                                 style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">就職サイト</p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_70 mg_auto">
-                                <img src="img/sect_10/logos_5.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_10/logos_5.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                         <div class="width_48" style="border: 2px solid #d0d0d0;">
@@ -3081,7 +3104,7 @@
                                 ダイレクトリクルーティング
                             </p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_70 mg_auto">
-                                <img src="img/sect_10/logos_6.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_10/logos_6.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                     </div>
@@ -3092,7 +3115,7 @@
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05"
                                 style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">就職サイト</p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_90 mg_auto">
-                                <img src="img/sect_10/logos_7.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_10/logos_7.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                         <div class="width_48" style="border: 2px solid #d0d0d0;">
@@ -3101,7 +3124,7 @@
                                 ダイレクトリクルーティング
                             </p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_70 mg_auto">
-                                <img src="img/sect_10/logos_8.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_10/logos_8.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                     </div>
@@ -3123,7 +3146,7 @@
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05"
                                 style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">就職サイト</p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1">
-                                <img src="img/sect_10/logos.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_10/logos.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                         <div class="space_2"></div>
@@ -3132,7 +3155,7 @@
                                 style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">ダイレクトリクルーティング
                             </p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1">
-                                <img src="img/sect_10/logos_2.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_10/logos_2.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                     </div>
@@ -3143,7 +3166,7 @@
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05"
                                 style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">就職サイト</p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1">
-                                <img src="img/sect_10/logos_3.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_10/logos_3.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                         <div class="space_2"></div>
@@ -3153,7 +3176,7 @@
                                 ダイレクトリクルーティング
                             </p>
                             <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_80 mg_auto">
-                                <img src="img/sect_10/logos_4.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_10/logos_4.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                     </div>
@@ -3164,7 +3187,7 @@
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05"
                                 style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">就職サイト</p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_70 mg_auto">
-                                <img src="img/sect_10/logos_5.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_10/logos_5.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                         <div class="space_2"></div>
@@ -3174,7 +3197,7 @@
                                 ダイレクトリクルーティング
                             </p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_70 mg_auto">
-                                <img src="img/sect_10/logos_6.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_10/logos_6.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                     </div>
@@ -3185,7 +3208,7 @@
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05"
                                 style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">就職サイト</p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_90 mg_auto">
-                                <img src="img/sect_10/logos_7.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_10/logos_7.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                         <div class="space_2"></div>
@@ -3195,7 +3218,7 @@
                                 ダイレクトリクルーティング
                             </p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_70 mg_auto">
-                                <img src="img/sect_10/logos_8.png" alt="" class="fix_zoom undrag">
+                                <img src="../img/sect_10/logos_8.png" alt="" class="fix_zoom undrag">
                             </div>
                         </div>
                     </div>
@@ -3225,7 +3248,7 @@
                                 </div>
                                 <div class="space_2"></div>
                                 <div class="wrapper_70">
-                                    <img src="img/sect_11/shakehand.png" alt="" class="fix_zoom undrag">
+                                    <img src="../img/sect_11/shakehand.png" alt="" class="fix_zoom undrag">
                                 </div>
                                 <div class="space_1"></div>
                                 <p class="noto_black font_100" style="color: #3c93c1;">ワンストップで新卒採用を<br>
@@ -3250,7 +3273,7 @@
                                 </div>
                                 <div class="space_2"></div>
                                 <div class="wrapper_20">
-                                    <img src="img/sect_11/book.png" alt="" class="fix_zoom undrag">
+                                    <img src="../img/sect_11/book.png" alt="" class="fix_zoom undrag">
                                 </div>
                                 <div class="space_1"></div>
                                 <p class="noto_black font_100" style="color: #3c93c1;">商材数も<br>
@@ -3275,7 +3298,7 @@
                                 </div>
                                 <div class="space_2"></div>
                                 <div class="wrapper_20">
-                                    <img src="img/sect_11/cup.png" alt="" class="fix_zoom undrag">
+                                    <img src="../img/sect_11/cup.png" alt="" class="fix_zoom undrag">
                                 </div>
                                 <div class="space_1"></div>
                                 <p class="noto_black font_100" style="color: #3c93c1;">新卒採用支援数、トップクラス<br>
@@ -3315,7 +3338,7 @@
                                 </div>
                                 <div class="space_5"></div>
                                 <div class="wrapper_70">
-                                    <img src="img/sect_11/shakehand.png" alt="" class="fix_zoom undrag">
+                                    <img src="../img/sect_11/shakehand.png" alt="" class="fix_zoom undrag">
                                 </div>
                                 <div class="space_1"></div>
                                 <p class="noto_black font_100" style="color: #3c93c1;">ワンストップで新卒採用を
@@ -3341,7 +3364,7 @@
                                 </div>
                                 <div class="space_5"></div>
                                 <div class="wrapper_20">
-                                    <img src="img/sect_11/book-sp.png" alt="" class="fix_zoom undrag">
+                                    <img src="../img/sect_11/book-sp.png" alt="" class="fix_zoom undrag">
                                 </div>
                                 <div class="space_1"></div>
                                 <p class="noto_black font_100" style="color: #3c93c1;">商材数も
@@ -3367,7 +3390,7 @@
                                 </div>
                                 <div class="space_5"></div>
                                 <div class="wrapper_20">
-                                    <img src="img/sect_11/cup.png" alt="" class="fix_zoom undrag">
+                                    <img src="../img/sect_11/cup.png" alt="" class="fix_zoom undrag">
                                 </div>
                                 <div class="space_1"></div>
                                 <p class="noto_black font_100" style="color: #3c93c1;">新卒採用支援数、トップクラス<br>
@@ -3395,14 +3418,15 @@
             <!-- View PC -->
             <div class="view_pc">
                 <div
-                    style="background-image: url('img/sect_12/bg_overlay.png'); background-size: cover; background-repeat: no-repeat;">
+                    style="background-image: url('../img/sect_12/bg_overlay.png'); background-size: cover; background-repeat: no-repeat;">
                     <div class="space_5"></div>
                     <div class="cont_wrapper_70">
                         <p class="white noto_black font_100 txt_bpad_05">ネオキャリアのサービスは、「ナビサイトを紹介する」だけではありません。</p>
                         <div class="hr_1 width_63 mg_auto" style="border-top: 2px solid #baccd3;"></div>
                         <div class="space_1"></div>
                         <p class="noto_bold font_150 white">最適な採用手法のコンサルティングから<br>
-                            <span class="noto_bold" style="color:#fcff10;">無料</span>で実施します。</p>
+                            <span class="noto_bold" style="color:#fcff10;">無料</span>で実施します。
+                        </p>
                     </div>
                     <div class="space_5"></div>
                 </div>
@@ -3411,22 +3435,23 @@
             <!-- View SP -->
             <div class="view_tabsp">
                 <div
-                    style="background-image: url('img/sect_12/bg_overlay.png'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+                    style="background-image: url('../img/sect_12/bg_overlay.png'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
                     <div class="space_5"></div>
                     <div class="cont_wrapper_70">
                         <p class="white noto_black font_100 txt_bpad_05"> <span
                                 class="white noto_black font_100 txt_bpad_05"
                                 style="border-bottom: 2px solid #baccd3; padding-bottom: 1px;">ネオキャリアのサービスは、</span>
                             <br>
-                            <div class="space_05"></div> <span class="white noto_black font_100 txt_bpad_05 tspace_1"
-                                style="border-bottom: 2px solid #baccd3;padding-bottom: 1px;">「ナビサイトを紹介する」だけでは</span>
-                            <br>
-                            <div class="space_05"></div> <span class="white noto_black font_100 txt_bpad_05 txt_tpad_05"
-                                style="border-bottom: 2px solid #baccd3;padding-bottom: 1px;">ありません。</span>
+                        <div class="space_05"></div> <span class="white noto_black font_100 txt_bpad_05 tspace_1"
+                            style="border-bottom: 2px solid #baccd3;padding-bottom: 1px;">「ナビサイトを紹介する」だけでは</span>
+                        <br>
+                        <div class="space_05"></div> <span class="white noto_black font_100 txt_bpad_05 txt_tpad_05"
+                            style="border-bottom: 2px solid #baccd3;padding-bottom: 1px;">ありません。</span>
                         </p>
                         <div class="space_1"></div>
                         <p class="noto_bold font_150 white txt_tpad_1">最適な採用手法の <br> コンサルティングから<br>
-                            <span class="noto_bold" style="color:#fcff10;">無料</span>で実施します。</p>
+                            <span class="noto_bold" style="color:#fcff10;">無料</span>で実施します。
+                        </p>
                     </div>
                     <div class="space_5"></div>
                 </div>
@@ -3595,7 +3620,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 28px !important;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/poing_1.png" alt=""
+                                                        <img src="../img/sect_13/poing_1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -3614,7 +3639,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_90">
-                                                        <img src="img/sect_13/poing_1-2.png" alt=""
+                                                        <img src="../img/sect_13/poing_1-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -3658,7 +3683,7 @@
                                                 <div class="width_48 txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 37px 0 !important;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/poing_2.png" alt=""
+                                                        <img src="../img/sect_13/poing_2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -3677,7 +3702,7 @@
                                                 <div class="width_48 txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/poing_2-2.png" alt=""
+                                                        <img src="../img/sect_13/poing_2-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -3856,7 +3881,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 62px 0 !important;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-2-p-1.png" alt=""
+                                                        <img src="../img/sect_13/case-2-p-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -3874,7 +3899,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_90">
-                                                        <img src="img/sect_13/case-2-p-1-1.png" alt=""
+                                                        <img src="../img/sect_13/case-2-p-1-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -3922,7 +3947,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 36px 0 !important;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-2-p-2.png" alt=""
+                                                        <img src="../img/sect_13/case-2-p-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -3946,7 +3971,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 17px 0 !important;">
                                                     <div class="wrapper_90">
-                                                        <img src="img/sect_13/case-2-p-2-2.png" alt=""
+                                                        <img src="../img/sect_13/case-2-p-2-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -4126,7 +4151,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 57px 0 !important;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-3-p-1.png" alt=""
+                                                        <img src="../img/sect_13/case-3-p-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -4144,7 +4169,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_90">
-                                                        <img src="img/sect_13/case-3-p-1-1.png" alt=""
+                                                        <img src="../img/sect_13/case-3-p-1-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -4188,7 +4213,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 63px 0 !important;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-3-p-2.png" alt=""
+                                                        <img src="../img/sect_13/case-3-p-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -4206,7 +4231,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_90">
-                                                        <img src="img/sect_13/case-3-p-2-2.png" alt=""
+                                                        <img src="../img/sect_13/case-3-p-2-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -4387,7 +4412,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 38px 0 !important;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-4-p-1.png" alt=""
+                                                        <img src="../img/sect_13/case-4-p-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -4409,7 +4434,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 18px 0 !important;">
                                                     <div class="wrapper_90">
-                                                        <img src="img/sect_13/case-4-p-1-1.png" alt=""
+                                                        <img src="../img/sect_13/case-4-p-1-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -4452,7 +4477,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 56px 0 !important;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-4-p-2.png" alt=""
+                                                        <img src="../img/sect_13/case-4-p-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -4474,7 +4499,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_90">
-                                                        <img src="img/sect_13/case-4-p-2-2.png" alt=""
+                                                        <img src="../img/sect_13/case-4-p-2-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -4648,7 +4673,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 46px 0 !important;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-5-p-1.png" alt=""
+                                                        <img src="../img/sect_13/case-5-p-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -4671,7 +4696,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 18px 0 !important;">
                                                     <div class="wrapper_90">
-                                                        <img src="img/sect_13/case-5-p-1-1.png" alt=""
+                                                        <img src="../img/sect_13/case-5-p-1-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -4719,7 +4744,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 41px 0 !important;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-5-p-2.png" alt=""
+                                                        <img src="../img/sect_13/case-5-p-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -4738,7 +4763,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_90">
-                                                        <img src="img/sect_13/case-5-p-2-2.png" alt=""
+                                                        <img src="../img/sect_13/case-5-p-2-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -4914,7 +4939,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 65px 0 !important;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-6-p-1.png" alt=""
+                                                        <img src="../img/sect_13/case-6-p-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -4932,7 +4957,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 18px 0 !important;">
                                                     <div class="wrapper_90">
-                                                        <img src="img/sect_13/case-6-p-1-1.png" alt=""
+                                                        <img src="../img/sect_13/case-6-p-1-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -4977,7 +5002,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 67px 0 !important;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-6-p-2.png" alt=""
+                                                        <img src="../img/sect_13/case-6-p-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -4995,7 +5020,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_90">
-                                                        <img src="img/sect_13/case-6-p-2-2.png" alt=""
+                                                        <img src="../img/sect_13/case-6-p-2-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -5188,7 +5213,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 37px 0 !important;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-7-p-1.png" alt=""
+                                                        <img src="../img/sect_13/case-7-p-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -5205,7 +5230,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 18px 0 !important;">
                                                     <div class="wrapper_90">
-                                                        <img src="img/sect_13/case-7-p-1-1.png" alt=""
+                                                        <img src="../img/sect_13/case-7-p-1-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -5249,7 +5274,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 55px 0 !important;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-7-p-2.png" alt=""
+                                                        <img src="../img/sect_13/case-7-p-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -5270,7 +5295,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_90">
-                                                        <img src="img/sect_13/case-7-p-2-2.png" alt=""
+                                                        <img src="../img/sect_13/case-7-p-2-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -5440,7 +5465,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 68px 0 !important;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-8-p-1.png" alt=""
+                                                        <img src="../img/sect_13/case-8-p-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -5459,7 +5484,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 18px 0 !important;">
                                                     <div class="wrapper_90">
-                                                        <img src="img/sect_13/case-8-p-1-1.png" alt=""
+                                                        <img src="../img/sect_13/case-8-p-1-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -5507,7 +5532,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7; padding: 41px 0 !important;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-8-p-2.png" alt=""
+                                                        <img src="../img/sect_13/case-8-p-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -5529,7 +5554,7 @@
                                                 <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_90">
-                                                        <img src="img/sect_13/case-8-p-2-2.png" alt=""
+                                                        <img src="../img/sect_13/case-8-p-2-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -5745,7 +5770,7 @@
                                                 <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_80">
-                                                        <img src="img/sect_13/poing_1.png" alt=""
+                                                        <img src="../img/sect_13/poing_1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -5764,7 +5789,7 @@
                                                 <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_80">
-                                                        <img src="img/sect_13/poing_1-2.png" alt=""
+                                                        <img src="../img/sect_13/poing_1-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -5807,7 +5832,7 @@
                                                 <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/poing_2.png" alt=""
+                                                        <img src="../img/sect_13/poing_2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -5826,7 +5851,7 @@
                                                 <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/poing_2-2.png" alt=""
+                                                        <img src="../img/sect_13/poing_2-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -6019,7 +6044,7 @@
                                                 <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_80">
-                                                        <img src="img/sect_13/case-2-p-1.png" alt=""
+                                                        <img src="../img/sect_13/case-2-p-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -6037,7 +6062,7 @@
                                                 <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_80">
-                                                        <img src="img/sect_13/case-2-p-1-1.png" alt=""
+                                                        <img src="../img/sect_13/case-2-p-1-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -6084,7 +6109,7 @@
                                                 <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-2-p-2.png" alt=""
+                                                        <img src="../img/sect_13/case-2-p-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -6108,7 +6133,7 @@
                                                 <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-2-p-2-2.png" alt=""
+                                                        <img src="../img/sect_13/case-2-p-2-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -6301,7 +6326,7 @@
                                                 <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_80">
-                                                        <img src="img/sect_13/case-3-p-1.png" alt=""
+                                                        <img src="../img/sect_13/case-3-p-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -6319,7 +6344,7 @@
                                                 <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_80">
-                                                        <img src="img/sect_13/case-3-p-1-1.png" alt=""
+                                                        <img src="../img/sect_13/case-3-p-1-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -6362,7 +6387,7 @@
                                                 <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-3-p-2.png" alt=""
+                                                        <img src="../img/sect_13/case-3-p-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -6381,7 +6406,7 @@
                                                 <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-3-p-2-2.png" alt=""
+                                                        <img src="../img/sect_13/case-3-p-2-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -6575,7 +6600,7 @@
                                                 <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_80">
-                                                        <img src="img/sect_13/case-4-p-1.png" alt=""
+                                                        <img src="../img/sect_13/case-4-p-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -6597,7 +6622,7 @@
                                                 <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_80">
-                                                        <img src="img/sect_13/case-4-p-1-1.png" alt=""
+                                                        <img src="../img/sect_13/case-4-p-1-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -6640,7 +6665,7 @@
                                                 <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-4-p-2.png" alt=""
+                                                        <img src="../img/sect_13/case-4-p-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -6663,7 +6688,7 @@
                                                 <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-4-p-2-2.png" alt=""
+                                                        <img src="../img/sect_13/case-4-p-2-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -6849,7 +6874,7 @@
                                                 <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_80">
-                                                        <img src="img/sect_13/case-5-p-1.png" alt=""
+                                                        <img src="../img/sect_13/case-5-p-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -6872,7 +6897,7 @@
                                                 <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_80">
-                                                        <img src="img/sect_13/case-5-p-1-1.png" alt=""
+                                                        <img src="../img/sect_13/case-5-p-1-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -6919,7 +6944,7 @@
                                                 <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-5-p-2.png" alt=""
+                                                        <img src="../img/sect_13/case-5-p-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -6941,7 +6966,7 @@
                                                 <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-5-p-2-2.png" alt=""
+                                                        <img src="../img/sect_13/case-5-p-2-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -7134,7 +7159,7 @@
                                                 <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_80">
-                                                        <img src="img/sect_13/case-6-p-1.png" alt=""
+                                                        <img src="../img/sect_13/case-6-p-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -7152,7 +7177,7 @@
                                                 <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_80">
-                                                        <img src="img/sect_13/case-6-p-1-1.png" alt=""
+                                                        <img src="../img/sect_13/case-6-p-1-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -7195,7 +7220,7 @@
                                                 <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-6-p-2.png" alt=""
+                                                        <img src="../img/sect_13/case-6-p-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -7213,7 +7238,7 @@
                                                 <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-6-p-2-2.png" alt=""
+                                                        <img src="../img/sect_13/case-6-p-2-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -7412,7 +7437,7 @@
                                                 <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_80">
-                                                        <img src="img/sect_13/case-7-p-1.png" alt=""
+                                                        <img src="../img/sect_13/case-7-p-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -7430,7 +7455,7 @@
                                                 <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_80">
-                                                        <img src="img/sect_13/case-7-p-1-1.png" alt=""
+                                                        <img src="../img/sect_13/case-7-p-1-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -7472,7 +7497,7 @@
                                                 <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-7-p-2.png" alt=""
+                                                        <img src="../img/sect_13/case-7-p-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -7494,7 +7519,7 @@
                                                 <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-7-p-2-2.png" alt=""
+                                                        <img src="../img/sect_13/case-7-p-2-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -7674,7 +7699,7 @@
                                                 <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_80">
-                                                        <img src="img/sect_13/case-8-p-1.png" alt=""
+                                                        <img src="../img/sect_13/case-8-p-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -7693,7 +7718,7 @@
                                                 <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_80">
-                                                        <img src="img/sect_13/case-8-p-1-1.png" alt=""
+                                                        <img src="../img/sect_13/case-8-p-1-1.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -7740,7 +7765,7 @@
                                                 <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-8-p-2.png" alt=""
+                                                        <img src="../img/sect_13/case-8-p-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -7762,7 +7787,7 @@
                                                 <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1"
                                                     style="border: 2px solid #c7c7c7;">
                                                     <div class="wrapper_60">
-                                                        <img src="img/sect_13/case-8-p-2-2.png" alt=""
+                                                        <img src="../img/sect_13/case-8-p-2-2.png" alt=""
                                                             class="fix_zoom undrag">
                                                     </div>
                                                     <div class="space_2"></div>
@@ -7797,14 +7822,16 @@
                     <!-- Button -->
                     <div class="square_btn wrapper_60 txt_tpad_1 txt_bpad_1 box_radius_5"
                         style=" background-image: linear-gradient(to right, #f4882d , #fb6b48);">
-                        <div class="bg_img">
-                            <div class="tl_0" style="left: 7%;">
-                                <p class="white font_125">▶</p>
+                        <a href="#">
+                            <div class="bg_img">
+                                <div class="tl_0" style="left: 7%;">
+                                    <p class="white font_125">▶</p>
+                                </div>
+                                <div>
+                                    <p class="white noto_black font_100">もっと見る</p>
+                                </div>
                             </div>
-                            <div>
-                                <p class="white noto_black font_100">もっと見る</p>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="space_3"></div>
                 </div>
@@ -8049,7 +8076,8 @@
                             <p><span class="font_125 noto_bold"
                                     style="color: #31a5b0;">✓まずは無料相談を利用したい　✓すぐに資料請求したい</span><br>
                                 <span class="noto_bold font_100"
-                                    style="color: #4b4b4b;">など、気になる点やご要望をお気軽にお問い合わせください。</span></p>
+                                    style="color: #4b4b4b;">など、気になる点やご要望をお気軽にお問い合わせください。</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -8063,7 +8091,8 @@
                             <p><span class="font_100 noto_bold" style="color: #31a5b0;">✓まずは無料相談を利用したい
                                     <br>　✓すぐに資料請求したい</span><br>
                                 <span class="noto_bold font_100" style="color: #4b4b4b;">など、気になる点やご要望を<br>
-                                    お気軽にお問い合わせください。</span></p>
+                                    お気軽にお問い合わせください。</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -8088,17 +8117,23 @@
                                     $_POST['inquiry'] = array();
                                 }
                             ?>
-                            <input type="checkbox" id="" name="inquiry[]" value="無料相談希望" <?php if(array_search('無料相談希望', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="inquiry[]" value="無料相談希望"
+                                <?php if(array_search('無料相談希望', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">無料相談希望</label>
-                            <input type="checkbox" id="" name="inquiry[]" value="資料請求" <?php if(array_search('資料請求', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="inquiry[]" value="資料請求"
+                                <?php if(array_search('資料請求', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75">資料請求</label>
-                            <input type="checkbox" id="" name="inquiry[]" value="サービス詳細" <?php if(array_search('サービス詳細', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="inquiry[]" value="サービス詳細"
+                                <?php if(array_search('サービス詳細', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">サービス詳細</label>
-                            <input type="checkbox" id="" name="inquiry[]" value="サービス料金" <?php if(array_search('サービス料金', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="inquiry[]" value="サービス料金"
+                                <?php if(array_search('サービス料金', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">サービス料金</label>
-                            <input type="checkbox" id="" name="inquiry[]" value="導入事例" <?php if(array_search('導入事例', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="inquiry[]" value="導入事例"
+                                <?php if(array_search('導入事例', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">導入事例</label>
-                            <input type="checkbox" id="" name="inquiry[]" value="その他" <?php if(array_search('その他', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="inquiry[]" value="その他"
+                                <?php if(array_search('その他', $_POST['inquiry']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75">その他</label>
                             <div class="width_100">
                                 <?php if( !empty($error['inquiry']) ): ?>
@@ -8121,10 +8156,12 @@
                                     style="background-color: #cc1e47;">必須</span></label>
                         </div>
                         <div class="width_75 f_sub full_width">
-                            <input type="text" id="" name="company_name" value="<?php if( !empty($clean['company_name']) ){ echo $clean['company_name']; } ?>" placeholder="ここに会社名を入力してください"
+                            <input type="text" id="" name="company_name"
+                                value="<?php if( !empty($clean['company_name']) ){ echo $clean['company_name']; } ?>"
+                                placeholder="ここに会社名を入力してください"
                                 class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
-                                style="border: 1px solid #c2c2c2;" >
-                                <div class="width_100">
+                                style="border: 1px solid #c2c2c2;">
+                            <div class="width_100">
                                 <div class="width_100">
                                     <?php if( !empty($error['company_name']) ): ?>
                                     <p class="error_msg bold txt_left font_75"
@@ -8146,12 +8183,16 @@
                         <div class="width_75 f_sub full_width flex"
                             style="justify-content: flex-start; column-gap: 1vw;">
                             <div class="width_35">
-                                <input type="text" id="" name="name_fname" value="<?php if( !empty($clean['name_fname']) ){ echo $clean['name_fname']; } ?>" placeholder="氏"
+                                <input type="text" id="" name="name_fname"
+                                    value="<?php if( !empty($clean['name_fname']) ){ echo $clean['name_fname']; } ?>"
+                                    placeholder="氏"
                                     class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
                                     style="border: 1px solid #c2c2c2;">
                             </div>
                             <div class="width_35">
-                                <input type="text" id="" name="name_lname" value="<?php if( !empty($clean['name_lname']) ){ echo $clean['name_lname']; } ?>" placeholder="名"
+                                <input type="text" id="" name="name_lname"
+                                    value="<?php if( !empty($clean['name_lname']) ){ echo $clean['name_lname']; } ?>"
+                                    placeholder="名"
                                     class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
                                     style="border: 1px solid #c2c2c2;">
                             </div>
@@ -8175,12 +8216,16 @@
                         <div class="width_75 f_sub full_width flex"
                             style="justify-content: flex-start; column-gap: 1vw;">
                             <div class="width_35">
-                                <input type="text" id="" name="kana_fname" value="<?php if( !empty($clean['kana_fname']) ){ echo $clean['kana_fname']; } ?>" placeholder="氏（カナ）"
+                                <input type="text" id="" name="kana_fname"
+                                    value="<?php if( !empty($clean['kana_fname']) ){ echo $clean['kana_fname']; } ?>"
+                                    placeholder="氏（カナ）"
                                     class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
                                     style="border: 1px solid #c2c2c2;">
                             </div>
                             <div class="width_35">
-                                <input type="text" id="" name="kana_lname" value="<?php if( !empty($clean['kana_lname']) ){ echo $clean['kana_lname']; } ?>" placeholder="名（カナ）"
+                                <input type="text" id="" name="kana_lname"
+                                    value="<?php if( !empty($clean['kana_lname']) ){ echo $clean['kana_lname']; } ?>"
+                                    placeholder="名（カナ）"
                                     class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
                                     style="border: 1px solid #c2c2c2;">
                             </div>
@@ -8202,7 +8247,9 @@
                                     style="background-color: #cc1e47;">必須</span></label>
                         </div>
                         <div class="width_75 full_width f_sub">
-                            <input type="text" id="" name="email" value="<?php if( !empty($clean['email']) ){ echo $clean['email']; } ?>" placeholder="ここにメールアドレスを入力してください"
+                            <input type="text" id="" name="email"
+                                value="<?php if( !empty($clean['email']) ){ echo $clean['email']; } ?>"
+                                placeholder="ここにメールアドレスを入力してください"
                                 class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
                                 style="border: 1px solid #c2c2c2;">
                             <div class="width_100">
@@ -8225,19 +8272,25 @@
                         <div class="width_75 f_sub full_width flex flex_center"
                             style="justify-content: flex-start; column-gap: 1vw;">
                             <div class="width_20">
-                                <input type="text" id="tel1" name="tel1" value="<?php if( !empty($clean['tel1']) ){ echo $clean['tel1']; } ?>" maxlength="3" placeholder=""
+                                <input type="text" id="tel1" name="tel1"
+                                    value="<?php if( !empty($clean['tel1']) ){ echo $clean['tel1']; } ?>" maxlength="3"
+                                    placeholder=""
                                     class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
                                     style="border: 1px solid #c2c2c2;">
                             </div>
                             <p class="font_200">-</p>
                             <div class="width_20">
-                                <input type="text" id="tel2" name="tel2" value="<?php if( !empty($clean['tel2']) ){ echo $clean['tel2']; } ?>" maxlength="3" placeholder=""
+                                <input type="text" id="tel2" name="tel2"
+                                    value="<?php if( !empty($clean['tel2']) ){ echo $clean['tel2']; } ?>" maxlength="3"
+                                    placeholder=""
                                     class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
                                     style="border: 1px solid #c2c2c2;">
                             </div>
                             <p class="font_200">-</p>
                             <div class="width_20">
-                                <input type="text" id="tel3" name="tel3" value="<?php if( !empty($clean['tel3']) ){ echo $clean['tel3']; } ?>" maxlength="4" placeholder=""
+                                <input type="text" id="tel3" name="tel3"
+                                    value="<?php if( !empty($clean['tel3']) ){ echo $clean['tel3']; } ?>" maxlength="4"
+                                    placeholder=""
                                     class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
                                     style="border: 1px solid #c2c2c2;">
                             </div>
@@ -8260,19 +8313,25 @@
                         <div class="width_75 f_sub full_width flex flex_center"
                             style="justify-content: flex-start; column-gap: 1vw;">
                             <div class="width_20">
-                                <input type="text" id="remote_tel1" name="remote_tel1" value="<?php if( !empty($clean['remote_tel1']) ){ echo $clean['remote_tel1']; } ?>" maxlength="3" placeholder=""
+                                <input type="text" id="remote_tel1" name="remote_tel1"
+                                    value="<?php if( !empty($clean['remote_tel1']) ){ echo $clean['remote_tel1']; } ?>"
+                                    maxlength="3" placeholder=""
                                     class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
                                     style="border: 1px solid #c2c2c2;">
                             </div>
                             <p class="font_200">-</p>
                             <div class="width_20">
-                                <input type="text" id="remote_tel2" name="remote_tel2" value="<?php if( !empty($clean['remote_tel2']) ){ echo $clean['remote_tel2']; } ?>" maxlength="3" placeholder=""
+                                <input type="text" id="remote_tel2" name="remote_tel2"
+                                    value="<?php if( !empty($clean['remote_tel2']) ){ echo $clean['remote_tel2']; } ?>"
+                                    maxlength="3" placeholder=""
                                     class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
                                     style="border: 1px solid #c2c2c2;">
                             </div>
                             <p class="font_200">-</p>
                             <div class="width_20">
-                                <input type="text" id="remote_tel3" name="remote_tel3" value="<?php if( !empty($clean['remote_tel3']) ){ echo $clean['remote_tel3']; } ?>" maxlength="4" placeholder=""
+                                <input type="text" id="remote_tel3" name="remote_tel3"
+                                    value="<?php if( !empty($clean['remote_tel3']) ){ echo $clean['remote_tel3']; } ?>"
+                                    maxlength="4" placeholder=""
                                     class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
                                     style="border: 1px solid #c2c2c2;">
                             </div>
@@ -8294,11 +8353,14 @@
                                     style="background-color: #31a5b0;">必須</span></label>
                         </div>
                         <div class="width_75 f_sub txt_left">
-                            <input type="radio" id="" name="job" value="経営者" <?php if( !empty($clean['job']) && $clean['job'] === "経営者" ){ echo 'checked'; } ?>>
+                            <input type="radio" id="" name="job" value="経営者"
+                                <?php if( !empty($clean['job']) && $clean['job'] === "経営者" ){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">経営者</label>
-                            <input type="radio" id="" name="job" value="部長/課長"  <?php if( !empty($clean['job']) && $clean['job'] === "部長/課長" ){ echo 'checked'; } ?>>
+                            <input type="radio" id="" name="job" value="部長/課長"
+                                <?php if( !empty($clean['job']) && $clean['job'] === "部長/課長" ){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75">部長/課長</label>
-                            <input type="radio" id="" name="job" value="担当者（その他）"  <?php if( !empty($clean['job']) && $clean['job'] === "担当者（その他）" ){ echo 'checked'; } ?>>
+                            <input type="radio" id="" name="job" value="担当者（その他）"
+                                <?php if( !empty($clean['job']) && $clean['job'] === "担当者（その他）" ){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">担当者（その他）</label>
                             <div class="width_100">
                                 <?php if( !empty($error['job']) ): ?>
@@ -8321,8 +8383,12 @@
                             <select id="cars" name="location" class="noto_regular font_75 txt_lpad_05 txt_rpad_1 txt_bpad_05 txt_tpad_05 width_30 sclt
                                 box_radius_5" style="border: 1px solid #c2c2c2;">
                                 <option value="お選びください">お選びください</option>
-                                <option value="item 1" <?php if( !empty($clean['location']) && $clean['location'] === "1" ){ echo 'selected'; } ?>>item 1</option>
-                                <option value="item 2" <?php if( !empty($clean['location']) && $clean['location'] === "2" ){ echo 'selected'; } ?>>item 2</option>
+                                <option value="item 1"
+                                    <?php if( !empty($clean['location']) && $clean['location'] === "1" ){ echo 'selected'; } ?>>
+                                    item 1</option>
+                                <option value="item 2"
+                                    <?php if( !empty($clean['location']) && $clean['location'] === "2" ){ echo 'selected'; } ?>>
+                                    item 2</option>
                             </select>
                             <div class="width_100">
                                 <?php if( !empty($error['location']) ): ?>
@@ -8348,17 +8414,23 @@
                                     $_POST['purpose'] = array();
                                 }
                             ?>
-                            <input type="checkbox" id="" name="purpose[]" value="母集団形成がうまくいっていない" <?php if(array_search('母集団形成がうまくいっていない', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="purpose[]" value="母集団形成がうまくいっていない"
+                                <?php if(array_search('母集団形成がうまくいっていない', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">母集団形成がうまくいっていない</label><br>
-                            <input type="checkbox" id="" name="purpose[]" value="どの求人媒体を利用してよいかわからない" <?php if(array_search('どの求人媒体を利用してよいかわからない', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="purpose[]" value="どの求人媒体を利用してよいかわからない"
+                                <?php if(array_search('どの求人媒体を利用してよいかわからない', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">どの求人媒体を利用してよいかわからない</label><br>
-                            <input type="checkbox" id="" name="purpose[]" value="効果的なインターンシップを開催したい" <?php if(array_search('効果的なインターンシップを開催したい', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="purpose[]" value="効果的なインターンシップを開催したい"
+                                <?php if(array_search('効果的なインターンシップを開催したい', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">効果的なインターンシップを開催したい</label><br>
-                            <input type="checkbox" id="" name="purpose[]" value="内定承諾が得られない" <?php if(array_search('内定承諾が得られない', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="purpose[]" value="内定承諾が得られない"
+                                <?php if(array_search('内定承諾が得られない', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">内定承諾が得られない</label><br>
-                            <input type="checkbox" id="" name="purpose[]" value="ダイレクトリクルーティングについて知りたい" <?php if(array_search('ダイレクトリクルーティングについて知りたい', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="purpose[]" value="ダイレクトリクルーティングについて知りたい"
+                                <?php if(array_search('ダイレクトリクルーティングについて知りたい', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">ダイレクトリクルーティングについて知りたい</label><br>
-                            <input type="checkbox" id="" name="purpose[]" value="その他（自由記入欄にご記入ください）" <?php if(array_search('その他（自由記入欄にご記入ください）', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
+                            <input type="checkbox" id="" name="purpose[]" value="その他（自由記入欄にご記入ください）"
+                                <?php if(array_search('その他（自由記入欄にご記入ください）', $_POST['purpose']) !== false){ echo 'checked'; } ?>>
                             <label for="" class="noto_regular font_75 txt_rpad_1">その他（自由記入欄にご記入ください）</label><br>
                             <div class="width_100">
                                 <?php if( !empty($error['purpose']) ): ?>
@@ -8380,7 +8452,8 @@
                         <div class="width_75 f_sub area">
                             <textarea placeholder="ここにお問い合わせ内容を入力してください" rows="6" cols="50" resize="none;"
                                 class="width_100 box_radius_5 txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1 txt_left"
-                                style="border: 1px solid #c2c2c2;" name="content"><?php if( !empty($clean['content']) ){ echo $clean['content']; } ?></textarea>
+                                style="border: 1px solid #c2c2c2;"
+                                name="content"><?php if( !empty($clean['content']) ){ echo $clean['content']; } ?></textarea>
                             <div class="width_100">
                                 <?php if( !empty($error['content']) ): ?>
                                 <p class="error_msg bold txt_left font_75"
@@ -8392,7 +8465,9 @@
                     </div>
                     <div class="space_2"></div>
                     <!-- Button -->
-                    <input type="submit" name="btn_confirm" value="入力内容を確認する" class="white noto_black font_75 square_btn wrapper_25 txt_tpad_1 txt_bpad_1 box_radius_10" style=" background-image: linear-gradient(to right, #f4882d , #fb6b48);">
+                    <input type="submit" name="btn_confirm" value="入力内容を確認する"
+                        class="white noto_black font_75 square_btn wrapper_25 txt_tpad_1 txt_bpad_1 box_radius_10"
+                        style=" background-image: linear-gradient(to right, #f4882d , #fb6b48);">
                     <div class="space_2"></div>
 
 
@@ -8409,7 +8484,7 @@
                 <div class="cont_wrapper_70">
                     <div class="space_4"></div>
                     <div class="wrapper_20">
-                        <img src="img/footer/neo_career_logo.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/footer/neo_career_logo.png" alt="" class="fix_zoom undrag">
                     </div>
 
                     <div class="width_100 relative txt_tpad_2 txt_bpad_1 bspace_05">
@@ -8474,7 +8549,8 @@
                 <div style="background-color: #296ca1;">
                     <p class="noto_demilight font_75 txt_center white txt_bpad_05 txt_tpad_05">
                         <a href="#" target="_blank" class="noto_demilight font_75 txt_center white">
-                            ©NEO CAREER</a></p>
+                            ©NEO CAREER</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -8485,7 +8561,7 @@
                 <div class="cont_wrapper_100">
                     <div class="space_4"></div>
                     <div class="wrapper_50">
-                        <img src="img/footer/neo_career_logo.png" alt="" class="fix_zoom undrag">
+                        <img src="../img/footer/neo_career_logo.png" alt="" class="fix_zoom undrag">
                     </div>
                     <div class="space_4"></div>
                     <div class="width_100 relative txt_tpad_2">
@@ -8583,186 +8659,188 @@
                 <div style="background-color: #296ca1;">
                     <p class="noto_demilight font_75 txt_center white txt_bpad_05 txt_tpad_05">
                         <a href="#" target="_blank" class="noto_demilight font_75 txt_center white">
-                            ©NEO CAREER</a></p>
+                            ©NEO CAREER</a>
+                    </p>
                 </div>
             </div>
         </div>
     </footer>
+
     <!-- ACCORDION -->
     <script>
-        $(document).ready(function () {
-            $(".accordion_item > a").on("click", function () {
-                if ($(this).hasClass("active")) {
-                    $(this).removeClass("active");
-                    $(this)
-                        .siblings(".content")
-                        .slideUp(200);
-                    $(".accordion_item > a i")
-                        .removeClass("fa-minus")
-                        .addClass("fa-plus");
+    $(document).ready(function() {
+        $(".accordion_item > a").on("click", function() {
+            if ($(this).hasClass("active")) {
+                $(this).removeClass("active");
+                $(this)
+                    .siblings(".content")
+                    .slideUp(200);
+                $(".accordion_item > a i")
+                    .removeClass("fa-minus")
+                    .addClass("fa-plus");
 
-                    $(".accordion_item > a p")
-                        .removeClass("white")
-                        .addClass("white");
+                $(".accordion_item > a p")
+                    .removeClass("white")
+                    .addClass("white");
 
-                    $(".accordion_item > a img")
-                        .removeClass("opened")
-                        .addClass("closed");
+                $(".accordion_item > a img")
+                    .removeClass("opened")
+                    .addClass("closed");
 
-                } else {
-                    $(".accordion_item > a i")
-                        .removeClass("fa-minus")
-                        .addClass("fa-plus");
+            } else {
+                $(".accordion_item > a i")
+                    .removeClass("fa-minus")
+                    .addClass("fa-plus");
 
-                    $(".accordion_item > a p")
-                        .removeClass("white")
-                        .addClass("white");
+                $(".accordion_item > a p")
+                    .removeClass("white")
+                    .addClass("white");
 
-                    $(this)
-                        .find("i")
-                        .removeClass("fa-plus")
-                        .addClass("fa-minus")
+                $(this)
+                    .find("i")
+                    .removeClass("fa-plus")
+                    .addClass("fa-minus")
 
-                    $(this)
-                        .find("p")
-                        .removeClass("white")
-                        .addClass("white")
+                $(this)
+                    .find("p")
+                    .removeClass("white")
+                    .addClass("white")
 
-                    $(".accordion_item > a").removeClass("active");
-                    $(this).addClass("active");
-                    $(".content").slideUp(200);
-                    $(this)
-                        .siblings(".content")
-                        .slideDown(200);
-                }
-            });
+                $(".accordion_item > a").removeClass("active");
+                $(this).addClass("active");
+                $(".content").slideUp(200);
+                $(this)
+                    .siblings(".content")
+                    .slideDown(200);
+            }
         });
+    });
     </script>
 
 
 
     <script>
-        $(function () {
-            $('a[href*=#]:not([href=#])').click(function () {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-                    location
-                    .hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                location
+                .hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
                 }
-            });
+            }
         });
+    });
     </script>
 
     <script>
-        $("html").easeScroll();
+    $("html").easeScroll();
 
-        // Navigation
-        $('#toggle').click(function () {
-            $(this).toggleClass('active');
-            $('#overlay').toggleClass('open');
-        });
+    // Navigation
+    $('#toggle').click(function() {
+        $(this).toggleClass('active');
+        $('#overlay').toggleClass('open');
+    });
 
-        function close_menu() {
-            $('#toggle').toggleClass('active');
-            $('#overlay').toggleClass('open');
-        }
+    function close_menu() {
+        $('#toggle').toggleClass('active');
+        $('#overlay').toggleClass('open');
+    }
     </script>
 
     <script>
-        $.fn.scrollView = function () {
-            return this.each(function () {
-                $('html, body').animate({
-                    scrollTop: $(this).offset().top - 100
-                }, 1000);
-            });
+    $.fn.scrollView = function() {
+        return this.each(function() {
+            $('html, body').animate({
+                scrollTop: $(this).offset().top - 100
+            }, 1000);
+        });
+    }
+
+    function check() {
+        if ($('.error_msg').is(':visible')) {
+            // we're empty. do stuff.
+            $('.error_msg:visible:first').scrollView();
+        }
+    }
+
+    check();
+
+    function telclick() {
+        var a = document.getElementById("tel1"),
+            b = document.getElementById("tel2"),
+            c = document.getElementById("tel3");
+
+        a.onkeyup = function() {
+            if (this.value.length === parseInt(this.attributes["maxlength"].value)) {
+                b.focus();
+            }
         }
 
-        function check(){
-            if ($('.error_msg').is(':visible')) { 
-                // we're empty. do stuff.
-                $('.error_msg:visible:first').scrollView();
+        b.onkeyup = function() {
+            if (this.value.length === parseInt(this.attributes["maxlength"].value)) {
+                c.focus();
             }
         }
-        
-        check();
 
-        function telclick(){
-            var a = document.getElementById("tel1"),
-                b = document.getElementById("tel2"),
-                c = document.getElementById("tel3");
-
-            a.onkeyup = function() {
-                if (this.value.length === parseInt(this.attributes["maxlength"].value)) {
-                    b.focus();
-                }
-            }
-
-            b.onkeyup = function() {
-                if (this.value.length === parseInt(this.attributes["maxlength"].value)) {
-                    c.focus();
-                }
-            }
-
-            c.onkeydown = function() {
-                if (event.keyCode === 8) {
+        c.onkeydown = function() {
+            if (event.keyCode === 8) {
                 if (this.value.length === 0) {
                     b.focus();
                 }
-                }
             }
+        }
 
-            b.onkeydown = function() {
-                if (event.keyCode === 8) {
+        b.onkeydown = function() {
+            if (event.keyCode === 8) {
                 if (this.value.length === 0) {
                     a.focus();
                 }
+            }
+        }
+    }
+
+    function remotetelclick() {
+        var a = document.getElementById("remote_tel1"),
+            b = document.getElementById("remote_tel2"),
+            c = document.getElementById("remote_tel3");
+
+        a.onkeyup = function() {
+            if (this.value.length === parseInt(this.attributes["maxlength"].value)) {
+                b.focus();
+            }
+        }
+
+        b.onkeyup = function() {
+            if (this.value.length === parseInt(this.attributes["maxlength"].value)) {
+                c.focus();
+            }
+        }
+
+        c.onkeydown = function() {
+            if (event.keyCode === 8) {
+                if (this.value.length === 0) {
+                    b.focus();
                 }
             }
         }
 
-        function remotetelclick(){
-            var a = document.getElementById("remote_tel1"),
-                b = document.getElementById("remote_tel2"),
-                c = document.getElementById("remote_tel3");
-
-            a.onkeyup = function() {
-                if (this.value.length === parseInt(this.attributes["maxlength"].value)) {
-                    b.focus();
-                }
-            }
-
-            b.onkeyup = function() {
-                if (this.value.length === parseInt(this.attributes["maxlength"].value)) {
-                    c.focus();
-                }
-            }
-
-            c.onkeydown = function() {
-                if (event.keyCode === 8) {
-                if (this.value.length === 0) {
-                    b.focus();
-                }
-                }
-            }
-
-            b.onkeydown = function() {
-                if (event.keyCode === 8) {
+        b.onkeydown = function() {
+            if (event.keyCode === 8) {
                 if (this.value.length === 0) {
                     a.focus();
                 }
-                }
             }
         }
-        
-        telclick();
-        remotetelclick();
+    }
+
+    telclick();
+    remotetelclick();
     </script>
 
 </body>
