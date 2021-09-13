@@ -586,7 +586,7 @@
                             </a>
                         </div>
                         <div class="bg_img width_31 square_btn">
-                            <a href="#">
+                            <a href="#confirm_form">
                                 <img src="../img/header/bg_header.png" alt="" class="fix_zoom undrag">
                                 <p class="tl_50 noto_black font_75 white width_100">24時間受付中！<span class="noto_black"
                                         style="color: #f0e002;">無料</span>相談・資料請求はこちら &nbsp;▶</p>
@@ -607,7 +607,7 @@
                             <div class="flex flex_center">
                                 <a href="#活用ケース" style="display: block;">
                                     <p class="noto_regular txt_mg_0 font_75 txt_tpad_05 txt_bpad_05">
-                                        ご提供tサービス
+                                        ご提供サービス
                                     </p>
                                 </a>
                             </div>
@@ -3464,7 +3464,7 @@
             <div class="view_pc">
                 <div class="cont_wrapper_70">
                     <div class="space_3"></div>
-                    <p class="noto_black font_150">導入事例</p>
+                    <p class="noto_black font_150 txt_center">導入事例</p>
                     <div class="space_2"></div>
                     <!-- Case 01 -->
                     <div style="box-shadow: 0 0 10px 0px #d3d3d3; border: 1px solid #d3d3d3;">
@@ -4526,1068 +4526,1086 @@
                         </div>
                     </div>
                     <div class="space_2"></div>
-                    <!-- Case 05 -->
-                    <div style="box-shadow: 0 0 10px 0px #d3d3d3; border: 1px solid #d3d3d3;">
-                        <div class="txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1" style="background-color: #3c93c1;">
-                            <div class="flex flex_center" style="justify-content: flex-start;">
-                                <div>
-                                    <p class="noto_bold font_75 bg_white txt_lpad_05 txt_rpad_05 box_radius_25"
-                                        style="color: #3c93c1;">
-                                        CASE：05</p>
+                    <div id="more" style="display: none;">
+                        <!-- Case 05 -->
+                        <div style="box-shadow: 0 0 10px 0px #d3d3d3; border: 1px solid #d3d3d3;">
+                            <div class="txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1"
+                                style="background-color: #3c93c1;">
+                                <div class="flex flex_center" style="justify-content: flex-start;">
+                                    <div>
+                                        <p class="noto_bold font_75 bg_white txt_lpad_05 txt_rpad_05 box_radius_25"
+                                            style="color: #3c93c1;">
+                                            CASE：05</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_black font_125 txt_lpad_1">採用プロセスの改善で<span
+                                                class="noto_black" style="color: #ffd200;">採用コストを増やさずに採用人数が増加！</span>
+                                        </p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p class="white noto_black font_125 txt_lpad_1">採用プロセスの改善で<span class="noto_black"
-                                            style="color: #ffd200;">採用コストを増やさずに採用人数が増加！</span>
-                                    </p>
+                                <div class="space_05"></div>
+                                <div class="hr_1" style="border-top: 1px solid #fff;"></div>
+                                <div class="space_1"></div>
+                                <!-- 1 -->
+                                <div class="flex flex_center" style="justify-content: flex-start; column-gap: 1vw;">
+                                    <div>
+                                        <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
+                                            style="background-color: #1b599f; border: 1px solid #fff;">業界</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_regular font_75">ソフトウェア</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
+                                            style="background-color: #748efd; border: 1px solid #fff;">従業員数</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_regular font_75">1000名〜</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
+                                            style="background-color: #eb6d41; border: 1px solid #fff;">採用人数</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_regular font_75">30名～100名</p>
+                                    </div>
                                 </div>
+                                <div class="space_05"></div>
+                                <!-- 2 -->
+                                <div class="flex flex_center" style="justify-content: flex-start; column-gap: 1vw;">
+                                    <div>
+                                        <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
+                                            style="background-color: #e4007f; border: 1px solid #fff;">利用サービス</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_regular font_75">マイナビ（サマーインターン）、アウトソース、モチカ、コンパス</p>
+                                    </div>
+                                </div>
+                                <div class="space_05"></div>
                             </div>
-                            <div class="space_05"></div>
-                            <div class="hr_1" style="border-top: 1px solid #fff;"></div>
-                            <div class="space_1"></div>
-                            <!-- 1 -->
-                            <div class="flex flex_center" style="justify-content: flex-start; column-gap: 1vw;">
-                                <div>
-                                    <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
-                                        style="background-color: #1b599f; border: 1px solid #fff;">業界</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_regular font_75">ソフトウェア</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
-                                        style="background-color: #748efd; border: 1px solid #fff;">従業員数</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_regular font_75">1000名〜</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
-                                        style="background-color: #eb6d41; border: 1px solid #fff;">採用人数</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_regular font_75">30名～100名</p>
-                                </div>
-                            </div>
-                            <div class="space_05"></div>
-                            <!-- 2 -->
-                            <div class="flex flex_center" style="justify-content: flex-start; column-gap: 1vw;">
-                                <div>
-                                    <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
-                                        style="background-color: #e4007f; border: 1px solid #fff;">利用サービス</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_regular font_75">マイナビ（サマーインターン）、アウトソース、モチカ、コンパス</p>
-                                </div>
-                            </div>
-                            <div class="space_05"></div>
-                        </div>
-                        <div class="space_3"></div>
-                        <div class="wrapper_95">
-                            <div class="flex flex_center" style="justify-content: space-between;">
-                                <div class="bg_img width_48 txt_tpad_2 txt_bpad_2 txt_lpad_1 txt_rpad_1"
-                                    style="border: 1px solid #c7c7c7;">
-                                    <div class="tl_0" style="top: -15%; left: 3%;">
-                                        <p class="box_radius_25 noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2"
-                                            style="background-color: #4b4b4b;">Before</p>
-                                    </div>
-                                    <div class="flex" style="justify-content: flex-start; align-items: baseline;">
-                                        <div>
-                                            <p style="color: #9f9f9f; font-size: 0.8vw;">●</p>
+                            <div class="space_3"></div>
+                            <div class="wrapper_95">
+                                <div class="flex flex_center" style="justify-content: space-between;">
+                                    <div class="bg_img width_48 txt_tpad_2 txt_bpad_2 txt_lpad_1 txt_rpad_1"
+                                        style="border: 1px solid #c7c7c7;">
+                                        <div class="tl_0" style="top: -15%; left: 3%;">
+                                            <p class="box_radius_25 noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2"
+                                                style="background-color: #4b4b4b;">Before</p>
                                         </div>
-                                        <div class="txt_lpad_05">
-                                            <p class="font_100 noto_regular txt_left">母集団は約4000名、採用人数は45名<br><br><br>
-                                            </p>
+                                        <div class="flex" style="justify-content: flex-start; align-items: baseline;">
+                                            <div>
+                                                <p style="color: #9f9f9f; font-size: 0.8vw;">●</p>
+                                            </div>
+                                            <div class="txt_lpad_05">
+                                                <p class="font_100 noto_regular txt_left">
+                                                    母集団は約4000名、採用人数は45名<br><br><br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="font_200" style="color: #3c93c1;">▶</p>
+                                    </div>
+                                    <div class="bg_img width_48 txt_tpad_2 txt_bpad_2 txt_lpad_1 txt_rpad_1"
+                                        style="border: 2px solid #007dc5;">
+                                        <div class="tl_0" style="top: -15%; left: 3%;">
+                                            <p class="box_radius_25 noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2"
+                                                style="background-color: #007dc5;">After</p>
+                                        </div>
+                                        <div class="flex flex_center" style="justify-content: flex-start;">
+                                            <div>
+                                                <p style="color: #007dc5; font-size: 0.8vw;">●</p>
+                                            </div>
+                                            <div class="txt_lpad_05">
+                                                <p class="font_100 noto_black">母集団は約5500名に、採用人数は約60名承諾</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex" style="justify-content: flex-start; align-items: baseline;">
+                                            <div>
+                                                <p style="color: #007dc5; font-size: 0.8vw;">●</p>
+                                            </div>
+                                            <div class="txt_lpad_05">
+                                                <p class="font_100 noto_black txt_left">
+                                                    採用の質も向上した<br>（内定承諾者の適性テストの結果も上がった）
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <p class="font_200" style="color: #3c93c1;">▶</p>
-                                </div>
-                                <div class="bg_img width_48 txt_tpad_2 txt_bpad_2 txt_lpad_1 txt_rpad_1"
-                                    style="border: 2px solid #007dc5;">
-                                    <div class="tl_0" style="top: -15%; left: 3%;">
-                                        <p class="box_radius_25 noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2"
-                                            style="background-color: #007dc5;">After</p>
-                                    </div>
-                                    <div class="flex flex_center" style="justify-content: flex-start;">
-                                        <div>
-                                            <p style="color: #007dc5; font-size: 0.8vw;">●</p>
-                                        </div>
-                                        <div class="txt_lpad_05">
-                                            <p class="font_100 noto_black">母集団は約5500名に、採用人数は約60名承諾</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex" style="justify-content: flex-start; align-items: baseline;">
-                                        <div>
-                                            <p style="color: #007dc5; font-size: 0.8vw;">●</p>
-                                        </div>
-                                        <div class="txt_lpad_05">
-                                            <p class="font_100 noto_black txt_left">採用の質も向上した<br>（内定承諾者の適性テストの結果も上がった）
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="space_1"></div>
-                            <!-- <div class="txt_tpad_1 txt_bpad_1 bg_img" style="background-color: #3c93c1;">
+                                <div class="space_1"></div>
+                                <!-- <div class="txt_tpad_1 txt_bpad_1 bg_img" style="background-color: #3c93c1;">
                                 <div class="t50_r0 width_3" style="right: 2%;">
                                     <a href="#"><img src="img/sect_13/plus_icon.png" alt="" class="fix_zoom undrag"></a>
                                 </div>
                                 <p class="noto_black font_125 white">施策を見る</p>
                             </div> -->
-                            <!-- ACCORDION 1 -->
-                            <div class="box_radius_0">
-                                <div class="accordion_item" style="background-color: #3c93c1;">
-                                    <a class="accordion_header flex flex_center"
-                                        style="padding: 10px; cursor: pointer;">
-                                        <p class="noto_black font_125 white width_85 flex
+                                <!-- ACCORDION 1 -->
+                                <div class="box_radius_0">
+                                    <div class="accordion_item" style="background-color: #3c93c1;">
+                                        <a class="accordion_header flex flex_center"
+                                            style="padding: 10px; cursor: pointer;">
+                                            <p class="noto_black font_125 white width_85 flex
                                                     flex_center" style="justify-content: center;">
-                                            施策を見る
-                                            <i class="fa fa-plus bg_white txt_tpad_05 txt_bpad_05 txt_lpad_05 txt_rpad_05 box_radius_9999"
-                                                style="position: relative; right: -48%;"></i>
-                                        </p>
-                                    </a>
+                                                施策を見る
+                                                <i class="fa fa-plus bg_white txt_tpad_05 txt_bpad_05 txt_lpad_05 txt_rpad_05 box_radius_9999"
+                                                    style="position: relative; right: -48%;"></i>
+                                            </p>
+                                        </a>
 
-                                    <div class="content">
-                                        <!-- Point 1 -->
-                                        <div>
-                                            <div class="space_2"></div>
-                                            <div class="txt_tpad_1 txt_bpad_1 txt_lpad_2"
-                                                style="background-color: #d8e9f3;">
-                                                <div class="flex flex_center" style="justify-content: flex-start;">
-                                                    <div class="width_8 txt_tpad_1 txt_bpad_1 box_radius_9999"
-                                                        style="background-color: #31a5b0;">
-                                                        <p class="txt_center noto_black font_100 white line_h_100">
-                                                            Point<br><span class="noto_black font_100 white">01</span>
-                                                        </p>
+                                        <div class="content">
+                                            <!-- Point 1 -->
+                                            <div>
+                                                <div class="space_2"></div>
+                                                <div class="txt_tpad_1 txt_bpad_1 txt_lpad_2"
+                                                    style="background-color: #d8e9f3;">
+                                                    <div class="flex flex_center" style="justify-content: flex-start;">
+                                                        <div class="width_8 txt_tpad_1 txt_bpad_1 box_radius_9999"
+                                                            style="background-color: #31a5b0;">
+                                                            <p class="txt_center noto_black font_100 white line_h_100">
+                                                                Point<br><span
+                                                                    class="noto_black font_100 white">01</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="width_80 txt_lpad_2">
+                                                            <p class="txt_left noto_black font_125"><span
+                                                                    class="noto_black"
+                                                                    style="color: #31a5b0;">母集団形成手法の変更</span><br>
+                                                                競合が激しくない地方学生向けにWebセミナーを展開</p>
+                                                        </div>
                                                     </div>
-                                                    <div class="width_80 txt_lpad_2">
-                                                        <p class="txt_left noto_black font_125"><span class="noto_black"
-                                                                style="color: #31a5b0;">母集団形成手法の変更</span><br>
-                                                            競合が激しくない地方学生向けにWebセミナーを展開</p>
+                                                </div>
+                                                <div class="space_2"></div>
+                                                <div class="flex flex_center">
+                                                    <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
+                                                        style="border: 2px solid #c7c7c7; padding: 46px 0 !important;">
+                                                        <div class="wrapper_60">
+                                                            <img src="../img/sect_13/case-5-p-1.png" alt=""
+                                                                class="fix_zoom undrag">
+                                                        </div>
+                                                        <div class="space_2"></div>
+                                                        <ul class="width_88 mg_auto">
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                東京・大阪・名古屋などの主要都市圏のみでの母集団形成に取
+                                                                り組んでいた
+                                                            </li>
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                採用における採用競合が激しく、充分な母集団形成や歩留まり
+                                                                を実現できていなかった
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <p class="font_200" style="color: #3c93c1;">▶</p>
+                                                    </div>
+                                                    <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
+                                                        style="border: 2px solid #c7c7c7; padding: 18px 0 !important;">
+                                                        <div class="wrapper_90">
+                                                            <img src="../img/sect_13/case-5-p-1-1.png" alt=""
+                                                                class="fix_zoom undrag">
+                                                        </div>
+                                                        <div class="space_2"></div>
+                                                        <ul class="width_88 mg_auto">
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                採用競合が激しくない地方学生を採用ターゲットに定め、採
+                                                                用の質を上げた
+                                                            </li>
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                地方での母集団を獲得するために、Webセミナーをコロナ前
+                                                                から計画し、実行した
+                                                            </li>
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                地方学生のセミナー参加人数が1.6倍になった
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="space_2"></div>
-                                            <div class="flex flex_center">
-                                                <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
-                                                    style="border: 2px solid #c7c7c7; padding: 46px 0 !important;">
-                                                    <div class="wrapper_60">
-                                                        <img src="../img/sect_13/case-5-p-1.png" alt=""
-                                                            class="fix_zoom undrag">
-                                                    </div>
-                                                    <div class="space_2"></div>
-                                                    <ul class="width_88 mg_auto">
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            東京・大阪・名古屋などの主要都市圏のみでの母集団形成に取
-                                                            り組んでいた
-                                                        </li>
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            採用における採用競合が激しく、充分な母集団形成や歩留まり
-                                                            を実現できていなかった
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <p class="font_200" style="color: #3c93c1;">▶</p>
-                                                </div>
-                                                <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
-                                                    style="border: 2px solid #c7c7c7; padding: 18px 0 !important;">
-                                                    <div class="wrapper_90">
-                                                        <img src="../img/sect_13/case-5-p-1-1.png" alt=""
-                                                            class="fix_zoom undrag">
-                                                    </div>
-                                                    <div class="space_2"></div>
-                                                    <ul class="width_88 mg_auto">
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            採用競合が激しくない地方学生を採用ターゲットに定め、採
-                                                            用の質を上げた
-                                                        </li>
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            地方での母集団を獲得するために、Webセミナーをコロナ前
-                                                            から計画し、実行した
-                                                        </li>
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            地方学生のセミナー参加人数が1.6倍になった
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Point 2 -->
-                                        <div>
-                                            <div class="space_2"></div>
-                                            <div class="txt_tpad_1 txt_bpad_1 txt_lpad_2"
-                                                style="background-color: #d8e9f3;">
-                                                <div class="flex flex_center" style="justify-content: flex-start;">
-                                                    <div class="width_8 txt_tpad_1 txt_bpad_1 box_radius_9999"
-                                                        style="background-color: #31a5b0;">
-                                                        <p class="txt_center noto_black font_100 white line_h_100">
-                                                            Point<br><span class="noto_black font_100 white">02</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="width_80">
-                                                        <p class="txt_left noto_black font_125 txt_lpad_2"><span
-                                                                class="noto_black"
-                                                                style="color: #31a5b0;">採用アウトソーシングの導入</span><br>
-                                                            人事担当者の工数や負荷が激減</p>
+                                            <!-- Point 2 -->
+                                            <div>
+                                                <div class="space_2"></div>
+                                                <div class="txt_tpad_1 txt_bpad_1 txt_lpad_2"
+                                                    style="background-color: #d8e9f3;">
+                                                    <div class="flex flex_center" style="justify-content: flex-start;">
+                                                        <div class="width_8 txt_tpad_1 txt_bpad_1 box_radius_9999"
+                                                            style="background-color: #31a5b0;">
+                                                            <p class="txt_center noto_black font_100 white line_h_100">
+                                                                Point<br><span
+                                                                    class="noto_black font_100 white">02</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="width_80">
+                                                            <p class="txt_left noto_black font_125 txt_lpad_2"><span
+                                                                    class="noto_black"
+                                                                    style="color: #31a5b0;">採用アウトソーシングの導入</span><br>
+                                                                人事担当者の工数や負荷が激減</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="space_2"></div>
-                                            <div class="flex flex_center">
-                                                <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
-                                                    style="border: 2px solid #c7c7c7; padding: 41px 0 !important;">
-                                                    <div class="wrapper_60">
-                                                        <img src="../img/sect_13/case-5-p-2.png" alt=""
-                                                            class="fix_zoom undrag">
+                                                <div class="space_2"></div>
+                                                <div class="flex flex_center">
+                                                    <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
+                                                        style="border: 2px solid #c7c7c7; padding: 41px 0 !important;">
+                                                        <div class="wrapper_60">
+                                                            <img src="../img/sect_13/case-5-p-2.png" alt=""
+                                                                class="fix_zoom undrag">
+                                                        </div>
+                                                        <div class="space_2"></div>
+                                                        <ul class="width_88 mg_auto">
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                採用競合がどのようなチャネルを利用しているかを知
+                                                                らなかったため、戦略的に採用チャネルを調べていな
+                                                                かった。
+                                                            </li>
+                                                        </ul>
                                                     </div>
-                                                    <div class="space_2"></div>
-                                                    <ul class="width_88 mg_auto">
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            採用競合がどのようなチャネルを利用しているかを知
-                                                            らなかったため、戦略的に採用チャネルを調べていな
-                                                            かった。
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <p class="font_200" style="color: #3c93c1;">▶</p>
-                                                </div>
-                                                <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
-                                                    style="border: 2px solid #c7c7c7;">
-                                                    <div class="wrapper_90">
-                                                        <img src="../img/sect_13/case-5-p-2-2.png" alt=""
-                                                            class="fix_zoom undrag">
+                                                    <div>
+                                                        <p class="font_200" style="color: #3c93c1;">▶</p>
                                                     </div>
-                                                    <div class="space_2"></div>
-                                                    <ul class="width_88 mg_auto">
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            採用競合がどのようなチャネルを利用しているかを知
-                                                            らなかったため、戦略的に採用チャネルを調べていな
-                                                            かった。
-                                                        </li>
-                                                    </ul>
+                                                    <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
+                                                        style="border: 2px solid #c7c7c7;">
+                                                        <div class="wrapper_90">
+                                                            <img src="../img/sect_13/case-5-p-2-2.png" alt=""
+                                                                class="fix_zoom undrag">
+                                                        </div>
+                                                        <div class="space_2"></div>
+                                                        <ul class="width_88 mg_auto">
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                採用競合がどのようなチャネルを利用しているかを知
+                                                                らなかったため、戦略的に採用チャネルを調べていな
+                                                                かった。
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="space_1"></div>
                             </div>
-                            <div class="space_1"></div>
                         </div>
-                    </div>
-                    <div class="space_2"></div>
-                    <!-- Case 06 -->
-                    <div style="box-shadow: 0 0 10px 0px #d3d3d3; border: 1px solid #d3d3d3;">
-                        <div class="txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1" style="background-color: #3c93c1;">
-                            <div class="flex flex_center" style="justify-content: flex-start;">
-                                <div>
-                                    <p class="noto_bold font_75 bg_white txt_lpad_05 txt_rpad_05 box_radius_25"
-                                        style="color: #3c93c1;">
-                                        CASE：06</p>
+                        <div class="space_2"></div>
+                        <!-- Case 06 -->
+                        <div style="box-shadow: 0 0 10px 0px #d3d3d3; border: 1px solid #d3d3d3;">
+                            <div class="txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1"
+                                style="background-color: #3c93c1;">
+                                <div class="flex flex_center" style="justify-content: flex-start;">
+                                    <div>
+                                        <p class="noto_bold font_75 bg_white txt_lpad_05 txt_rpad_05 box_radius_25"
+                                            style="color: #3c93c1;">
+                                            CASE：06</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_black font_125 txt_lpad_1">ナビサイトの活用だけに留まらない幅広いアプローチで<span
+                                                class="noto_black" style="color: #ffd200;">土木建築系学生の採用に成功！</span>
+                                        </p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p class="white noto_black font_125 txt_lpad_1">ナビサイトの活用だけに留まらない幅広いアプローチで<span
-                                            class="noto_black" style="color: #ffd200;">土木建築系学生の採用に成功！</span>
-                                    </p>
+                                <div class="space_05"></div>
+                                <div class="hr_1" style="border-top: 1px solid #fff;"></div>
+                                <div class="space_1"></div>
+                                <!-- 1 -->
+                                <div class="flex flex_center" style="justify-content: flex-start; column-gap: 1vw;">
+                                    <div>
+                                        <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
+                                            style="background-color: #1b599f; border: 1px solid #fff;">業界</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_regular font_75">建設</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
+                                            style="background-color: #748efd; border: 1px solid #fff;">従業員数</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_regular font_75">300名～1000名</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
+                                            style="background-color: #eb6d41; border: 1px solid #fff;">採用人数</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_regular font_75">20名〜100名</p>
+                                    </div>
                                 </div>
+                                <div class="space_05"></div>
+                                <!-- 2 -->
+                                <div class="flex flex_center" style="justify-content: flex-start; column-gap: 1vw;">
+                                    <div>
+                                        <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
+                                            style="background-color: #e4007f; border: 1px solid #fff;">利用サービス</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_regular font_75">マイナビ、オファーボックス、アウトソース</p>
+                                    </div>
+                                </div>
+                                <div class="space_05"></div>
                             </div>
-                            <div class="space_05"></div>
-                            <div class="hr_1" style="border-top: 1px solid #fff;"></div>
-                            <div class="space_1"></div>
-                            <!-- 1 -->
-                            <div class="flex flex_center" style="justify-content: flex-start; column-gap: 1vw;">
-                                <div>
-                                    <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
-                                        style="background-color: #1b599f; border: 1px solid #fff;">業界</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_regular font_75">建設</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
-                                        style="background-color: #748efd; border: 1px solid #fff;">従業員数</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_regular font_75">300名～1000名</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
-                                        style="background-color: #eb6d41; border: 1px solid #fff;">採用人数</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_regular font_75">20名〜100名</p>
-                                </div>
-                            </div>
-                            <div class="space_05"></div>
-                            <!-- 2 -->
-                            <div class="flex flex_center" style="justify-content: flex-start; column-gap: 1vw;">
-                                <div>
-                                    <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
-                                        style="background-color: #e4007f; border: 1px solid #fff;">利用サービス</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_regular font_75">マイナビ、オファーボックス、アウトソース</p>
-                                </div>
-                            </div>
-                            <div class="space_05"></div>
-                        </div>
-                        <div class="space_3"></div>
-                        <div class="wrapper_95">
-                            <div class="flex flex_center" style="justify-content: space-between;">
-                                <div class="bg_img width_48 txt_tpad_2 txt_bpad_2 txt_lpad_1 txt_rpad_1"
-                                    style="border: 1px solid #c7c7c7; padding-bottom: 0.3vw !important;">
-                                    <div class="tl_0" style="top: -15%; left: 3%;">
-                                        <p class="box_radius_25 noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2"
-                                            style="background-color: #4b4b4b;">Before</p>
-                                    </div>
-                                    <div class="flex" style="justify-content: flex-start; align-items: baseline;">
-                                        <div class="width_4">
-                                            <p style="color: #9f9f9f; font-size: 0.8vw;">●</p>
+                            <div class="space_3"></div>
+                            <div class="wrapper_95">
+                                <div class="flex flex_center" style="justify-content: space-between;">
+                                    <div class="bg_img width_48 txt_tpad_2 txt_bpad_2 txt_lpad_1 txt_rpad_1"
+                                        style="border: 1px solid #c7c7c7; padding-bottom: 0.3vw !important;">
+                                        <div class="tl_0" style="top: -15%; left: 3%;">
+                                            <p class="box_radius_25 noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2"
+                                                style="background-color: #4b4b4b;">Before</p>
                                         </div>
-                                        <div class="txt_lpad_05 width_96">
-                                            <p class="font_100 noto_regular txt_left">理系学生、その中でも土木系専攻が 採用ターゲット
-                                                　だったが苦戦していた</p>
+                                        <div class="flex" style="justify-content: flex-start; align-items: baseline;">
+                                            <div class="width_4">
+                                                <p style="color: #9f9f9f; font-size: 0.8vw;">●</p>
+                                            </div>
+                                            <div class="txt_lpad_05 width_96">
+                                                <p class="font_100 noto_regular txt_left">理系学生、その中でも土木系専攻が 採用ターゲット
+                                                    　だったが苦戦していた</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex" style="justify-content: flex-start; align-items: baseline;">
+                                            <div class="width_4">
+                                                <p style="color: #9f9f9f; font-size: 0.8vw;">●</p>
+                                            </div>
+                                            <div class="txt_lpad_05 width_96">
+                                                <p class="font_100 noto_regular txt_left">採用目標が毎年未達に終わっていた<br><br></p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="flex" style="justify-content: flex-start; align-items: baseline;">
-                                        <div class="width_4">
-                                            <p style="color: #9f9f9f; font-size: 0.8vw;">●</p>
+                                    <div>
+                                        <p class="font_200" style="color: #3c93c1;">▶</p>
+                                    </div>
+                                    <div class="bg_img width_48 txt_tpad_2 txt_bpad_2 txt_lpad_1 txt_rpad_1"
+                                        style="border: 2px solid #007dc5;">
+                                        <div class="tl_0" style="top: -15%; left: 3%;">
+                                            <p class="box_radius_25 noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2"
+                                                style="background-color: #007dc5;">After</p>
                                         </div>
-                                        <div class="txt_lpad_05 width_96">
-                                            <p class="font_100 noto_regular txt_left">採用目標が毎年未達に終わっていた<br><br></p>
+                                        <div class="flex flex_center" style="justify-content: flex-start;">
+                                            <div>
+                                                <p style="color: #007dc5; font-size: 0.8vw;">●</p>
+                                            </div>
+                                            <div class="txt_lpad_05">
+                                                <p class="font_100 noto_black">土木系専攻を中心とした理系学生の採用に成功</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex" style="justify-content: flex-start; align-items: baseline;">
+                                            <div>
+                                                <p style="color: #007dc5; font-size: 0.8vw;">●</p>
+                                            </div>
+                                            <div class="txt_lpad_05">
+                                                <p class="font_100 noto_black txt_left">採用目標20名を達成<br><br></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <p class="font_200" style="color: #3c93c1;">▶</p>
-                                </div>
-                                <div class="bg_img width_48 txt_tpad_2 txt_bpad_2 txt_lpad_1 txt_rpad_1"
-                                    style="border: 2px solid #007dc5;">
-                                    <div class="tl_0" style="top: -15%; left: 3%;">
-                                        <p class="box_radius_25 noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2"
-                                            style="background-color: #007dc5;">After</p>
-                                    </div>
-                                    <div class="flex flex_center" style="justify-content: flex-start;">
-                                        <div>
-                                            <p style="color: #007dc5; font-size: 0.8vw;">●</p>
-                                        </div>
-                                        <div class="txt_lpad_05">
-                                            <p class="font_100 noto_black">土木系専攻を中心とした理系学生の採用に成功</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex" style="justify-content: flex-start; align-items: baseline;">
-                                        <div>
-                                            <p style="color: #007dc5; font-size: 0.8vw;">●</p>
-                                        </div>
-                                        <div class="txt_lpad_05">
-                                            <p class="font_100 noto_black txt_left">採用目標20名を達成<br><br></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="space_1"></div>
-                            <!-- <div class="txt_tpad_1 txt_bpad_1 bg_img" style="background-color: #3c93c1;">
+                                <div class="space_1"></div>
+                                <!-- <div class="txt_tpad_1 txt_bpad_1 bg_img" style="background-color: #3c93c1;">
                                 <div class="t50_r0 width_3" style="right: 2%;">
                                     <a href="#"><img src="img/sect_13/plus_icon.png" alt="" class="fix_zoom undrag"></a>
                                 </div>
                                 <p class="noto_black font_125 white">施策を見る</p>
                             </div> -->
-                            <!-- ACCORDION 1 -->
-                            <div class="box_radius_0">
-                                <div class="accordion_item" style="background-color: #3c93c1;">
-                                    <a class="accordion_header flex flex_center"
-                                        style="padding: 10px; cursor: pointer;">
-                                        <p class="noto_black font_125 white width_85 flex
+                                <!-- ACCORDION 1 -->
+                                <div class="box_radius_0">
+                                    <div class="accordion_item" style="background-color: #3c93c1;">
+                                        <a class="accordion_header flex flex_center"
+                                            style="padding: 10px; cursor: pointer;">
+                                            <p class="noto_black font_125 white width_85 flex
                                                     flex_center" style="justify-content: center;">
-                                            施策を見る
-                                            <i class="fa fa-plus bg_white txt_tpad_05 txt_bpad_05 txt_lpad_05 txt_rpad_05 box_radius_9999"
-                                                style="position: relative; right: -48%;"></i>
-                                        </p>
-                                    </a>
-
-                                    <div class="content">
-                                        <!-- Point 1 -->
-                                        <div>
-                                            <div class="space_2"></div>
-                                            <div class="txt_tpad_1 txt_bpad_1 txt_lpad_2"
-                                                style="background-color: #d8e9f3;">
-                                                <div class="flex flex_center" style="justify-content: flex-start;">
-                                                    <div class="width_8 txt_tpad_1 txt_bpad_1 box_radius_9999"
-                                                        style="background-color: #31a5b0;">
-                                                        <p class="txt_center noto_black font_100 white line_h_100">
-                                                            Point<br><span class="noto_black font_100 white">01</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="width_80 txt_lpad_2">
-                                                        <p class="txt_left noto_black font_125"><span class="noto_black"
-                                                                style="color: #31a5b0;">母集団形成手法の変更</span><br>
-                                                            ダイレクトリクルーティングでピンポイントなアプローチ</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="space_2"></div>
-                                            <div class="flex flex_center">
-                                                <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
-                                                    style="border: 2px solid #c7c7c7; padding: 65px 0 !important;">
-                                                    <div class="wrapper_60">
-                                                        <img src="../img/sect_13/case-6-p-1.png" alt=""
-                                                            class="fix_zoom undrag">
-                                                    </div>
-                                                    <div class="space_2"></div>
-                                                    <ul class="width_88 mg_auto">
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            ナビを中心とした一般的な採用チャネルでの採用に取り組ん
-                                                            でいた
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <p class="font_200" style="color: #3c93c1;">▶</p>
-                                                </div>
-                                                <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
-                                                    style="border: 2px solid #c7c7c7; padding: 18px 0 !important;">
-                                                    <div class="wrapper_90">
-                                                        <img src="../img/sect_13/case-6-p-1-1.png" alt=""
-                                                            class="fix_zoom undrag">
-                                                    </div>
-                                                    <div class="space_2"></div>
-                                                    <ul class="width_88 mg_auto">
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            ターゲットとなる理系学生に対して、個別にアプローチする
-                                                            ためにオファーボックスを用いたダイレクトリクルーティン
-                                                            グに取り組んだ
-                                                        </li>
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            アウトソーシングも活用しながらピンポイントにアプローチ
-                                                            し、結果として国立大学の理系学生を3名採用
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Point 2 -->
-                                        <div>
-                                            <div class="space_2"></div>
-                                            <div class="txt_tpad_1 txt_bpad_1 txt_lpad_2"
-                                                style="background-color: #d8e9f3;">
-                                                <div class="flex flex_center" style="justify-content: flex-start;">
-                                                    <div class="width_8 txt_tpad_1 txt_bpad_1 box_radius_9999"
-                                                        style="background-color: #31a5b0;">
-                                                        <p class="txt_center noto_black font_100 white line_h_100">
-                                                            Point<br><span class="noto_black font_100 white">02</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="width_80">
-                                                        <p class="txt_left noto_black font_125 txt_lpad_2"><span
-                                                                class="noto_black"
-                                                                style="color: #31a5b0;">イベント運用方法の変更</span><br>
-                                                            イベント前後のフローを改善</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="space_2"></div>
-                                            <div class="flex flex_center">
-                                                <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
-                                                    style="border: 2px solid #c7c7c7; padding: 67px 0 !important;">
-                                                    <div class="wrapper_60">
-                                                        <img src="../img/sect_13/case-6-p-2.png" alt=""
-                                                            class="fix_zoom undrag">
-                                                    </div>
-                                                    <div class="space_2"></div>
-                                                    <ul class="width_88 mg_auto">
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            イベントに出展するが、エントリーシートの回収が思うように
-                                                            できていなかった
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <p class="font_200" style="color: #3c93c1;">▶</p>
-                                                </div>
-                                                <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
-                                                    style="border: 2px solid #c7c7c7;">
-                                                    <div class="wrapper_90">
-                                                        <img src="../img/sect_13/case-6-p-2-2.png" alt=""
-                                                            class="fix_zoom undrag">
-                                                    </div>
-                                                    <div class="space_2"></div>
-                                                    <ul class="width_88 mg_auto">
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            イベント前後のコミュニケーションやフローを変更すること
-                                                            でエントリーシートの提出率が劇的に改善した（10%アップ
-                                                            ）。具体的にはブースへの集客代行、エントリーシートの電
-                                                            子化・書式変更、説明会スライドのデザイン変更などに取り
-                                                            組んだ
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="space_1"></div>
-                        </div>
-                    </div>
-                    <div class="space_2"></div>
-                    <!-- Case 07 -->
-                    <div style="box-shadow: 0 0 10px 0px #d3d3d3; border: 1px solid #d3d3d3;">
-                        <div class="txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1" style="background-color: #3c93c1;">
-                            <div class="flex flex_center" style="justify-content: flex-start;">
-                                <div>
-                                    <p class="noto_bold font_75 bg_white txt_lpad_05 txt_rpad_05 box_radius_25"
-                                        style="color: #3c93c1;">
-                                        CASE：07</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_black font_125 txt_lpad_1">採用予算を減らしながらも、<span
-                                            class="noto_black" style="color: #ffd200;">採用実績が約5倍に!</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="space_05"></div>
-                            <div class="hr_1" style="border-top: 1px solid #fff;"></div>
-                            <div class="space_1"></div>
-                            <!-- 1 -->
-                            <div class="flex flex_center" style="justify-content: flex-start; column-gap: 1vw;">
-                                <div>
-                                    <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
-                                        style="background-color: #1b599f; border: 1px solid #fff;">業界</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_regular font_75">福祉</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
-                                        style="background-color: #748efd; border: 1px solid #fff;">従業員数</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_regular font_75">100名〜300名</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
-                                        style="background-color: #eb6d41; border: 1px solid #fff;">採用人数</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_regular font_75">10名～30名</p>
-                                </div>
-                            </div>
-                            <div class="space_05"></div>
-                            <!-- 2 -->
-                            <div class="flex flex_center" style="justify-content: flex-start; column-gap: 1vw;">
-                                <div>
-                                    <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
-                                        style="background-color: #e4007f; border: 1px solid #fff;">利用サービス</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_regular font_75">マイナビ</p>
-                                </div>
-                            </div>
-                            <div class="space_05"></div>
-                        </div>
-                        <div class="space_3"></div>
-                        <div class="wrapper_95">
-                            <div class="flex flex_center" style="justify-content: space-between;">
-                                <div class="bg_img width_48 txt_tpad_2 txt_bpad_2 txt_lpad_1 txt_rpad_1"
-                                    style="border: 1px solid #c7c7c7;">
-                                    <div class="tl_0" style="top: -15%; left: 3%;">
-                                        <p class="box_radius_25 noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2"
-                                            style="background-color: #4b4b4b;">Before</p>
-                                    </div>
-                                    <div class="flex" style="justify-content: flex-start; align-items: baseline;">
-                                        <div class="width_4">
-                                            <p style="color: #9f9f9f; font-size: 0.8vw;">●</p>
-                                        </div>
-                                        <div class="txt_lpad_05 width_96">
-                                            <p class="font_100 noto_regular txt_left"
-                                                style="font-size: 1.22vw !important;">
-                                                新卒採用に数年ぶりに取り組むことになった</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex" style="justify-content: flex-start; align-items: baseline;">
-                                        <div class="width_4">
-                                            <p style="color: #9f9f9f; font-size: 0.8vw;">●</p>
-                                        </div>
-                                        <div class="txt_lpad_05 width_96">
-                                            <p class="font_100 noto_regular txt_left"
-                                                style="font-size: 1.22vw !important;">以前新卒採用を取り組んでいたが実績は2名だった
+                                                施策を見る
+                                                <i class="fa fa-plus bg_white txt_tpad_05 txt_bpad_05 txt_lpad_05 txt_rpad_05 box_radius_9999"
+                                                    style="position: relative; right: -48%;"></i>
                                             </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex" style="justify-content: flex-start; align-items: baseline;">
-                                        <div class="width_4">
-                                            <p style="color: #9f9f9f; font-size: 0.8vw;">●</p>
-                                        </div>
-                                        <div class="txt_lpad_05 width_96">
-                                            <p class="font_100 noto_regular txt_left"
-                                                style="font-size: 1.22vw !important;">新卒採用予算を大幅に減らし、媒体も2つから1つに
-                                                　絞る必要があった</p>
+                                        </a>
+
+                                        <div class="content">
+                                            <!-- Point 1 -->
+                                            <div>
+                                                <div class="space_2"></div>
+                                                <div class="txt_tpad_1 txt_bpad_1 txt_lpad_2"
+                                                    style="background-color: #d8e9f3;">
+                                                    <div class="flex flex_center" style="justify-content: flex-start;">
+                                                        <div class="width_8 txt_tpad_1 txt_bpad_1 box_radius_9999"
+                                                            style="background-color: #31a5b0;">
+                                                            <p class="txt_center noto_black font_100 white line_h_100">
+                                                                Point<br><span
+                                                                    class="noto_black font_100 white">01</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="width_80 txt_lpad_2">
+                                                            <p class="txt_left noto_black font_125"><span
+                                                                    class="noto_black"
+                                                                    style="color: #31a5b0;">母集団形成手法の変更</span><br>
+                                                                ダイレクトリクルーティングでピンポイントなアプローチ</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="space_2"></div>
+                                                <div class="flex flex_center">
+                                                    <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
+                                                        style="border: 2px solid #c7c7c7; padding: 65px 0 !important;">
+                                                        <div class="wrapper_60">
+                                                            <img src="../img/sect_13/case-6-p-1.png" alt=""
+                                                                class="fix_zoom undrag">
+                                                        </div>
+                                                        <div class="space_2"></div>
+                                                        <ul class="width_88 mg_auto">
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                ナビを中心とした一般的な採用チャネルでの採用に取り組ん
+                                                                でいた
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <p class="font_200" style="color: #3c93c1;">▶</p>
+                                                    </div>
+                                                    <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
+                                                        style="border: 2px solid #c7c7c7; padding: 18px 0 !important;">
+                                                        <div class="wrapper_90">
+                                                            <img src="../img/sect_13/case-6-p-1-1.png" alt=""
+                                                                class="fix_zoom undrag">
+                                                        </div>
+                                                        <div class="space_2"></div>
+                                                        <ul class="width_88 mg_auto">
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                ターゲットとなる理系学生に対して、個別にアプローチする
+                                                                ためにオファーボックスを用いたダイレクトリクルーティン
+                                                                グに取り組んだ
+                                                            </li>
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                アウトソーシングも活用しながらピンポイントにアプローチ
+                                                                し、結果として国立大学の理系学生を3名採用
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Point 2 -->
+                                            <div>
+                                                <div class="space_2"></div>
+                                                <div class="txt_tpad_1 txt_bpad_1 txt_lpad_2"
+                                                    style="background-color: #d8e9f3;">
+                                                    <div class="flex flex_center" style="justify-content: flex-start;">
+                                                        <div class="width_8 txt_tpad_1 txt_bpad_1 box_radius_9999"
+                                                            style="background-color: #31a5b0;">
+                                                            <p class="txt_center noto_black font_100 white line_h_100">
+                                                                Point<br><span
+                                                                    class="noto_black font_100 white">02</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="width_80">
+                                                            <p class="txt_left noto_black font_125 txt_lpad_2"><span
+                                                                    class="noto_black"
+                                                                    style="color: #31a5b0;">イベント運用方法の変更</span><br>
+                                                                イベント前後のフローを改善</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="space_2"></div>
+                                                <div class="flex flex_center">
+                                                    <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
+                                                        style="border: 2px solid #c7c7c7; padding: 67px 0 !important;">
+                                                        <div class="wrapper_60">
+                                                            <img src="../img/sect_13/case-6-p-2.png" alt=""
+                                                                class="fix_zoom undrag">
+                                                        </div>
+                                                        <div class="space_2"></div>
+                                                        <ul class="width_88 mg_auto">
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                イベントに出展するが、エントリーシートの回収が思うように
+                                                                できていなかった
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <p class="font_200" style="color: #3c93c1;">▶</p>
+                                                    </div>
+                                                    <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
+                                                        style="border: 2px solid #c7c7c7;">
+                                                        <div class="wrapper_90">
+                                                            <img src="../img/sect_13/case-6-p-2-2.png" alt=""
+                                                                class="fix_zoom undrag">
+                                                        </div>
+                                                        <div class="space_2"></div>
+                                                        <ul class="width_88 mg_auto">
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                イベント前後のコミュニケーションやフローを変更すること
+                                                                でエントリーシートの提出率が劇的に改善した（10%アップ
+                                                                ）。具体的にはブースへの集客代行、エントリーシートの電
+                                                                子化・書式変更、説明会スライドのデザイン変更などに取り
+                                                                組んだ
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <p class="font_200" style="color: #3c93c1;">▶</p>
+                                <div class="space_1"></div>
+                            </div>
+                        </div>
+                        <div class="space_2"></div>
+                        <!-- Case 07 -->
+                        <div style="box-shadow: 0 0 10px 0px #d3d3d3; border: 1px solid #d3d3d3;">
+                            <div class="txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1"
+                                style="background-color: #3c93c1;">
+                                <div class="flex flex_center" style="justify-content: flex-start;">
+                                    <div>
+                                        <p class="noto_bold font_75 bg_white txt_lpad_05 txt_rpad_05 box_radius_25"
+                                            style="color: #3c93c1;">
+                                            CASE：07</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_black font_125 txt_lpad_1">採用予算を減らしながらも、<span
+                                                class="noto_black" style="color: #ffd200;">採用実績が約5倍に!</span>
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="bg_img width_48 txt_tpad_2 txt_bpad_2 txt_lpad_1 txt_rpad_1" style="border: 2px solid #007dc5; padding-top: 2.7vw !important; padding-bottom:
+                                <div class="space_05"></div>
+                                <div class="hr_1" style="border-top: 1px solid #fff;"></div>
+                                <div class="space_1"></div>
+                                <!-- 1 -->
+                                <div class="flex flex_center" style="justify-content: flex-start; column-gap: 1vw;">
+                                    <div>
+                                        <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
+                                            style="background-color: #1b599f; border: 1px solid #fff;">業界</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_regular font_75">福祉</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
+                                            style="background-color: #748efd; border: 1px solid #fff;">従業員数</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_regular font_75">100名〜300名</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
+                                            style="background-color: #eb6d41; border: 1px solid #fff;">採用人数</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_regular font_75">10名～30名</p>
+                                    </div>
+                                </div>
+                                <div class="space_05"></div>
+                                <!-- 2 -->
+                                <div class="flex flex_center" style="justify-content: flex-start; column-gap: 1vw;">
+                                    <div>
+                                        <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
+                                            style="background-color: #e4007f; border: 1px solid #fff;">利用サービス</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_regular font_75">マイナビ</p>
+                                    </div>
+                                </div>
+                                <div class="space_05"></div>
+                            </div>
+                            <div class="space_3"></div>
+                            <div class="wrapper_95">
+                                <div class="flex flex_center" style="justify-content: space-between;">
+                                    <div class="bg_img width_48 txt_tpad_2 txt_bpad_2 txt_lpad_1 txt_rpad_1"
+                                        style="border: 1px solid #c7c7c7;">
+                                        <div class="tl_0" style="top: -15%; left: 3%;">
+                                            <p class="box_radius_25 noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2"
+                                                style="background-color: #4b4b4b;">Before</p>
+                                        </div>
+                                        <div class="flex" style="justify-content: flex-start; align-items: baseline;">
+                                            <div class="width_4">
+                                                <p style="color: #9f9f9f; font-size: 0.8vw;">●</p>
+                                            </div>
+                                            <div class="txt_lpad_05 width_96">
+                                                <p class="font_100 noto_regular txt_left"
+                                                    style="font-size: 1.22vw !important;">
+                                                    新卒採用に数年ぶりに取り組むことになった</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex" style="justify-content: flex-start; align-items: baseline;">
+                                            <div class="width_4">
+                                                <p style="color: #9f9f9f; font-size: 0.8vw;">●</p>
+                                            </div>
+                                            <div class="txt_lpad_05 width_96">
+                                                <p class="font_100 noto_regular txt_left"
+                                                    style="font-size: 1.22vw !important;">以前新卒採用を取り組んでいたが実績は2名だった
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="flex" style="justify-content: flex-start; align-items: baseline;">
+                                            <div class="width_4">
+                                                <p style="color: #9f9f9f; font-size: 0.8vw;">●</p>
+                                            </div>
+                                            <div class="txt_lpad_05 width_96">
+                                                <p class="font_100 noto_regular txt_left"
+                                                    style="font-size: 1.22vw !important;">新卒採用予算を大幅に減らし、媒体も2つから1つに
+                                                    　絞る必要があった</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="font_200" style="color: #3c93c1;">▶</p>
+                                    </div>
+                                    <div class="bg_img width_48 txt_tpad_2 txt_bpad_2 txt_lpad_1 txt_rpad_1" style="border: 2px solid #007dc5; padding-top: 2.7vw !important; padding-bottom:
                                     2.7vw !important;">
-                                    <div class="tl_0" style="top: -15%; left: 3%;">
-                                        <p class="box_radius_25 noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2"
-                                            style="background-color: #007dc5;">After</p>
-                                    </div>
-                                    <div class="flex flex_center"
-                                        style="justify-content: flex-start; align-items: baseline;">
-                                        <div>
-                                            <p style="color: #007dc5; font-size: 0.8vw;">●</p>
+                                        <div class="tl_0" style="top: -15%; left: 3%;">
+                                            <p class="box_radius_25 noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2"
+                                                style="background-color: #007dc5;">After</p>
                                         </div>
-                                        <div class="txt_lpad_05">
-                                            <p class="font_100 noto_black">
-                                                媒体の数を減らしたことで、母集団は減ったが、<br>採用プロセス上の様々な工夫に取り組んできた</p>
+                                        <div class="flex flex_center"
+                                            style="justify-content: flex-start; align-items: baseline;">
+                                            <div>
+                                                <p style="color: #007dc5; font-size: 0.8vw;">●</p>
+                                            </div>
+                                            <div class="txt_lpad_05">
+                                                <p class="font_100 noto_black">
+                                                    媒体の数を減らしたことで、母集団は減ったが、<br>採用プロセス上の様々な工夫に取り組んできた</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="flex" style="justify-content: flex-start; align-items: baseline;">
-                                        <div>
-                                            <p style="color: #007dc5; font-size: 0.8vw;">●</p>
-                                        </div>
-                                        <div class="txt_lpad_05">
-                                            <p class="font_100 noto_black txt_left">採用実績が11名になった</p>
+                                        <div class="flex" style="justify-content: flex-start; align-items: baseline;">
+                                            <div>
+                                                <p style="color: #007dc5; font-size: 0.8vw;">●</p>
+                                            </div>
+                                            <div class="txt_lpad_05">
+                                                <p class="font_100 noto_black txt_left">採用実績が11名になった</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="space_1"></div>
-                            <!-- <div class="txt_tpad_1 txt_bpad_1 bg_img" style="background-color: #3c93c1;">
+                                <div class="space_1"></div>
+                                <!-- <div class="txt_tpad_1 txt_bpad_1 bg_img" style="background-color: #3c93c1;">
                                 <div class="t50_r0 width_3" style="right: 2%;">
                                     <a href="#"><img src="img/sect_13/plus_icon.png" alt="" class="fix_zoom undrag"></a>
                                 </div>
                                 <p class="noto_black font_125 white">施策を見る</p>
                             </div> -->
-                            <!-- ACCORDION 1 -->
-                            <div class="box_radius_0">
-                                <div class="accordion_item" style="background-color: #3c93c1;">
-                                    <a class="accordion_header flex flex_center"
-                                        style="padding: 10px; cursor: pointer;">
-                                        <p class="noto_black font_125 white width_85 flex
+                                <!-- ACCORDION 1 -->
+                                <div class="box_radius_0">
+                                    <div class="accordion_item" style="background-color: #3c93c1;">
+                                        <a class="accordion_header flex flex_center"
+                                            style="padding: 10px; cursor: pointer;">
+                                            <p class="noto_black font_125 white width_85 flex
                                                     flex_center" style="justify-content: center;">
-                                            施策を見る
-                                            <i class="fa fa-plus bg_white txt_tpad_05 txt_bpad_05 txt_lpad_05 txt_rpad_05 box_radius_9999"
-                                                style="position: relative; right: -48%;"></i>
-                                        </p>
-                                    </a>
+                                                施策を見る
+                                                <i class="fa fa-plus bg_white txt_tpad_05 txt_bpad_05 txt_lpad_05 txt_rpad_05 box_radius_9999"
+                                                    style="position: relative; right: -48%;"></i>
+                                            </p>
+                                        </a>
 
-                                    <div class="content">
-                                        <!-- Point 1 -->
-                                        <div>
-                                            <div class="space_2"></div>
-                                            <div class="txt_tpad_1 txt_bpad_1 txt_lpad_2"
-                                                style="background-color: #d8e9f3;">
-                                                <div class="flex flex_center" style="justify-content: flex-start;">
-                                                    <div class="width_8 txt_tpad_1 txt_bpad_1 box_radius_9999"
-                                                        style="background-color: #31a5b0;">
-                                                        <p class="txt_center noto_black font_100 white line_h_100">
-                                                            Point<br><span class="noto_black font_100 white">01</span>
-                                                        </p>
+                                        <div class="content">
+                                            <!-- Point 1 -->
+                                            <div>
+                                                <div class="space_2"></div>
+                                                <div class="txt_tpad_1 txt_bpad_1 txt_lpad_2"
+                                                    style="background-color: #d8e9f3;">
+                                                    <div class="flex flex_center" style="justify-content: flex-start;">
+                                                        <div class="width_8 txt_tpad_1 txt_bpad_1 box_radius_9999"
+                                                            style="background-color: #31a5b0;">
+                                                            <p class="txt_center noto_black font_100 white line_h_100">
+                                                                Point<br><span
+                                                                    class="noto_black font_100 white">01</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="width_80 txt_lpad_2">
+                                                            <p class="txt_left noto_black font_125"><span
+                                                                    class="noto_black"
+                                                                    style="color: #31a5b0;">母集団形成手法の変更</span><br>
+                                                                Web説明会の導入で参加者増</p>
+                                                        </div>
                                                     </div>
-                                                    <div class="width_80 txt_lpad_2">
-                                                        <p class="txt_left noto_black font_125"><span class="noto_black"
-                                                                style="color: #31a5b0;">母集団形成手法の変更</span><br>
-                                                            Web説明会の導入で参加者増</p>
+                                                </div>
+                                                <div class="space_2"></div>
+                                                <div class="flex flex_center">
+                                                    <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
+                                                        style="border: 2px solid #c7c7c7; padding: 37px 0 !important;">
+                                                        <div class="wrapper_60">
+                                                            <img src="../img/sect_13/case-7-p-1.png" alt=""
+                                                                class="fix_zoom undrag">
+                                                        </div>
+                                                        <div class="space_2"></div>
+                                                        <ul class="width_88 mg_auto">
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                説明会会場が駅から遠かったため、説明会参加者が少なかった
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <p class="font_200" style="color: #3c93c1;">▶</p>
+                                                    </div>
+                                                    <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
+                                                        style="border: 2px solid #c7c7c7; padding: 18px 0 !important;">
+                                                        <div class="wrapper_90">
+                                                            <img src="../img/sect_13/case-7-p-1-1.png" alt=""
+                                                                class="fix_zoom undrag">
+                                                        </div>
+                                                        <div class="space_2"></div>
+                                                        <ul class="width_88 mg_auto">
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                コロナの影響もあり、Web説明会を導入した
+                                                            </li>
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                Web説明会でも会社のウリである「施設のイメージ」をきち
+                                                                んと伝達するために、スライドで施設を多く見せるように工
+                                                                夫した
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="space_2"></div>
-                                            <div class="flex flex_center">
-                                                <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
-                                                    style="border: 2px solid #c7c7c7; padding: 37px 0 !important;">
-                                                    <div class="wrapper_60">
-                                                        <img src="../img/sect_13/case-7-p-1.png" alt=""
-                                                            class="fix_zoom undrag">
-                                                    </div>
-                                                    <div class="space_2"></div>
-                                                    <ul class="width_88 mg_auto">
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            説明会会場が駅から遠かったため、説明会参加者が少なかった
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <p class="font_200" style="color: #3c93c1;">▶</p>
-                                                </div>
-                                                <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
-                                                    style="border: 2px solid #c7c7c7; padding: 18px 0 !important;">
-                                                    <div class="wrapper_90">
-                                                        <img src="../img/sect_13/case-7-p-1-1.png" alt=""
-                                                            class="fix_zoom undrag">
-                                                    </div>
-                                                    <div class="space_2"></div>
-                                                    <ul class="width_88 mg_auto">
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            コロナの影響もあり、Web説明会を導入した
-                                                        </li>
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            Web説明会でも会社のウリである「施設のイメージ」をきち
-                                                            んと伝達するために、スライドで施設を多く見せるように工
-                                                            夫した
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Point 2 -->
-                                        <div>
-                                            <div class="space_2"></div>
-                                            <div class="txt_tpad_1 txt_bpad_1 txt_lpad_2"
-                                                style="background-color: #d8e9f3;">
-                                                <div class="flex flex_center" style="justify-content: flex-start;">
-                                                    <div class="width_8 txt_tpad_1 txt_bpad_1 box_radius_9999"
-                                                        style="background-color: #31a5b0;">
-                                                        <p class="txt_center noto_black font_100 white line_h_100">
-                                                            Point<br><span class="noto_black font_100 white">02</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="width_80">
-                                                        <p class="txt_left noto_black font_125 txt_lpad_2"><span
-                                                                class="noto_black"
-                                                                style="color: #31a5b0;">面接方法の改善</span><br>
-                                                            面接の改善で内定承諾率が約8割に</p>
+                                            <!-- Point 2 -->
+                                            <div>
+                                                <div class="space_2"></div>
+                                                <div class="txt_tpad_1 txt_bpad_1 txt_lpad_2"
+                                                    style="background-color: #d8e9f3;">
+                                                    <div class="flex flex_center" style="justify-content: flex-start;">
+                                                        <div class="width_8 txt_tpad_1 txt_bpad_1 box_radius_9999"
+                                                            style="background-color: #31a5b0;">
+                                                            <p class="txt_center noto_black font_100 white line_h_100">
+                                                                Point<br><span
+                                                                    class="noto_black font_100 white">02</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="width_80">
+                                                            <p class="txt_left noto_black font_125 txt_lpad_2"><span
+                                                                    class="noto_black"
+                                                                    style="color: #31a5b0;">面接方法の改善</span><br>
+                                                                面接の改善で内定承諾率が約8割に</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="space_2"></div>
-                                            <div class="flex flex_center">
-                                                <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
-                                                    style="border: 2px solid #c7c7c7; padding: 55px 0 !important;">
-                                                    <div class="wrapper_60">
-                                                        <img src="../img/sect_13/case-7-p-2.png" alt=""
-                                                            class="fix_zoom undrag">
+                                                <div class="space_2"></div>
+                                                <div class="flex flex_center">
+                                                    <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
+                                                        style="border: 2px solid #c7c7c7; padding: 55px 0 !important;">
+                                                        <div class="wrapper_60">
+                                                            <img src="../img/sect_13/case-7-p-2.png" alt=""
+                                                                class="fix_zoom undrag">
+                                                        </div>
+                                                        <div class="space_2"></div>
+                                                        <ul class="width_88 mg_auto">
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                面接官が面接の場を魅力を伝える場として認識できていない
+                                                            </li>
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                面接前後も人事からのコミュニケーションはなかった
+                                                            </li>
+                                                        </ul>
                                                     </div>
-                                                    <div class="space_2"></div>
-                                                    <ul class="width_88 mg_auto">
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            面接官が面接の場を魅力を伝える場として認識できていない
-                                                        </li>
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            面接前後も人事からのコミュニケーションはなかった
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <p class="font_200" style="color: #3c93c1;">▶</p>
-                                                </div>
-                                                <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
-                                                    style="border: 2px solid #c7c7c7;">
-                                                    <div class="wrapper_90">
-                                                        <img src="../img/sect_13/case-7-p-2-2.png" alt=""
-                                                            class="fix_zoom undrag">
+                                                    <div>
+                                                        <p class="font_200" style="color: #3c93c1;">▶</p>
                                                     </div>
-                                                    <div class="space_2"></div>
-                                                    <ul class="width_88 mg_auto">
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            面接官向けに面接ハンドブックを作成・提供し、面接官が学生
-                                                            に企業の魅力を伝達するようになった
-                                                        </li>
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            面接の前後で人事担当者からフォローのコミュニケーションを
-                                                            するようにした
-                                                        </li>
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            結果として高い承諾率を実現（14名中11名が承諾）
-                                                        </li>
-                                                    </ul>
+                                                    <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
+                                                        style="border: 2px solid #c7c7c7;">
+                                                        <div class="wrapper_90">
+                                                            <img src="../img/sect_13/case-7-p-2-2.png" alt=""
+                                                                class="fix_zoom undrag">
+                                                        </div>
+                                                        <div class="space_2"></div>
+                                                        <ul class="width_88 mg_auto">
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                面接官向けに面接ハンドブックを作成・提供し、面接官が学生
+                                                                に企業の魅力を伝達するようになった
+                                                            </li>
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                面接の前後で人事担当者からフォローのコミュニケーションを
+                                                                するようにした
+                                                            </li>
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                結果として高い承諾率を実現（14名中11名が承諾）
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="space_1"></div>
                             </div>
-                            <div class="space_1"></div>
                         </div>
-                    </div>
-                    <div class="space_2"></div>
-                    <!-- Case 08 -->
-                    <div style="box-shadow: 0 0 10px 0px #d3d3d3; border: 1px solid #d3d3d3;">
-                        <div class="txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1" style="background-color: #3c93c1;">
-                            <div class="flex flex_center" style="justify-content: flex-start;">
-                                <div>
-                                    <p class="noto_bold font_75 bg_white txt_lpad_05 txt_rpad_05 box_radius_25"
-                                        style="color: #3c93c1;">
-                                        CASE：08</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_black font_125 txt_lpad_1">効果的なインターンシップ設計で<span
-                                            class="noto_black" style="color: #ffd200;">参加者数が約15倍に！</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="space_05"></div>
-                            <div class="hr_1" style="border-top: 1px solid #fff;"></div>
-                            <div class="space_1"></div>
-                            <!-- 1 -->
-                            <div class="flex flex_center" style="justify-content: flex-start; column-gap: 1vw;">
-                                <div>
-                                    <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
-                                        style="background-color: #1b599f; border: 1px solid #fff;">業界</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_regular font_75">物流・倉庫</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
-                                        style="background-color: #748efd; border: 1px solid #fff;">従業員数</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_regular font_75">300名～1000名</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
-                                        style="background-color: #eb6d41; border: 1px solid #fff;">採用人数</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_regular font_75">10名～30名</p>
-                                </div>
-                            </div>
-                            <div class="space_05"></div>
-                            <!-- 2 -->
-                            <div class="flex flex_center" style="justify-content: flex-start; column-gap: 1vw;">
-                                <div>
-                                    <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
-                                        style="background-color: #e4007f; border: 1px solid #fff;">利用サービス</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_regular font_75">マイナビ（サマーインターン）</p>
-                                </div>
-                            </div>
-                            <div class="space_05"></div>
-                        </div>
-                        <div class="space_3"></div>
-                        <div class="wrapper_95">
-                            <div class="flex flex_center" style="justify-content: space-between;">
-                                <div class="bg_img width_48 txt_tpad_2 txt_bpad_2 txt_lpad_1 txt_rpad_1"
-                                    style="border: 1px solid #c7c7c7;">
-                                    <div class="tl_0" style="top: -15%; left: 3%;">
-                                        <p class="box_radius_25 noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2"
-                                            style="background-color: #4b4b4b;">Before</p>
+                        <div class="space_2"></div>
+                        <!-- Case 08 -->
+                        <div style="box-shadow: 0 0 10px 0px #d3d3d3; border: 1px solid #d3d3d3;">
+                            <div class="txt_tpad_05 txt_bpad_05 txt_lpad_1 txt_rpad_1"
+                                style="background-color: #3c93c1;">
+                                <div class="flex flex_center" style="justify-content: flex-start;">
+                                    <div>
+                                        <p class="noto_bold font_75 bg_white txt_lpad_05 txt_rpad_05 box_radius_25"
+                                            style="color: #3c93c1;">
+                                            CASE：08</p>
                                     </div>
-                                    <div class="flex" style="justify-content: flex-start; align-items: baseline;">
-                                        <div>
-                                            <p style="color: #9f9f9f; font-size: 0.8vw;">●</p>
-                                        </div>
-                                        <div class="txt_lpad_05">
-                                            <p class="font_100 noto_regular txt_left">昨年までのインターンシップは、
-                                                エントリー数が<br>230名、参加数12名だった</p>
-                                        </div>
+                                    <div>
+                                        <p class="white noto_black font_125 txt_lpad_1">効果的なインターンシップ設計で<span
+                                                class="noto_black" style="color: #ffd200;">参加者数が約15倍に！</span>
+                                        </p>
                                     </div>
                                 </div>
-                                <div>
-                                    <p class="font_200" style="color: #3c93c1;">▶</p>
-                                </div>
-                                <div class="bg_img width_48 txt_tpad_2 txt_bpad_2 txt_lpad_1 txt_rpad_1"
-                                    style="border: 2px solid #007dc5;">
-                                    <div class="tl_0" style="top: -15%; left: 3%;">
-                                        <p class="box_radius_25 noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2"
-                                            style="background-color: #007dc5;">After</p>
+                                <div class="space_05"></div>
+                                <div class="hr_1" style="border-top: 1px solid #fff;"></div>
+                                <div class="space_1"></div>
+                                <!-- 1 -->
+                                <div class="flex flex_center" style="justify-content: flex-start; column-gap: 1vw;">
+                                    <div>
+                                        <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
+                                            style="background-color: #1b599f; border: 1px solid #fff;">業界</p>
                                     </div>
-                                    <div class="flex flex_center"
-                                        style="justify-content: flex-start; align-items: baseline;">
-                                        <div class="width_4">
-                                            <p style="color: #007dc5; font-size: 0.8vw;">●</p>
-                                        </div>
-                                        <div class="txt_lpad_05 width_96">
-                                            <p class="font_100 noto_black">今年は、効果的な施策を展開することで、
-                                                エントリー数が1000名、参加数170名と大幅に増加した</p>
-                                        </div>
+                                    <div>
+                                        <p class="white noto_regular font_75">物流・倉庫</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
+                                            style="background-color: #748efd; border: 1px solid #fff;">従業員数</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_regular font_75">300名～1000名</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
+                                            style="background-color: #eb6d41; border: 1px solid #fff;">採用人数</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_regular font_75">10名～30名</p>
                                     </div>
                                 </div>
+                                <div class="space_05"></div>
+                                <!-- 2 -->
+                                <div class="flex flex_center" style="justify-content: flex-start; column-gap: 1vw;">
+                                    <div>
+                                        <p class="white noto_bold font_75 txt_lpad_1 txt_rpad_1"
+                                            style="background-color: #e4007f; border: 1px solid #fff;">利用サービス</p>
+                                    </div>
+                                    <div>
+                                        <p class="white noto_regular font_75">マイナビ（サマーインターン）</p>
+                                    </div>
+                                </div>
+                                <div class="space_05"></div>
                             </div>
-                            <div class="space_1"></div>
-                            <!-- <div class="txt_tpad_1 txt_bpad_1 bg_img" style="background-color: #3c93c1;">
+                            <div class="space_3"></div>
+                            <div class="wrapper_95">
+                                <div class="flex flex_center" style="justify-content: space-between;">
+                                    <div class="bg_img width_48 txt_tpad_2 txt_bpad_2 txt_lpad_1 txt_rpad_1"
+                                        style="border: 1px solid #c7c7c7;">
+                                        <div class="tl_0" style="top: -15%; left: 3%;">
+                                            <p class="box_radius_25 noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2"
+                                                style="background-color: #4b4b4b;">Before</p>
+                                        </div>
+                                        <div class="flex" style="justify-content: flex-start; align-items: baseline;">
+                                            <div>
+                                                <p style="color: #9f9f9f; font-size: 0.8vw;">●</p>
+                                            </div>
+                                            <div class="txt_lpad_05">
+                                                <p class="font_100 noto_regular txt_left">昨年までのインターンシップは、
+                                                    エントリー数が<br>230名、参加数12名だった</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="font_200" style="color: #3c93c1;">▶</p>
+                                    </div>
+                                    <div class="bg_img width_48 txt_tpad_2 txt_bpad_2 txt_lpad_1 txt_rpad_1"
+                                        style="border: 2px solid #007dc5;">
+                                        <div class="tl_0" style="top: -15%; left: 3%;">
+                                            <p class="box_radius_25 noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2"
+                                                style="background-color: #007dc5;">After</p>
+                                        </div>
+                                        <div class="flex flex_center"
+                                            style="justify-content: flex-start; align-items: baseline;">
+                                            <div class="width_4">
+                                                <p style="color: #007dc5; font-size: 0.8vw;">●</p>
+                                            </div>
+                                            <div class="txt_lpad_05 width_96">
+                                                <p class="font_100 noto_black">今年は、効果的な施策を展開することで、
+                                                    エントリー数が1000名、参加数170名と大幅に増加した</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="space_1"></div>
+                                <!-- <div class="txt_tpad_1 txt_bpad_1 bg_img" style="background-color: #3c93c1;">
                                 <div class="t50_r0 width_3" style="right: 2%;">
                                     <a href="#"><img src="img/sect_13/plus_icon.png" alt="" class="fix_zoom undrag"></a>
                                 </div>
                                 <p class="noto_black font_125 white">施策を見る</p>
                             </div> -->
-                            <!-- ACCORDION 1 -->
-                            <div class="box_radius_0">
-                                <div class="accordion_item" style="background-color: #3c93c1;">
-                                    <a class="accordion_header flex flex_center"
-                                        style="padding: 10px; cursor: pointer;">
-                                        <p class="noto_black font_125 white width_85 flex
+                                <!-- ACCORDION 1 -->
+                                <div class="box_radius_0">
+                                    <div class="accordion_item" style="background-color: #3c93c1;">
+                                        <a class="accordion_header flex flex_center"
+                                            style="padding: 10px; cursor: pointer;">
+                                            <p class="noto_black font_125 white width_85 flex
                                                     flex_center" style="justify-content: center;">
-                                            施策を見る
-                                            <i class="fa fa-plus bg_white txt_tpad_05 txt_bpad_05 txt_lpad_05 txt_rpad_05 box_radius_9999"
-                                                style="position: relative; right: -48%;"></i>
-                                        </p>
-                                    </a>
+                                                施策を見る
+                                                <i class="fa fa-plus bg_white txt_tpad_05 txt_bpad_05 txt_lpad_05 txt_rpad_05 box_radius_9999"
+                                                    style="position: relative; right: -48%;"></i>
+                                            </p>
+                                        </a>
 
-                                    <div class="content">
-                                        <!-- Point 1 -->
-                                        <div>
-                                            <div class="space_2"></div>
-                                            <div class="txt_tpad_1 txt_bpad_1 txt_lpad_2"
-                                                style="background-color: #d8e9f3;">
-                                                <div class="flex flex_center" style="justify-content: flex-start;">
-                                                    <div class="width_8 txt_tpad_1 txt_bpad_1 box_radius_9999"
-                                                        style="background-color: #31a5b0;">
-                                                        <p class="txt_center noto_black font_100 white line_h_100">
-                                                            Point<br><span class="noto_black font_100 white">01</span>
-                                                        </p>
+                                        <div class="content">
+                                            <!-- Point 1 -->
+                                            <div>
+                                                <div class="space_2"></div>
+                                                <div class="txt_tpad_1 txt_bpad_1 txt_lpad_2"
+                                                    style="background-color: #d8e9f3;">
+                                                    <div class="flex flex_center" style="justify-content: flex-start;">
+                                                        <div class="width_8 txt_tpad_1 txt_bpad_1 box_radius_9999"
+                                                            style="background-color: #31a5b0;">
+                                                            <p class="txt_center noto_black font_100 white line_h_100">
+                                                                Point<br><span
+                                                                    class="noto_black font_100 white">01</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="width_80 txt_lpad_2">
+                                                            <p class="txt_left noto_black font_125"><span
+                                                                    class="noto_black"
+                                                                    style="color: #31a5b0;">インターンシップ内容変更</span><br>
+                                                                学生の状況に合わせた多様なインターンシップを設計</p>
+                                                        </div>
                                                     </div>
-                                                    <div class="width_80 txt_lpad_2">
-                                                        <p class="txt_left noto_black font_125"><span class="noto_black"
-                                                                style="color: #31a5b0;">インターンシップ内容変更</span><br>
-                                                            学生の状況に合わせた多様なインターンシップを設計</p>
+                                                </div>
+                                                <div class="space_2"></div>
+                                                <div class="flex flex_center">
+                                                    <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
+                                                        style="border: 2px solid #c7c7c7; padding: 68px 0 !important;">
+                                                        <div class="wrapper_60">
+                                                            <img src="../img/sect_13/case-8-p-1.png" alt=""
+                                                                class="fix_zoom undrag">
+                                                        </div>
+                                                        <div class="space_2"></div>
+                                                        <ul class="width_88 mg_auto">
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                インターンシップが業界志望の学生には浅い内容になってお
+                                                                り、業界志望でない学生には興味が持ちづらい内容になって
+                                                                しまっていた
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <p class="font_200" style="color: #3c93c1;">▶</p>
+                                                    </div>
+                                                    <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
+                                                        style="border: 2px solid #c7c7c7; padding: 18px 0 !important;">
+                                                        <div class="wrapper_90">
+                                                            <img src="../img/sect_13/case-8-p-1-1.png" alt=""
+                                                                class="fix_zoom undrag">
+                                                        </div>
+                                                        <div class="space_2"></div>
+                                                        <ul class="width_88 mg_auto">
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                インターンシップの種類を増やした
+                                                            </li>
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                業界志望の学生には、課題解決型のグループワークや職場見学
+                                                                などを通じて、会社や仕事の魅力が深く伝わるようにした
+                                                            </li>
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                業界志望でない学生には、就活支援のプログラムを通じて、
+                                                                興味を持つきっかけを提供した
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="space_2"></div>
-                                            <div class="flex flex_center">
-                                                <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
-                                                    style="border: 2px solid #c7c7c7; padding: 68px 0 !important;">
-                                                    <div class="wrapper_60">
-                                                        <img src="../img/sect_13/case-8-p-1.png" alt=""
-                                                            class="fix_zoom undrag">
-                                                    </div>
-                                                    <div class="space_2"></div>
-                                                    <ul class="width_88 mg_auto">
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            インターンシップが業界志望の学生には浅い内容になってお
-                                                            り、業界志望でない学生には興味が持ちづらい内容になって
-                                                            しまっていた
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <p class="font_200" style="color: #3c93c1;">▶</p>
-                                                </div>
-                                                <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
-                                                    style="border: 2px solid #c7c7c7; padding: 18px 0 !important;">
-                                                    <div class="wrapper_90">
-                                                        <img src="../img/sect_13/case-8-p-1-1.png" alt=""
-                                                            class="fix_zoom undrag">
-                                                    </div>
-                                                    <div class="space_2"></div>
-                                                    <ul class="width_88 mg_auto">
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            インターンシップの種類を増やした
-                                                        </li>
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            業界志望の学生には、課題解決型のグループワークや職場見学
-                                                            などを通じて、会社や仕事の魅力が深く伝わるようにした
-                                                        </li>
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            業界志望でない学生には、就活支援のプログラムを通じて、
-                                                            興味を持つきっかけを提供した
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Point 2 -->
-                                        <div>
-                                            <div class="space_2"></div>
-                                            <div class="txt_tpad_1 txt_bpad_1 txt_lpad_2"
-                                                style="background-color: #d8e9f3;">
-                                                <div class="flex flex_center" style="justify-content: flex-start;">
-                                                    <div class="width_8 txt_tpad_1 txt_bpad_1 box_radius_9999"
-                                                        style="background-color: #31a5b0;">
-                                                        <p class="txt_center noto_black font_100 white line_h_100">
-                                                            Point<br><span class="noto_black font_100 white">02</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="width_80">
-                                                        <p class="txt_left noto_black font_125 txt_lpad_2"><span
-                                                                class="noto_black"
-                                                                style="color: #31a5b0;">インターンシップ開催方法変更</span><br>
-                                                            Webインターンシップの導入で参加者増</p>
+                                            <!-- Point 2 -->
+                                            <div>
+                                                <div class="space_2"></div>
+                                                <div class="txt_tpad_1 txt_bpad_1 txt_lpad_2"
+                                                    style="background-color: #d8e9f3;">
+                                                    <div class="flex flex_center" style="justify-content: flex-start;">
+                                                        <div class="width_8 txt_tpad_1 txt_bpad_1 box_radius_9999"
+                                                            style="background-color: #31a5b0;">
+                                                            <p class="txt_center noto_black font_100 white line_h_100">
+                                                                Point<br><span
+                                                                    class="noto_black font_100 white">02</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="width_80">
+                                                            <p class="txt_left noto_black font_125 txt_lpad_2"><span
+                                                                    class="noto_black"
+                                                                    style="color: #31a5b0;">インターンシップ開催方法変更</span><br>
+                                                                Webインターンシップの導入で参加者増</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="space_2"></div>
-                                            <div class="flex flex_center">
-                                                <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
-                                                    style="border: 2px solid #c7c7c7; padding: 41px 0 !important;">
-                                                    <div class="wrapper_60">
-                                                        <img src="../img/sect_13/case-8-p-2.png" alt=""
-                                                            class="fix_zoom undrag">
+                                                <div class="space_2"></div>
+                                                <div class="flex flex_center">
+                                                    <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
+                                                        style="border: 2px solid #c7c7c7; padding: 41px 0 !important;">
+                                                        <div class="wrapper_60">
+                                                            <img src="../img/sect_13/case-8-p-2.png" alt=""
+                                                                class="fix_zoom undrag">
+                                                        </div>
+                                                        <div class="space_2"></div>
+                                                        <ul class="width_88 mg_auto">
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                Webでのインターンシップの実施をしていなかった
+                                                            </li>
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                インターンシップの開催数も4回と少なく、開催場所も東京・
+                                                                大阪と限定されていた
+                                                            </li>
+                                                        </ul>
                                                     </div>
-                                                    <div class="space_2"></div>
-                                                    <ul class="width_88 mg_auto">
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            Webでのインターンシップの実施をしていなかった
-                                                        </li>
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            インターンシップの開催数も4回と少なく、開催場所も東京・
-                                                            大阪と限定されていた
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <p class="font_200" style="color: #3c93c1;">▶</p>
-                                                </div>
-                                                <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
-                                                    style="border: 2px solid #c7c7c7;">
-                                                    <div class="wrapper_90">
-                                                        <img src="../img/sect_13/case-8-p-2-2.png" alt=""
-                                                            class="fix_zoom undrag">
+                                                    <div>
+                                                        <p class="font_200" style="color: #3c93c1;">▶</p>
                                                     </div>
-                                                    <div class="space_2"></div>
-                                                    <ul class="width_88 mg_auto">
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            Webでのインターンシップを実施し、学生が選択しやすい環境
-                                                            を作った
-                                                        </li>
-                                                        <li class="txt_left noto_regular font_75"
-                                                            style="list-style-type: disc;">
-                                                            開催数も12回に増やし、開催場所も東京・大阪・名古屋・Web
-                                                            での実施するようにした
-                                                        </li>
-                                                    </ul>
+                                                    <div class="width_48 txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1"
+                                                        style="border: 2px solid #c7c7c7;">
+                                                        <div class="wrapper_90">
+                                                            <img src="../img/sect_13/case-8-p-2-2.png" alt=""
+                                                                class="fix_zoom undrag">
+                                                        </div>
+                                                        <div class="space_2"></div>
+                                                        <ul class="width_88 mg_auto">
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                Webでのインターンシップを実施し、学生が選択しやすい環境
+                                                                を作った
+                                                            </li>
+                                                            <li class="txt_left noto_regular font_75"
+                                                                style="list-style-type: disc;">
+                                                                開催数も12回に増やし、開催場所も東京・大阪・名古屋・Web
+                                                                での実施するようにした
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="space_1"></div>
                             </div>
-                            <div class="space_1"></div>
                         </div>
+                        <span id="dots" style="visibility: hidden;">...</span>
                     </div>
-
-
-
 
                     <div class="space_3"></div>
                     <!-- Button -->
-                    <div class="square_btn wrapper_25 txt_tpad_1 txt_bpad_1 box_radius_10"
+                    <div class="d_none square_btn wrapper_25 txt_tpad_1 txt_bpad_1 box_radius_10" id="myBtn"
                         style=" background-image: linear-gradient(to right, #f4882d , #fb6b48);">
-                        <div class="bg_img">
+                        <div class="bg_img" onclick="myFunction()">
                             <div class="tl_0" style="left: 7%;">
                                 <p class="white font_125">▶</p>
                             </div>
@@ -6166,6 +6184,7 @@
                     <!-- Case 03 -->
                     <div style="box-shadow: 0 0 10px 0px #d3d3d3; border: 1px solid #d3d3d3;">
                         <div class="txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2" style="background-color: #3c93c1;">
+                            <div class="space_2"></div>
                             <div class="flex flex_center" style="justify-content: flex-start;">
                                 <div>
                                     <p class="noto_bold font_75 bg_white txt_lpad_05 txt_rpad_05 box_radius_25"
@@ -6439,6 +6458,7 @@
                     <!-- Case 04 -->
                     <div style="box-shadow: 0 0 10px 0px #d3d3d3; border: 1px solid #d3d3d3;">
                         <div class="txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2" style="background-color: #3c93c1;">
+                            <div class="space_2"></div>
                             <div class="flex flex_center" style="justify-content: flex-start;">
                                 <div>
                                     <p class="noto_bold font_75 bg_white txt_lpad_05 txt_rpad_05 box_radius_25"
@@ -6719,6 +6739,7 @@
                     <!-- Case 05 -->
                     <div style="box-shadow: 0 0 10px 0px #d3d3d3; border: 1px solid #d3d3d3;">
                         <div class="txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2" style="background-color: #3c93c1;">
+                            <div class="space_2"></div>
                             <div class="flex flex_center" style="justify-content: flex-start;">
                                 <div>
                                     <p class="noto_bold font_75 bg_white txt_lpad_05 txt_rpad_05 box_radius_25"
@@ -6996,6 +7017,7 @@
                     <!-- Case 06 -->
                     <div style="box-shadow: 0 0 10px 0px #d3d3d3; border: 1px solid #d3d3d3;">
                         <div class="txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2" style="background-color: #3c93c1;">
+                            <div class="space_2"></div>
                             <div class="flex flex_center" style="justify-content: flex-start;">
                                 <div>
                                     <p class="noto_bold font_75 bg_white txt_lpad_05 txt_rpad_05 box_radius_25"
@@ -7266,6 +7288,7 @@
                     <!-- Case 07 -->
                     <div style="box-shadow: 0 0 10px 0px #d3d3d3; border: 1px solid #d3d3d3;">
                         <div class="txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2" style="background-color: #3c93c1;">
+                            <div class="space_2"></div>
                             <div class="flex flex_center" style="justify-content: flex-start;">
                                 <div>
                                     <p class="noto_bold font_75 bg_white txt_lpad_05 txt_rpad_05 box_radius_25"
@@ -7553,6 +7576,7 @@
                     <!-- Case 08 -->
                     <div style="box-shadow: 0 0 10px 0px #d3d3d3; border: 1px solid #d3d3d3;">
                         <div class="txt_tpad_05 txt_bpad_05 txt_lpad_2 txt_rpad_2" style="background-color: #3c93c1;">
+                            <div class="space_2"></div>
                             <div class="flex flex_center" style="justify-content: flex-start;">
                                 <div>
                                     <p class="noto_bold font_75 bg_white txt_lpad_05 txt_rpad_05 box_radius_25"
@@ -7813,25 +7837,6 @@
 
                             <div class="space_1"></div>
                         </div>
-                    </div>
-
-
-
-
-                    <div class="space_3"></div>
-                    <!-- Button -->
-                    <div class="square_btn wrapper_60 txt_tpad_1 txt_bpad_1 box_radius_5"
-                        style=" background-image: linear-gradient(to right, #f4882d , #fb6b48);">
-                        <a href="#">
-                            <div class="bg_img">
-                                <div class="tl_0" style="left: 7%;">
-                                    <p class="white font_125">▶</p>
-                                </div>
-                                <div>
-                                    <p class="white noto_black font_100">もっと見る</p>
-                                </div>
-                            </div>
-                        </a>
                     </div>
                     <div class="space_3"></div>
                 </div>
@@ -8505,6 +8510,27 @@
             </div>
         </div>
     </footer>
+
+    <!-- See more -->
+    <script>
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+            // dots.style.display = "inline";
+            // btnText.innerHTML = "もっと見る";
+            moreText.style.display = "none";
+            btnText.style.display = "none";
+        } else {
+            // dots.style.display = "none";
+            // btnText.innerHTML = "続きを読む";
+            btnText.style.display = "none";
+            moreText.style.display = "inline";
+        }
+    }
+    </script>
 
     <!-- ACCORDION -->
     <script>
