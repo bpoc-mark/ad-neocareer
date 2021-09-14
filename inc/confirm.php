@@ -335,13 +335,13 @@
 
     .noto_regular {
         font-family: 'noto_regular';
-        font-weight: 400;
+        font-weight: 500;
         font-style: normal;
     }
 
     .noto_bold {
         font-family: 'noto_bold';
-        font-weight: 600;
+        font-weight: 700;
     }
 
     .noto_light {
