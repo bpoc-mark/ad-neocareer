@@ -46,6 +46,12 @@
     <!-- Base CSS -->
     <link rel="stylesheet" href="../css/base.css">
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="../css/main.css">
 
     <!-- フォントオーサム -->
@@ -280,7 +286,7 @@
     </style>
 
     <style type='text/css'>
-    @font-face {
+    /* @font-face {
         font-family: 'noto_demilight';
         src: url(../assets/css/fonts/NotoSansCJKjp-DemiLight.otf);
         font-style: normal;
@@ -320,7 +326,7 @@
         font-family: 'co_regular';
         src: url(../assets/css/fonts/CoTextCorp-Regular.ttf);
         font-style: normal;
-    }
+    } */
 
     .noto_demilight {
         font-family: 'noto_demilight';
@@ -328,22 +334,34 @@
 
     .noto_regular {
         font-family: 'noto_regular';
+        font-weight: 400;
+        font-style: normal;
     }
 
     .noto_bold {
         font-family: 'noto_bold';
+        font-weight: 600;
     }
 
     .noto_light {
         font-family: 'noto_light';
+        font-weight: 300;
+        font-style: normal;
     }
 
     .noto_medium {
         font-family: 'noto_medium';
+        font-weight: 500;
+        font-style: normal;
     }
 
-    .noto_black {
+    /* .noto_black {
         font-family: 'noto_black';
+    } */
+    .noto_black {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 900;
+        font-style: normal;
     }
 
     .co_regular {
@@ -8722,7 +8740,6 @@
     <!-- PC -->
     <script>
     function myFunction() {
-        alert();
         var dots = document.getElementById("dots");
         var moreText = document.getElementById("more");
         var btnText = document.getElementById("myBtn");
