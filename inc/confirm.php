@@ -8384,7 +8384,7 @@
                                 <div class="flex flex_center">
                                     <a href="#ご提供tサービス" style="display: block;">
                                         <p class="noto_regular txt_mg_0 font_75 txt_tpad_05 txt_bpad_05 white">
-                                            ご提供tサービス
+                                            ご提供サービス
                                         </p>
                                     </a>
                                 </div>
@@ -8462,7 +8462,7 @@
                                     style="border-bottom: 2px solid #d6d6d6;">
                                     <a class="width_80 txt_left" href="#活用ケース" style="display: block;">
                                         <p class="noto_regular txt_mg_0 font_75 txt_tpad_2 txt_bpad_2 white">
-                                            ご提供tサービス
+                                            ご提供サービス
                                         </p>
                                         <div class="noto_regular txt_mg_0 font_100 white"><a
                                                 class="noto_regular txt_mg_0 font_100 white" href="#活用ケース">&#10095;</a>
