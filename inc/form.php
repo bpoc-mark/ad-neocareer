@@ -676,7 +676,8 @@
                         <div class="width_60 txt_tpad_2 txt_bpad_2 mg_auto">
                             <a href="#confirm_form">
                                 <img src="../img/header/mail.png" alt="" class="fix_zoom undrag">
-                                <p class="font_75 noto_bold" style="color: #00a3e0; position: relative; top: 1vw;">MAIL</p>
+                                <p class="font_75 noto_bold" style="color: #00a3e0; position: relative; top: 1vw;">MAIL
+                                </p>
                             </a>
                         </div>
                     </div>
@@ -830,7 +831,7 @@
                     <img src="../img/sect_1/main_img_sp.png" alt="" class="fix_zoom undrag">
                     <div class="t0_l50 width_81" style="top: 85.2%; right: 8%;">
                         <div class="bg_img square_btn">
-                            <a href="#">
+                            <a href="#confirm_form">
                                 <img src="../img/sect_4/bg_btn.png" alt="" class="fix_zoom undrag">
                                 <div class="tl_50 width_100">
                                     <div class="flex flex_center bg_img" style="justify-content: center;">
@@ -2019,7 +2020,7 @@
                                     <div class="width_32">
                                         <p class="noto_black font_100 white box_radius_25 txt_tpad_05 txt_bpad_05 txt_center"
                                             style="background-color: #44712d;">
-                                            各種就職サイトの紹介・効果向上支援</p>
+                                            インターンシップ支援</p>
                                         <div class="wrapper_70 txt_tpad_1">
                                             <img src="../img/sect_9/img_2.png" alt="" class="fix_zoom undrag">
                                         </div>
@@ -2033,7 +2034,7 @@
                                     <div class="width_32">
                                         <p class="noto_black font_100 white box_radius_25 txt_tpad_05 txt_bpad_05 txt_center"
                                             style="background-color: #44712d;">
-                                            各種就職サイトの紹介・効果向上支援</p>
+                                            ダイレクトリクルーティング支援</p>
                                         <div class="wrapper_70 txt_tpad_1" style="padding-bottom: 1.7vw;">
                                             <img src="../img/sect_9/img_3.png" alt="" class="fix_zoom undrag">
                                         </div>
@@ -2088,7 +2089,7 @@
                                         <div class="width_100">
                                             <div class="width_100">
                                                 <p class="white noto_black font_100 txt_center"
-                                                    style="background-color: #6ed53b; letter-spacing: 3px;">経営課題
+                                                    style="background-color: #6ed53b; letter-spacing: 3px;">採用ツール
                                                 </p>
                                                 <div class="txt_tpad_05 txt_bpad_05 txt_lpad_05 txt_rpad_05"
                                                     style="background-color: #fff;">
@@ -2722,7 +2723,7 @@
                                             <div class="width_100">
                                                 <div class="width_100">
                                                     <p class="white noto_black font_100 txt_center"
-                                                        style="background-color: #6ed53b; letter-spacing: 3px;">経営課題
+                                                        style="background-color: #6ed53b; letter-spacing: 3px;">採用ツール
                                                     </p>
                                                     <div class="txt_tpad_05 txt_bpad_05 txt_lpad_05 txt_rpad_05"
                                                         style="background-color: #fff;">
@@ -3077,7 +3078,7 @@
                     <div class="flex">
                         <div class="width_48" style="border: 2px solid #d0d0d0;">
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_center"
-                                style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">就職サイト</p>
+                                style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">合同企業説明会</p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1">
                                 <img src="../img/sect_10/logos_3.png" alt="" class="fix_zoom undrag">
                             </div>
@@ -3085,7 +3086,7 @@
                         <div class="width_48" style="border: 2px solid #d0d0d0;">
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_center"
                                 style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">
-                                ダイレクトリクルーティング
+                                採用ツール
                             </p>
                             <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_80 mg_auto">
                                 <img src="../img/sect_10/logos_4.png" alt="" class="fix_zoom undrag">
@@ -3097,7 +3098,7 @@
                     <div class="flex">
                         <div class="width_48" style="border: 2px solid #d0d0d0;">
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_center"
-                                style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">就職サイト</p>
+                                style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">コンサルティング</p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_70 mg_auto">
                                 <img src="../img/sect_10/logos_5.png" alt="" class="fix_zoom undrag">
                             </div>
@@ -3105,7 +3106,7 @@
                         <div class="width_48" style="border: 2px solid #d0d0d0;">
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_center"
                                 style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">
-                                ダイレクトリクルーティング
+                                内定者フォロー・歩留まり改善
                             </p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_70 mg_auto">
                                 <img src="../img/sect_10/logos_6.png" alt="" class="fix_zoom undrag">
@@ -3117,7 +3118,7 @@
                     <div class="flex">
                         <div class="width_48" style="border: 2px solid #d0d0d0;">
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_center"
-                                style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">就職サイト</p>
+                                style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">適性検査</p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_90 mg_auto">
                                 <img src="../img/sect_10/logos_7.png" alt="" class="fix_zoom undrag">
                             </div>
@@ -3125,7 +3126,7 @@
                         <div class="width_48" style="border: 2px solid #d0d0d0;">
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_center"
                                 style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">
-                                ダイレクトリクルーティング
+                                採用アウトソーシング
                             </p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_70 mg_auto">
                                 <img src="../img/sect_10/logos_8.png" alt="" class="fix_zoom undrag">
@@ -3168,7 +3169,7 @@
                     <div class="flex">
                         <div class="width_100" style="border: 2px solid #d0d0d0;">
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_center"
-                                style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">就職サイト</p>
+                                style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">合同企業説明会</p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1">
                                 <img src="../img/sect_10/logos_3.png" alt="" class="fix_zoom undrag">
                             </div>
@@ -3177,7 +3178,7 @@
                         <div class="width_100" style="border: 2px solid #d0d0d0;">
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_center"
                                 style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">
-                                ダイレクトリクルーティング
+                                採用ツール
                             </p>
                             <div class="txt_tpad_2 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_80 mg_auto">
                                 <img src="../img/sect_10/logos_4.png" alt="" class="fix_zoom undrag">
@@ -3189,7 +3190,7 @@
                     <div class="flex">
                         <div class="width_100" style="border: 2px solid #d0d0d0;">
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_center"
-                                style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">就職サイト</p>
+                                style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">コンサルティング</p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_70 mg_auto">
                                 <img src="../img/sect_10/logos_5.png" alt="" class="fix_zoom undrag">
                             </div>
@@ -3198,7 +3199,7 @@
                         <div class="width_100" style="border: 2px solid #d0d0d0;">
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_center"
                                 style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">
-                                ダイレクトリクルーティング
+                                内定者フォロー・歩留まり改善
                             </p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_70 mg_auto">
                                 <img src="../img/sect_10/logos_6.png" alt="" class="fix_zoom undrag">
@@ -3210,7 +3211,7 @@
                     <div class="flex">
                         <div class="width_100" style="border: 2px solid #d0d0d0;">
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_center"
-                                style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">就職サイト</p>
+                                style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">適性検査</p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_90 mg_auto">
                                 <img src="../img/sect_10/logos_7.png" alt="" class="fix_zoom undrag">
                             </div>
@@ -3219,7 +3220,7 @@
                         <div class="width_100" style="border: 2px solid #d0d0d0;">
                             <p class="noto_black font_100 white txt_tpad_05 txt_bpad_05 txt_center"
                                 style=" background-image: linear-gradient(to right, #34a1b4 , #408dc6);">
-                                ダイレクトリクルーティング
+                                採用アウトソーシング
                             </p>
                             <div class="txt_tpad_1 txt_bpad_1 txt_lpad_1 txt_rpad_1 width_70 mg_auto">
                                 <img src="../img/sect_10/logos_8.png" alt="" class="fix_zoom undrag">
@@ -4312,7 +4313,7 @@
                                         style="background-color: #e4007f; border: 1px solid #fff;">利用サービス</p>
                                 </div>
                                 <div>
-                                    <p class="white noto_regular font_75">マイナビ、マイナビ高専イベント、動画、パンフレット制作</p>
+                                    <p class="white noto_regular font_75">マイナビ、マッチングイベント</p>
                                 </div>
                             </div>
                             <div class="space_05"></div>
@@ -8720,44 +8721,44 @@
     <!-- See more -->
     <!-- PC -->
     <script>
-        function myFunction() {
-            alert();
-            var dots = document.getElementById("dots");
-            var moreText = document.getElementById("more");
-            var btnText = document.getElementById("myBtn");
+    function myFunction() {
+        alert();
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
 
-            if (dots.style.display === "none") {
-                // dots.style.display = "inline";
-                // btnText.innerHTML = "もっと見る";
-                moreText.style.display = "none";
-                btnText.style.display = "none";
-            } else {
-                // dots.style.display = "none";
-                // btnText.innerHTML = "続きを読む";
-                btnText.style.display = "none";
-                moreText.style.display = "inline";
-            }
+        if (dots.style.display === "none") {
+            // dots.style.display = "inline";
+            // btnText.innerHTML = "もっと見る";
+            moreText.style.display = "none";
+            btnText.style.display = "none";
+        } else {
+            // dots.style.display = "none";
+            // btnText.innerHTML = "続きを読む";
+            btnText.style.display = "none";
+            moreText.style.display = "inline";
         }
+    }
     </script>
     <!-- SP -->
     <script>
-        function myFunctionsp() {
-            var dots = document.getElementById("dots2");
-            var moreText = document.getElementById("more-2");
-            var btnText = document.getElementById("myBtn-2");
+    function myFunctionsp() {
+        var dots = document.getElementById("dots2");
+        var moreText = document.getElementById("more-2");
+        var btnText = document.getElementById("myBtn-2");
 
-            if (dots.style.display === "none") {
-                // dots.style.display = "inline";
-                // btnText.innerHTML = "もっと見る";
-                moreText.style.display = "none";
-                btnText.style.display = "none";
-            } else {
-                // dots.style.display = "none";
-                // btnText.innerHTML = "続きを読む";
-                btnText.style.display = "none";
-                moreText.style.display = "inline";
-            }
+        if (dots.style.display === "none") {
+            // dots.style.display = "inline";
+            // btnText.innerHTML = "もっと見る";
+            moreText.style.display = "none";
+            btnText.style.display = "none";
+        } else {
+            // dots.style.display = "none";
+            // btnText.innerHTML = "続きを読む";
+            btnText.style.display = "none";
+            moreText.style.display = "inline";
         }
+    }
     </script>
 
     <!-- ACCORDION -->
