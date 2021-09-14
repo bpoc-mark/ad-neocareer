@@ -334,7 +334,7 @@
 
     .noto_regular {
         font-family: 'noto_regular';
-        font-weight: 500;
+        font-weight: 600;
         font-style: normal;
     }
 
