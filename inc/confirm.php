@@ -594,7 +594,8 @@
     <header>
         <!-- PC -->
         <div class="view_pc">
-            <div class="width_100 relative txt_tpad_1 txt_bpad_1 bspace_05">
+            <div class="width_100 relative txt_tpad_1 txt_bpad_1 bspace_05 bg_white"
+                style="position: fixed; z-index: 150; border-bottom:1px solid #707070;">
                 <div class="cont_wrapper_70">
                     <div class="width_100 flex flex_center" style="justify-content: flex-start;">
                         <div class="width_20 txt_bpad_05">
@@ -818,8 +819,8 @@
         <section class="sect_1">
             <div class="view_pc">
                 <div class="wrapper_100 bg_img">
+                    <div class="space_5" style="height: 8.8vw !important;"></div>
                     <img src="../img/sect_1/main_img.png" alt="" class="fix_zoom undrag">
-
                     <div class="t50_r0 width_31" style="top: 73.5%; right: 8%;">
                         <div class="bg_img square_btn">
                             <a href="#confirm_form">
